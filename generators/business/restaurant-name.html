@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>Restaurant Name Generator | Creative Food Business Names | Name Generator Hub</title>
+    <meta name="title" content="Restaurant Name Generator | Creative Food Business Names | Name Generator Hub">
+    <meta name="description" content="Create the perfect name for your restaurant, café, or food business with our free restaurant name generator. Find unique, memorable names by cuisine type.">
+    <meta name="keywords" content="restaurant name generator, cafe name ideas, food business names, restaurant branding, bistro names, pizzeria names, bakery names, food truck names">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="../../index.html" class="navbar-brand">
+                <i class="fas fa-magic"></i> Name Generator Hub
+            </a>
+            <ul class="navbar-nav">
+                <li><a href="../../index.html#generators">Generators</a></li>
+                <li><a href="../../index.html#how-it-works">How It Works</a></li>
+                <li><a href="../../index.html#faq">FAQ</a></li>
+                <li><a href="../../index.html#about">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header restaurant-header">
+        <div class="container">
+            <h1>Restaurant Name Generator</h1>
+            <p>Create appetizing, memorable names for your food business</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="generator-container">
+            <div class="generator-header">
+                <div class="icon">
+                    <i class="fas fa-utensils"></i>
+                </div>
+                <div>
+                    <h2>Generate a Restaurant Name</h2>
+                    <p>Use the options below to customize your restaurant name search.</p>
+                </div>
+            </div>
+
+            <div class="generator-options">
+                <div class="form-group">
+                    <label for="restaurant-type">Restaurant Type</label>
+                    <select id="restaurant-type">
+                        <option value="any">Any Type</option>
+                        <option value="fine-dining">Fine Dining</option>
+                        <option value="casual">Casual Dining</option>
+                        <option value="fast-casual">Fast Casual</option>
+                        <option value="cafe">Café/Coffee Shop</option>
+                        <option value="bistro">Bistro</option>
+                        <option value="pub">Pub/Bar</option>
+                        <option value="food-truck">Food Truck</option>
+                        <option value="bakery">Bakery/Patisserie</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="cuisine">Cuisine Type</label>
+                    <select id="cuisine">
+                        <option value="any">Any Cuisine</option>
+                        <option value="italian">Italian</option>
+                        <option value="french">French</option>
+                        <option value="american">American</option>
+                        <option value="mexican">Mexican</option>
+                        <option value="asian">Asian</option>
+                        <option value="mediterranean">Mediterranean</option>
+                        <option value="indian">Indian</option>
+                        <option value="seafood">Seafood</option>
+                        <option value="steakhouse">Steakhouse</option>
+                        <option value="vegetarian">Vegetarian/Vegan</option>
+                        <option value="fusion">Fusion</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="name-style">Naming Style</label>
+                    <select id="name-style">
+                        <option value="any">Any Style</option>
+                        <option value="classic">Classic/Traditional</option>
+                        <option value="modern">Modern/Trendy</option>
+                        <option value="geographical">Location-Based</option>
+                        <option value="pun">Punny/Wordplay</option>
+                        <option value="ingredient">Ingredient-Focused</option>
+                        <option value="founder">Founder's Name</option>
+                        <option value="descriptive">Descriptive</option>
+                        <option value="foreign">Foreign Language</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="atmosphere">Atmosphere</label>
+                    <select id="atmosphere">
+                        <option value="any">Any Atmosphere</option>
+                        <option value="elegant">Elegant/Upscale</option>
+                        <option value="cozy">Cozy/Intimate</option>
+                        <option value="vibrant">Vibrant/Energetic</option>
+                        <option value="rustic">Rustic/Homey</option>
+                        <option value="modern">Modern/Sleek</option>
+                        <option value="family">Family-Friendly</option>
+                        <option value="quirky">Quirky/Unique</option>
+                        <option value="nostalgic">Nostalgic/Retro</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="starting-letter">Starting Letter (Optional)</label>
+                    <input type="text" id="starting-letter" maxlength="1" placeholder="Enter a letter">
+                </div>
+
+                <button id="generate-btn" class="btn generate-btn">
+                    Generate Restaurant Name <i class="fas fa-hamburger"></i>
+                </button>
+            </div>
+
+            <!-- Google Ads Section -->
+            <div class="ad-container">
+                <div class="ad-label">Advertisement</div>
+                <div class="google-ad-placeholder">
+                    <!-- Google AdSense Code Would Go Here -->
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1234567890123456" crossorigin="anonymous"></script>
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-1234567890123456"
+                         data-ad-slot="1234567890"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+            </div>
+
+            <div class="result-container">
+                <h3>Your Restaurant Name</h3>
+                <div id="name-result" class="name-result">Click generate to find a restaurant name</div>
+                <div id="name-meaning" class="name-meaning"></div>
+                <button id="regenerate-btn" class="btn">
+                    <i class="fas fa-redo"></i> Generate Another
+                </button>
+            </div>
+
+            <div class="restaurant-tips">
+                <h3>Restaurant Naming Tips</h3>
+                <p>Choosing the right name for your restaurant can significantly impact your brand's success. Consider these factors when making your final selection:</p>
+                
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <div class="tip-icon"><i class="fas fa-bullseye"></i></div>
+                        <h4>Memorability</h4>
+                        <p>Your restaurant name should be easy to remember, pronounce, and spell. Consider how it sounds when spoken aloud and whether customers can easily recommend it to friends.</p>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon"><i class="fas fa-search"></i></div>
+                        <h4>SEO & Domain Availability</h4>
+                        <p>Check domain availability and social media handles before finalizing your name. A unique name will help you stand out in search results and make it easier to secure consistent branding.</p>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon"><i class="fas fa-trademark"></i></div>
+                        <h4>Trademark Considerations</h4>
+                        <p>Research existing trademarks to avoid legal issues. Conduct a thorough search to ensure your chosen name isn't already in use by another restaurant, especially in your area.</p>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon"><i class="fas fa-expand-arrows-alt"></i></div>
+                        <h4>Scalability</h4>
+                        <p>Choose a name that can grow with your business. Avoid names that are too location-specific or limited to one menu item if you plan to expand or diversify in the future.</p>
+                    </div>
+                </div>
+            </div>
+
+            <a href="../../index.html" class="back-link">
+                <i class="fas fa-arrow-left"></i> Back to All Generators
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>Name Generators</h4>
+                    <ul class="footer-links">
+                        <li><a href="../pet-name.html">Pet Names</a></li>
+                        <li><a href="../baby-name.html">Baby Names</a></li>
+                        <li><a href="../fantasy-name.html">Fantasy Names</a></li>
+                        <li><a href="../startup-name.html">Business Names</a></li>
+                        <li><a href="../gamer-tag.html">Gamer Tags</a></li>
+                        <li><a href="../boyfriend-name.html">Boyfriend Nicknames</a></li>
+                        <li><a href="../girlfriend-name.html">Girlfriend Nicknames</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Business Names</h4>
+                    <ul class="footer-links">
+                        <li><a href="restaurant-name.html">Restaurant Names</a></li>
+                        <li><a href="boutique-name.html">Boutique Names</a></li>
+                        <li><a href="tech-startup-name.html">Tech Startup Names</a></li>
+                        <li><a href="salon-name.html">Salon Names</a></li>
+                        <li><a href="consulting-name.html">Consulting Business Names</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="../../company/about.html">About Us</a></li>
+                        <li><a href="../../company/contact.html">Contact</a></li>
+                        <li><a href="../../company/privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="../../company/terms-of-service.html">Terms of Service</a></li>
+                        <li><a href="../../company/sitemap.html">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Stay Updated</h4>
+                    <p>Subscribe to our newsletter for the latest naming trends and generator updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Name Generator Hub. All rights reserved. | <a href="../../company/privacy-policy.html">Privacy Policy</a> | <a href="../../company/terms-of-service.html">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Restaurant name components by cuisine
+            const cuisineWords = {
+                italian: {
+                    nouns: ["Trattoria", "Osteria", "Ristorante", "Pizzeria", "Cucina", "Taverna", "Pasta", "Forno", "Gusto", "Sapore", "Dolce", "Pranzo", "Cena", "Rosso", "Bianco", "Verde"],
+                    adjectives: ["Bella", "Buono", "Fresco", "Rustico", "Autentico", "Piccolo", "Grande", "Vecchio", "Nuovo", "Delizioso", "Saporito", "Caldo", "Bello", "Divino"],
+                    ingredients: ["Pomodoro", "Basilico", "Oliva", "Vino", "Formaggio", "Pasta", "Limone", "Aglio", "Funghi", "Tartufo", "Pane", "Pesto", "Salame", "Prosciutto"]
+                },
+                french: {
+                    nouns: ["Bistro", "Café", "Brasserie", "Restaurant", "Patisserie", "Cuisine", "Boulangerie", "Maison", "Table", "Jardin", "Terrasse", "Plaisir", "Goût", "Saveur"],
+                    adjectives: ["Petit", "Grand", "Bon", "Beau", "Chic", "Élégant", "Authentique", "Classique", "Moderne", "Délicieux", "Rustique", "Raffiné", "Vieux", "Nouveau"],
+                    ingredients: ["Fromage", "Vin", "Pain", "Beurre", "Truffe", "Champignon", "Crème", "Bœuf", "Poulet", "Herbes", "Croissant", "Chocolat", "Sauce", "Escargot"]
+                },
+                american: {
+                    nouns: ["Diner", "Grill", "Kitchen", "Eatery", "Tavern", "Cafe", "Deli", "House", "Joint", "Spot", "Table", "Fork", "Plate", "Corner", "Bistro", "Pub"],
+                    adjectives: ["Classic", "Hometown", "Local", "Original", "Crispy", "Savory", "Hearty", "Tasty", "Juicy", "Fresh", "Golden", "Sizzling", "Farm", "Home"],
+                    ingredients: ["Burger", "Steak", "Bacon", "Cheese", "Fries", "BBQ", "Grill", "Smoke", "Biscuit", "Chicken", "Beef", "Pork", "Meat", "Pie", "Apple"]
+                },
+                mexican: {
+                    nouns: ["Taqueria", "Cantina", "Cocina", "Comida", "Casa", "Restaurante", "Fuego", "Sabor", "Fiesta", "Mercado", "Mesa", "Rincón", "Taco", "Burrito"],
+                    adjectives: ["Loco", "Picante", "Fresco", "Caliente", "Sabroso", "Auténtico", "Rico", "Grande", "Pequeño", "Feliz", "Bonito", "Viejo", "Nuevo", "Verde"],
+                    ingredients: ["Taco", "Burrito", "Salsa", "Chile", "Maíz", "Frijoles", "Tortilla", "Queso", "Guacamole", "Carnitas", "Mole", "Tequila", "Lime", "Cilantro"]
+                },
+                asian: {
+                    nouns: ["Wok", "Dragon", "Phoenix", "Garden", "House", "Palace", "Lotus", "Bamboo", "Kitchen", "Noodle", "Rice", "Spice", "Fusion", "Bento", "Sushi", "Tea"],
+                    adjectives: ["Golden", "Jade", "Lucky", "Happy", "Great", "Grand", "Royal", "Imperial", "Spicy", "Fresh", "East", "Asian", "Hot", "Sweet", "Crispy"],
+                    ingredients: ["Noodle", "Rice", "Soy", "Wok", "Spice", "Ginger", "Curry", "Dumpling", "Ramen", "Tofu", "Miso", "Wasabi", "Seafood", "Teriyaki", "Kimchi"]
+                },
+                mediterranean: {
+                    nouns: ["Taverna", "Mezze", "Olive", "Cyprus", "Aegean", "Mediterranean", "Villa", "Coast", "Sea", "Sun", "Island", "Harbor", "Bay", "Marina", "Olive"],
+                    adjectives: ["Blue", "Coastal", "Fresh", "Sunny", "Rustic", "Authentic", "Golden", "Azure", "Seaside", "Warm", "Island", "Breezy", "Crisp", "Homestyle"],
+                    ingredients: ["Olive", "Hummus", "Grape", "Feta", "Lamb", "Pita", "Herb", "Lemon", "Tahini", "Tzatziki", "Falafel", "Mint", "Eggplant", "Wine", "Fig"]
+                },
+                indian: {
+                    nouns: ["Spice", "Curry", "Tandoor", "Masala", "Taj", "Bombay", "Delhi", "Indian", "Flavors", "House", "Palace", "Banquet", "Gate", "Garden", "Kitchen"],
+                    adjectives: ["Spicy", "Hot", "Flavorful", "Royal", "Exotic", "Aromatic", "Traditional", "Authentic", "Golden", "Fiery", "Colorful", "Rich", "Vibrant"],
+                    ingredients: ["Curry", "Masala", "Tandoori", "Naan", "Chutney", "Paneer", "Basmati", "Ginger", "Tikka", "Korma", "Saag", "Biryani", "Chai", "Cardamom"]
+                },
+                seafood: {
+                    nouns: ["Cove", "Harbor", "Wharf", "Pier", "Dock", "Lighthouse", "Ocean", "Sea", "Shell", "Coast", "Bay", "Catch", "Grill", "Hook", "Net", "Anchor"],
+                    adjectives: ["Fresh", "Coastal", "Blue", "Salty", "Crispy", "Grilled", "Steamed", "Raw", "Deep", "Wild", "Local", "Briny", "Maritime", "Seaside"],
+                    ingredients: ["Crab", "Lobster", "Shrimp", "Fish", "Salmon", "Oyster", "Clam", "Scallop", "Tuna", "Cod", "Bass", "Halibut", "Mussel", "Prawn", "Trout"]
+                },
+                steakhouse: {
+                    nouns: ["Grill", "Steakhouse", "Chop", "Knife", "Fork", "Ranch", "Butcher", "Smoke", "Fire", "House", "Lodge", "Club", "Prime", "Char", "Iron", "Oak"],
+                    adjectives: ["Prime", "Rare", "Medium", "Sizzling", "Juicy", "Aged", "Rich", "Hearty", "Bold", "Classic", "Rustic", "Robust", "Savory", "Grilled"],
+                    ingredients: ["Beef", "Steak", "Rib", "Filet", "Sirloin", "Wagyu", "Kobe", "Angus", "Chop", "Strip", "Meat", "Dry-Aged", "Bone", "Marrow", "Brisket"]
+                },
+                vegetarian: {
+                    nouns: ["Green", "Leaf", "Sprout", "Harvest", "Garden", "Root", "Plant", "Earth", "Nature", "Bloom", "Seed", "Organic", "Field", "Farm", "Grove"],
+                    adjectives: ["Fresh", "Green", "Organic", "Wholesome", "Natural", "Clean", "Healthy", "Pure", "Raw", "Sustainable", "Vibrant", "Living", "Earthy"],
+                    ingredients: ["Kale", "Quinoa", "Tofu", "Veggie", "Bean", "Avocado", "Sprout", "Lentil", "Hummus", "Falafel", "Grain", "Mushroom", "Greens", "Roots"]
+                },
+                fusion: {
+                    nouns: ["Fusion", "Mix", "Blend", "Hybrid", "Mosaic", "Melting Pot", "Junction", "Crossroads", "Union", "Amalgam", "Merging", "Intersection", "Medley"],
+                    adjectives: ["Creative", "Innovative", "Bold", "Unconventional", "Experimental", "Global", "Modern", "Artisanal", "Inventive", "Diverse", "Eclectic"],
+                    ingredients: ["Spice", "Blend", "Combo", "Duo", "Flavor", "Fusion", "World", "Global", "Local", "East-West", "North-South", "Cross", "Mix", "Hybrid"]
+                },
+                any: {
+                    nouns: ["Table", "Plate", "Spoon", "Fork", "Knife", "Dish", "Feast", "Meal", "Taste", "Flavor", "Palate", "Bite", "Morsel", "Dining", "Cuisine", "Kitchen"],
+                    adjectives: ["Tasty", "Delicious", "Savory", "Flavorful", "Fresh", "Homemade", "Artisanal", "Gourmet", "Classic", "Modern", "Authentic", "Signature", "Seasonal"],
+                    ingredients: ["Salt", "Pepper", "Herb", "Spice", "Sauce", "Oil", "Butter", "Cream", "Sugar", "Honey", "Garlic", "Onion", "Tomato", "Lemon", "Vinegar"]
+                }
+            };
+            
+            // Restaurant name components by type
+            const typeWords = {
+                "fine-dining": {
+                    prefixes: ["The", "Le", "La", "Il", "El"],
+                    nouns: ["Restaurant", "Dining Room", "Table", "Kitchen", "Cuisine", "Bistro", "Room", "House", "Estate", "Manor", "Chateau"],
+                    adjectives: ["Elegant", "Refined", "Luxurious", "Sophisticated", "Exquisite", "Exclusive", "Premier", "Fine", "Gourmet", "Upscale"],
+                    styles: ["& Co.", "Restaurant", "Dining", "Cuisine", "Gastronomy", "et Cie", "& Sons"]
+                },
+                "casual": {
+                    prefixes: ["The", "My", "Our", "Big", "Little"],
+                    nouns: ["Kitchen", "Diner", "Grill", "Eatery", "Place", "Table", "Spot", "Joint", "House", "Corner", "Family"],
+                    adjectives: ["Friendly", "Homestyle", "Cozy", "Casual", "Hearty", "Local", "Neighborhood", "Comfy", "Happy", "Gathering"],
+                    styles: ["Kitchen", "Eatery", "Grill", "& Grill", "Restaurant", "Diner", "Cafe"]
+                },
+                "fast-casual": {
+                    prefixes: ["Fresh", "Quick", "Fast", "Express", "Speedy"],
+                    nouns: ["Bowl", "Box", "Plate", "Bite", "Eats", "Chow", "Grub", "Kitchen", "Counter", "Spot", "Go"],
+                    adjectives: ["Fresh", "Quick", "Tasty", "Healthy", "Modern", "Urban", "Street", "City", "Metro", "Convenient"],
+                    styles: ["Express", "To Go", "& Co.", "Kitchen", "Eats", "Fast", "Now"]
+                },
+                "cafe": {
+                    prefixes: ["The", "Little", "Daily", "Morning", "Cozy"],
+                    nouns: ["Café", "Coffee", "Cup", "Bean", "Brew", "Roast", "Bakery", "Patisserie", "Espresso", "Morning", "Corner"],
+                    adjectives: ["Cozy", "Aromatic", "Warm", "Daily", "Fresh", "Local", "Sweet", "Morning", "Sunny", "Artisan"],
+                    styles: ["Cafe", "Coffee House", "Coffeery", "& Bakery", "Coffee Co.", "Roasters", "Bake Shop"]
+                },
+                "bistro": {
+                    prefixes: ["Le", "La", "The", "Petit", "Cozy"],
+                    nouns: ["Bistro", "Corner", "Table", "Kitchen", "Spoon", "Plate", "Pot", "Pan", "Chef", "Cuisine", "Room"],
+                    adjectives: ["Charming", "Cozy", "Intimate", "Rustic", "French", "European", "Neighborhood", "Local", "Petite", "Homey"],
+                    styles: ["Bistro", "Kitchen", "Table", "& Wine", "Cafe", "Cuisine"]
+                },
+                "pub": {
+                    prefixes: ["The", "Ye Olde", "Old", "Royal", "Black", "Red", "White"],
+                    nouns: ["Pub", "Tavern", "Inn", "Alehouse", "Tap", "Barrel", "Pint", "Mug", "Stein", "Horse", "Lion", "Crown", "Arms"],
+                    adjectives: ["Thirsty", "Tipsy", "Jolly", "Rustic", "Local", "Friendly", "Merry", "Old", "Traditional", "Crafty"],
+                    styles: ["Pub", "Tavern", "Bar & Grill", "Public House", "Brewery", "Alehouse", "& Kitchen"]
+                },
+                "food-truck": {
+                    prefixes: ["Rolling", "Wandering", "Street", "Urban", "City"],
+                    nouns: ["Truck", "Wheels", "Road", "Street", "Curb", "Cart", "Mobile", "Movable", "Wandering", "Roaming", "Rolling"],
+                    adjectives: ["Mobile", "Rolling", "Roaming", "Street", "Curbside", "Urban", "City", "Nomadic", "Traveling", "Wandering"],
+                    styles: ["Food Truck", "Street Food", "On Wheels", "Mobile Eats", "Curbside", "To Go", "Express"]
+                },
+                "bakery": {
+                    prefixes: ["The", "Sweet", "Daily", "Fresh", "Warm"],
+                    nouns: ["Bakery", "Patisserie", "Boulangerie", "Oven", "Bread", "Pastry", "Cake", "Flour", "Sugar", "Dough", "Sweet"],
+                    adjectives: ["Sweet", "Fresh", "Warm", "Homemade", "Artisan", "Handcrafted", "Rustic", "Daily", "Heavenly", "Golden"],
+                    styles: ["Bakery", "Bake Shop", "Patisserie", "& Cafe", "Breads", "Cakes", "Sweets"]
+                },
+                "any": {
+                    prefixes: ["The", "My", "Our", "Big", "Little", "Daily", "Fresh"],
+                    nouns: ["Kitchen", "Dining", "Table", "Plate", "Spoon", "Fork", "Dish", "Taste", "Flavor", "Meal", "Bite", "Room"],
+                    adjectives: ["Tasty", "Delicious", "Savory", "Flavorful", "Fresh", "Homemade", "Artisanal", "Gourmet", "Classic", "Modern"],
+                    styles: ["Restaurant", "Eatery", "Kitchen", "Dining", "& Co.", "Place", "House"]
+                }
+            };
+            
+            // Atmosphere-related words for restaurant names
+            const atmosphereWords = {
+                "elegant": ["Grand", "Luxe", "Noble", "Royal", "Refined", "Polished", "Elite", "Prestige", "Opulent", "Sophisticated"],
+                "cozy": ["Snug", "Warm", "Hearth", "Home", "Comfort", "Nest", "Hideaway", "Nook", "Cottage", "Retreat"],
+                "vibrant": ["Lively", "Buzz", "Vibrant", "Energy", "Spark", "Urban", "Metro", "City", "Beat", "Pulse"],
+                "rustic": ["Farmhouse", "Barn", "Country", "Homestead", "Rustic", "Rural", "Harvest", "Hearth", "Field", "Countryside"],
+                "modern": ["Contemporary", "Urban", "Minimal", "Sleek", "Edge", "Nouveau", "Current", "Progressive", "Trend", "Design"],
+                "family": ["Family", "Gathering", "Together", "Tradition", "Generations", "Heritage", "Hearth", "Home", "Union", "Clan"],
+                "quirky": ["Odd", "Curious", "Quirky", "Whimsical", "Eccentric", "Peculiar", "Funky", "Offbeat", "Unique", "Unexpected"],
+                "nostalgic": ["Vintage", "Retro", "Classic", "Traditional", "Heritage", "Throwback", "Old-School", "Historic", "Timeless", "Legacy"],
+                "any": ["The", "Place", "House", "Room", "Space", "Spot", "Corner", "Area", "Zone", "Section"]
+            };
+            
+            // Restaurant name style templates
+            const nameFormats = {
+                "classic": [
+                    "{prefix} {adjective} {noun}",
+                    "The {adjective} {noun}",
+                    "{prefix} {noun}",
+                    "{founder}'s {type}"
+                ],
+                "modern": [
+                    "{noun} + {ingredient}",
+                    "{adjective} & {ingredient}",
+                    "{ingredient} {type}",
+                    "{noun} {number}"
+                ],
+                "geographical": [
+                    "{location} {type}",
+                    "{adjective} {location}",
+                    "{location} & {ingredient}"
+                ],
+                "pun": [
+                    "{pun}",
+                    "{pun} {type}"
+                ],
+                "ingredient": [
+                    "{ingredient} & {ingredient}",
+                    "The {adjective} {ingredient}",
+                    "{ingredient} {type}"
+                ],
+                "founder": [
+                    "{founder}'s",
+                    "{founder}'s {type}",
+                    "Chez {founder}",
+                    "{founder} & {founder}"
+                ],
+                "descriptive": [
+                    "{adjective} {noun}",
+                    "{adjective} {adjective} {noun}",
+                    "{adjective} {ingredient}"
+                ],
+                "foreign": [
+                    "Le {french_word}",
+                    "La {french_word}",
+                    "Il {italian_word}",
+                    "El {spanish_word}"
+                ],
+                "any": [
+                    "{prefix} {adjective} {noun}",
+                    "{adjective} {noun}",
+                    "{adjective} & {ingredient}",
+                    "{noun} {type}",
+                    "{founder}'s {type}",
+                    "{location} {type}"
+                ]
+            };
+            
+            // Sample placeholder data
+            const samplePlaceholders = {
+                founder: ["Marco", "Julia", "Pierre", "Maria", "Chen", "Miguel", "Fatima", "Giovanni", "Sophia", "James", "Emma", "Raj", "Yuki", "Carlos", "Aisha"],
+                location: ["Harbor", "Village", "Downtown", "Riverside", "Uptown", "Westside", "Broadway", "Main Street", "Coastal", "Mountain", "Lakeside", "City", "Park", "Garden"],
+                number: ["27", "42", "101", "55", "86", "99", "7", "12", "36", "5", "21", "8", "1", "3", "11"],
+                pun_italian: ["Pasta La Vista", "Spaghetti Westerner", "Pizza My Heart", "Pasta Point of No Return", "The Leaning Tower of Pizza", "Holy Cannoli", "Al Dente Destiny"],
+                pun_french: ["Déjà Brew", "Bon Appetit Bistro", "French Connection", "Oui Serve", "Merci Beaucoup"],
+                pun_american: ["The Grub Hub", "Burgatory", "Lord of the Fries", "The Codfather", "Life of Pie", "Bean There Done That", "Grillenium Falcon"],
+                french_word: ["Petit", "Jardin", "Maison", "Bistro", "Café", "Table", "Délice", "Goût", "Amour", "Cuisine"],
+                italian_word: ["Gusto", "Cibo", "Tavola", "Cucina", "Sapore", "Amore", "Pranzo", "Cena", "Giardino"],
+                spanish_word: ["Sabor", "Cocina", "Mesa", "Fuego", "Casa", "Comida", "Amor", "Gusto", "Plato"]
+            };
+
+            // Generate restaurant name function
+            function generateRestaurantName() {
+                const restaurantType = document.getElementById('restaurant-type').value;
+                const cuisine = document.getElementById('cuisine').value;
+                const style = document.getElementById('name-style').value;
+                const atmosphere = document.getElementById('atmosphere').value;
+                const startingLetter = document.getElementById('starting-letter').value.toUpperCase();
+                
+                // Select appropriate word pools based on selections
+                let cuisinePool = cuisineWords[cuisine] || cuisineWords['any'];
+                let typePool = typeWords[restaurantType] || typeWords['any'];
+                let atmospherePool = atmosphereWords[atmosphere] || atmosphereWords['any'];
+                
+                // Determine name format to use
+                let formatList = nameFormats[style] || nameFormats['any'];
+                let nameFormat = formatList[Math.floor(Math.random() * formatList.length)];
+                
+                // Helper function to pick a random word
+                function getRandomWord(list) {
+                    return list[Math.floor(Math.random() * list.length)];
+                }
+                
+                // Helper function to filter by starting letter if specified
+                function getWordWithLetter(list, letter) {
+                    if (!letter) return getRandomWord(list);
+                    
+                    const filteredList = list.filter(word => word.startsWith(letter));
+                    if (filteredList.length > 0) {
+                        return getRandomWord(filteredList);
+                    } else {
+                        return getRandomWord(list);
+                    }
+                }
+                
+                // Build name components
+                const placeholders = {
+                    prefix: getRandomWord(typePool.prefixes),
+                    noun: startingLetter ? getWordWithLetter(cuisinePool.nouns, startingLetter) : getRandomWord(cuisinePool.nouns),
+                    adjective: getRandomWord([...cuisinePool.adjectives, ...atmospherePool]),
+                    ingredient: getRandomWord(cuisinePool.ingredients),
+                    type: getRandomWord(typePool.styles),
+                    location: getRandomWord(samplePlaceholders.location),
+                    founder: getRandomWord(samplePlaceholders.founder),
+                    number: getRandomWord(samplePlaceholders.number),
+                    french_word: getRandomWord(samplePlaceholders.french_word),
+                    italian_word: getRandomWord(samplePlaceholders.italian_word),
+                    spanish_word: getRandomWord(samplePlaceholders.spanish_word)
+                };
+                
+                // Handle pun names specially
+                if (nameFormat.includes("{pun}")) {
+                    let punPool;
+                    if (cuisine === 'italian') punPool = samplePlaceholders.pun_italian;
+                    else if (cuisine === 'french') punPool = samplePlaceholders.pun_french;
+                    else punPool = samplePlaceholders.pun_american;
+                    
+                    placeholders.pun = getRandomWord(punPool);
+                }
+                
+                // Create the restaurant name by replacing placeholders in the template
+                let restaurantName = nameFormat;
+                for (const [key, value] of Object.entries(placeholders)) {
+                    restaurantName = restaurantName.replace(`{${key}}`, value);
+                }
+                
+                // Display the result
+                document.getElementById('name-result').innerText = restaurantName;
+                document.getElementById('name-result').classList.add('animate-result');
+                
+                // Generate a description for the restaurant
+                generateRestaurantDescription(restaurantName, restaurantType, cuisine, atmosphere);
+                
+                // Remove animation class after animation completes
+                setTimeout(() => {
+                    document.getElementById('name-result').classList.remove('animate-result');
+                }, 500);
+            }
+            
+            // Generate a restaurant description
+            function generateRestaurantDescription(name, type, cuisine, atmosphere) {
+                const restaurantTypes = {
+                    "fine-dining": "An upscale dining establishment offering premium cuisine and impeccable service",
+                    "casual": "A relaxed restaurant serving approachable, familiar dishes in a comfortable setting",
+                    "fast-casual": "A modern eatery offering quality food with the convenience of fast service",
+                    "cafe": "A cozy establishment serving coffee, light meals, and baked goods",
+                    "bistro": "An intimate restaurant serving moderately priced meals in a casual, often European-inspired atmosphere",
+                    "pub": "A convivial establishment serving drinks and hearty food in a relaxed setting",
+                    "food-truck": "A mobile kitchen offering creative, convenient street food",
+                    "bakery": "A specialty shop focusing on freshly baked bread, pastries, and desserts",
+                    "any": "A welcoming dining establishment with character and charm"
+                };
+                
+                const cuisineDescriptions = {
+                    "italian": "authentic Italian cuisine featuring handmade pasta, wood-fired pizzas, and regional specialties",
+                    "french": "refined French dishes highlighting classical techniques and seasonal ingredients",
+                    "american": "classic American comfort food with contemporary twists",
+                    "mexican": "vibrant Mexican flavors featuring traditional recipes and fresh ingredients",
+                    "asian": "pan-Asian dishes showcasing the diverse flavors of Eastern cuisine",
+                    "mediterranean": "healthy Mediterranean fare emphasizing olive oil, fresh vegetables, and seafood",
+                    "indian": "aromatic Indian specialties with complex spice blends and traditional cooking methods",
+                    "seafood": "fresh seafood prepared with creativity and respect for oceanic flavors",
+                    "steakhouse": "premium cuts of meat cooked to perfection and served with classic sides",
+                    "vegetarian": "inventive plant-based dishes that celebrate vegetables in their finest forms",
+                    "fusion": "innovative cuisine that thoughtfully combines elements from multiple culinary traditions",
+                    "any": "thoughtfully prepared dishes made with quality ingredients"
+                };
+                
+                const atmosphereDescriptions = {
+                    "elegant": "sophisticated ambiance with refined décor and attentive service",
+                    "cozy": "warm, intimate setting that feels like a second home",
+                    "vibrant": "energetic environment with lively music and a dynamic crowd",
+                    "rustic": "homey, unpretentious space with natural elements and country charm",
+                    "modern": "sleek, contemporary design with minimalist aesthetics",
+                    "family": "welcoming space designed for gatherings of all ages",
+                    "quirky": "unique character with eccentric décor and playful touches",
+                    "nostalgic": "timeless atmosphere that evokes a sense of history and tradition",
+                    "any": "distinctive character and welcoming atmosphere"
+                };
+                
+                const restaurantDesc = restaurantTypes[type] || restaurantTypes['any'];
+                const cuisineDesc = cuisineDescriptions[cuisine] || cuisineDescriptions['any'];
+                const atmosphereDesc = atmosphereDescriptions[atmosphere] || atmosphereDescriptions['any'];
+                
+                document.getElementById('name-meaning').innerHTML = `<p>${name} is ${restaurantDesc} serving ${cuisineDesc}. Guests will enjoy the ${atmosphereDesc} that makes dining here a memorable experience.</p>`;
+            }
+            
+            // Event listeners
+            document.getElementById('generate-btn').addEventListener('click', generateRestaurantName);
+            document.getElementById('regenerate-btn').addEventListener('click', generateRestaurantName);
+        });
+    </script>
+</body>
+</html>

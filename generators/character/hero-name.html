@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>Hero Name Generator | Powerful Character Names | Name Generator Hub</title>
+    <meta name="title" content="Hero Name Generator | Powerful Character Names | Name Generator Hub">
+    <meta name="description" content="Create the perfect heroic name for your comic, novel, game, or creative project. Generate powerful, inspiring protagonist names with our free hero name generator.">
+    <meta name="keywords" content="hero name generator, superhero names, protagonist names, character name creator, superhero name ideas, comic book heroes, fantasy hero names">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="../../index.html" class="navbar-brand">
+                <i class="fas fa-magic"></i> Name Generator Hub
+            </a>
+            <ul class="navbar-nav">
+                <li><a href="../../index.html#generators">Generators</a></li>
+                <li><a href="../../index.html#how-it-works">How It Works</a></li>
+                <li><a href="../../index.html#faq">FAQ</a></li>
+                <li><a href="../../index.html#about">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header hero-header">
+        <div class="container">
+            <h1>Hero Name Generator</h1>
+            <p>Create inspiring, powerful names for your story's perfect protagonist</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="generator-container">
+            <div class="generator-header">
+                <div class="icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <div>
+                    <h2>Generate a Heroic Name</h2>
+                    <p>Use the options below to customize your hero name search.</p>
+                </div>
+            </div>
+
+            <div class="generator-options">
+                <div class="form-group">
+                    <label for="hero-type">Hero Type</label>
+                    <select id="hero-type">
+                        <option value="any">Any Type</option>
+                        <option value="superhero">Superhero</option>
+                        <option value="fantasy">Fantasy Hero</option>
+                        <option value="sci-fi">Sci-Fi Champion</option>
+                        <option value="mythological">Mythological Hero</option>
+                        <option value="vigilante">Vigilante</option>
+                        <option value="military">Military Hero</option>
+                        <option value="spy">Secret Agent/Spy</option>
+                        <option value="everyday">Everyday Hero</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="hero-gender">Gender</label>
+                    <select id="hero-gender">
+                        <option value="any">Any Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="neutral">Gender Neutral</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="hero-power">Power Source</label>
+                    <select id="hero-power">
+                        <option value="any">Any Source</option>
+                        <option value="elemental">Elemental Powers</option>
+                        <option value="tech">Technology/Gadgets</option>
+                        <option value="magical">Magical Abilities</option>
+                        <option value="mutant">Mutation/Genetic</option>
+                        <option value="skilled">Skills/Training</option>
+                        <option value="cosmic">Cosmic/Alien Powers</option>
+                        <option value="psionic">Psionic/Mental Powers</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="name-style">Name Style</label>
+                    <select id="name-style">
+                        <option value="any">Any Style</option>
+                        <option value="alter-ego">Alter Ego (Secret Identity)</option>
+                        <option value="code-name">Code Name/Alias</option>
+                        <option value="descriptive">Descriptive Title</option>
+                        <option value="symbolic">Symbolic Name</option>
+                        <option value="mythic">Mythic/Legendary</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="starting-letter">Starting Letter (Optional)</label>
+                    <input type="text" id="starting-letter" maxlength="1" placeholder="Enter a letter">
+                </div>
+
+                <button id="generate-btn" class="btn generate-btn">
+                    Generate Hero Name <i class="fas fa-bolt"></i>
+                </button>
+            </div>
+
+            <!-- Google Ads Section -->
+            <div class="ad-container">
+                <div class="ad-label">Advertisement</div>
+                <div class="google-ad-placeholder">
+                    <!-- Google AdSense Code Would Go Here -->
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1234567890123456" crossorigin="anonymous"></script>
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-1234567890123456"
+                         data-ad-slot="1234567890"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+            </div>
+
+            <div class="result-container">
+                <h3>Your Hero Name</h3>
+                <div id="name-result" class="name-result">Click generate to find a hero name</div>
+                <div id="name-meaning" class="name-meaning"></div>
+                <button id="regenerate-btn" class="btn">
+                    <i class="fas fa-redo"></i> Generate Another
+                </button>
+            </div>
+
+            <div class="hero-tips">
+                <h3>Creating Compelling Heroes</h3>
+                <p>A memorable name is just one aspect of a great hero. Consider these tips when developing your protagonist:</p>
+                
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <div class="tip-icon"><i class="fas fa-balance-scale"></i></div>
+                        <h4>Flaws & Vulnerabilities</h4>
+                        <p>Perfect heroes are boring. Give your protagonist weaknesses, fears, or moral dilemmas that create internal conflict.</p>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon"><i class="fas fa-mountain"></i></div>
+                        <h4>Compelling Motivations</h4>
+                        <p>What drives your hero? Personal beliefs, past trauma, love, duty, or redemption can all provide strong motivational forces.</p>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon"><i class="fas fa-arrows-alt"></i></div>
+                        <h4>Character Growth</h4>
+                        <p>Heroes should evolve throughout their journey, learning from failures and changing their perspectives or abilities.</p>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon"><i class="fas fa-users"></i></div>
+                        <h4>Meaningful Relationships</h4>
+                        <p>A hero's connections with allies, mentors, and even enemies help define their character and provide emotional depth.</p>
+                    </div>
+                </div>
+            </div>
+
+            <a href="../../index.html" class="back-link">
+                <i class="fas fa-arrow-left"></i> Back to All Generators
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>Name Generators</h4>
+                    <ul class="footer-links">
+                        <li><a href="../pet-name.html">Pet Names</a></li>
+                        <li><a href="../baby-name.html">Baby Names</a></li>
+                        <li><a href="../fantasy-name.html">Fantasy Names</a></li>
+                        <li><a href="../startup-name.html">Business Names</a></li>
+                        <li><a href="../gamer-tag.html">Gamer Tags</a></li>
+                        <li><a href="../boyfriend-name.html">Boyfriend Nicknames</a></li>
+                        <li><a href="../girlfriend-name.html">Girlfriend Nicknames</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Character Names</h4>
+                    <ul class="footer-links">
+                        <li><a href="villain-name.html">Villain Names</a></li>
+                        <li><a href="hero-name.html">Hero Names</a></li>
+                        <li><a href="wizard-name.html">Wizard Names</a></li>
+                        <li><a href="warrior-name.html">Warrior Names</a></li>
+                        <li><a href="elf-name.html">Elf Names</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="../../company/about.html">About Us</a></li>
+                        <li><a href="../../company/contact.html">Contact</a></li>
+                        <li><a href="../../company/privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="../../company/terms-of-service.html">Terms of Service</a></li>
+                        <li><a href="../../company/sitemap.html">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Stay Updated</h4>
+                    <p>Subscribe to our newsletter for the latest naming trends and generator updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Name Generator Hub. All rights reserved. | <a href="../../company/privacy-policy.html">Privacy Policy</a> | <a href="../../company/terms-of-service.html">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Sample hero first names
+            const heroFirstNames = {
+                male: ["Alexander", "Gabriel", "Ethan", "Logan", "Orion", "Hunter", "Mason", "Phoenix", "Archer", "Valor", "Jace", "Zephyr", "Axel", "Sterling", "Troy", "Ryker", "Atlas", "Blaze", "Cyrus", "Rowan"],
+                female: ["Aurora", "Athena", "Valerie", "Selena", "Trinity", "Nova", "Serenity", "Lyra", "Aria", "Skylar", "Phoenix", "Sage", "Thea", "Zara", "Iris", "Luna", "Cora", "Freya", "Eden", "Raven"],
+                neutral: ["Avery", "Riley", "Justice", "Phoenix", "Storm", "Echo", "Indigo", "Sage", "Sky", "Nova", "Quinn", "Ember", "Rowan", "Orion", "Raven", "Ash", "Valor", "Vesper", "Onyx", "Meridian"]
+            };
+            
+            // Sample hero last names
+            const heroLastNames = ["Steele", "Knight", "Storm", "Valor", "Thorne", "Wolf", "Rivers", "Starling", "Drake", "Phoenix", "Winters", "Sterling", "Stone", "Hawk", "Gray", "Wilde", "Pierce", "Blade", "Divine", "Powers"];
+            
+            // Sample superhero aliases
+            const heroAliases = {
+                elemental: ["Blaze", "Frost", "Tempest", "Quake", "Gale", "Spark", "Tide", "Inferno", "Terra", "Zephyr"],
+                tech: ["Circuit", "Byte", "Iron", "Mech", "Cyber", "Pulse", "Steel", "Neural", "Quantum", "Gadget"],
+                magical: ["Arcane", "Mystic", "Hex", "Rune", "Spellbinder", "Oracle", "Divine", "Enchanter", "Sorcerer", "Fae"],
+                mutant: ["Genesis", "Prime", "Evolution", "Apex", "Omega", "Vector", "Helix", "Mutation", "Neo", "Alpha"],
+                skilled: ["Nightshade", "Viper", "Eagle", "Phantom", "Shadow", "Ghost", "Dagger", "Tigress", "Archer", "Ronin"],
+                cosmic: ["Nova", "Celestial", "Pulsar", "Quasar", "Astral", "Comet", "Eclipse", "Nebula", "Solaris", "Orion"],
+                psionic: ["Mentis", "Psypher", "Mindwave", "Kinesis", "Enigma", "Vision", "Echo", "Neural", "Cerebra", "Augur"],
+                any: ["Paragon", "Sentinel", "Guardian", "Defender", "Legend", "Aegis", "Titan", "Champion", "Zenith", "Vanguard"]
+            };
+            
+            // Sample hero titles
+            const heroTitles = ["the Brave", "the Righteous", "the Protector", "the Valiant", "the Swift", "the Wise", "the Mighty", "the Merciful", "the Just", "the Steadfast", "the Unbroken", "the Invincible", "the Vigilant", "the Guardian", "the Defender", "the Noble", "the Resolute", "the Radiant", "the Dauntless", "the Unyielding"];
+
+            // Generate hero name function
+            function generateHeroName() {
+                const heroType = document.getElementById('hero-type').value;
+                const gender = document.getElementById('hero-gender').value;
+                const powerSource = document.getElementById('hero-power').value;
+                const style = document.getElementById('name-style').value;
+                const startingLetter = document.getElementById('starting-letter').value.toUpperCase();
+                
+                // Determine gender for name selection
+                let nameGender = gender;
+                if (gender === 'any') {
+                    const genders = ['male', 'female', 'neutral'];
+                    nameGender = genders[Math.floor(Math.random() * genders.length)];
+                }
+                
+                // Select appropriate first name list
+                let firstNamePool = heroFirstNames[nameGender].slice();
+                
+                // Filter by starting letter if specified
+                if (startingLetter) {
+                    firstNamePool = firstNamePool.filter(name => name.startsWith(startingLetter));
+                    // If no matches, revert to full list to avoid empty results
+                    if (firstNamePool.length === 0) {
+                        firstNamePool = heroFirstNames[nameGender].slice();
+                    }
+                }
+                
+                // Generate name components
+                const firstName = firstNamePool[Math.floor(Math.random() * firstNamePool.length)];
+                const lastName = heroLastNames[Math.floor(Math.random() * heroLastNames.length)];
+                const title = heroTitles[Math.floor(Math.random() * heroTitles.length)];
+                
+                // Select power-appropriate alias
+                const powerType = powerSource === 'any' ? 
+                    Object.keys(heroAliases)[Math.floor(Math.random() * Object.keys(heroAliases).length)] : 
+                    powerSource;
+                
+                const alias = heroAliases[powerType][Math.floor(Math.random() * heroAliases[powerType].length)];
+                
+                // Craft final name based on style
+                let heroName = '';
+                const styleRandom = style === 'any' ? Math.floor(Math.random() * 5) : 0;
+                
+                switch (style === 'any' ? styleRandom : style) {
+                    case 'alter-ego':
+                    case 0:
+                        heroName = `${firstName} ${lastName}`;
+                        break;
+                    case 'code-name':
+                    case 1:
+                        heroName = `${alias}`;
+                        break;
+                    case 'descriptive':
+                    case 2:
+                        heroName = `The ${alias}`;
+                        break;
+                    case 'symbolic':
+                    case 3:
+                        heroName = `${firstName} the ${alias}`;
+                        break;
+                    case 'mythic':
+                    case 4:
+                        heroName = `${firstName} ${title}`;
+                        break;
+                    default:
+                        heroName = `${firstName} ${lastName}`;
+                }
+                
+                // Display the result
+                document.getElementById('name-result').innerText = heroName;
+                document.getElementById('name-result').classList.add('animate-result');
+                
+                // Create a hero description
+                generateHeroDescription(heroName, heroType, powerSource, nameGender);
+                
+                // Remove animation class after animation completes
+                setTimeout(() => {
+                    document.getElementById('name-result').classList.remove('animate-result');
+                }, 500);
+            }
+            
+            // Generate a hero description
+            function generateHeroDescription(name, type, powerSource, gender) {
+                const heroTypes = {
+                    "superhero": "A charismatic champion with extraordinary abilities who fights for justice",
+                    "fantasy": "A noble adventurer in a world of magic and mythical creatures",
+                    "sci-fi": "A futuristic defender in a world of advanced technology",
+                    "mythological": "A legendary figure whose deeds will be remembered for generations",
+                    "vigilante": "A determined fighter who takes justice into their own hands",
+                    "military": "A decorated commander who leads with courage and tactical brilliance",
+                    "spy": "A skilled operative who works in the shadows to protect the innocent",
+                    "everyday": "An ordinary person who rises to extraordinary challenges through sheer determination",
+                    "any": "A beacon of hope and courage in dark times"
+                };
+                
+                const powerTypes = {
+                    "elemental": "mastery over natural forces",
+                    "tech": "cutting-edge technology and gadgets",
+                    "magical": "ancient mystical abilities",
+                    "mutant": "extraordinary genetic gifts",
+                    "skilled": "exceptional training and discipline",
+                    "cosmic": "otherworldly powers from beyond the stars",
+                    "psionic": "powerful mental abilities",
+                    "any": "unique powers and exceptional abilities"
+                };
+                
+                const pronouns = {
+                    "male": { subject: "he", object: "him", possessive: "his" },
+                    "female": { subject: "she", object: "her", possessive: "her" },
+                    "neutral": { subject: "they", object: "them", possessive: "their" }
+                };
+                
+                const p = pronouns[gender];
+                const description = heroTypes[type];
+                const power = powerTypes[powerSource];
+                
+                document.getElementById('name-meaning').innerHTML = `<p>${description} who uses ${power} to protect the innocent. With unwavering courage and integrity, ${name} inspires hope wherever ${p.subject} goes.</p>`;
+            }
+            
+            // Event listeners
+            document.getElementById('generate-btn').addEventListener('click', generateHeroName);
+            document.getElementById('regenerate-btn').addEventListener('click', generateHeroName);
+        });
+    </script>
+</body>
+</html>

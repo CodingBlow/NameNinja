@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>Tech Startup Name Generator | Modern Business Names | Name Generator Hub</title>
+    <meta name="title" content="Tech Startup Name Generator | Modern Business Names | Name Generator Hub">
+    <meta name="description" content="Create the perfect name for your tech startup, SaaS company, or app with our free tech business name generator. Find innovative, memorable tech names instantly.">
+    <meta name="keywords" content="tech startup name generator, SaaS company names, app name ideas, tech business names, technology company names, startup branding, software company names">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="../../index.html" class="navbar-brand">
+                <i class="fas fa-magic"></i> Name Generator Hub
+            </a>
+            <ul class="navbar-nav">
+                <li><a href="../../index.html#generators">Generators</a></li>
+                <li><a href="../../index.html#how-it-works">How It Works</a></li>
+                <li><a href="../../index.html#faq">FAQ</a></li>
+                <li><a href="../../index.html#about">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header tech-header">
+        <div class="container">
+            <h1>Tech Startup Name Generator</h1>
+            <p>Create innovative, memorable names for your technology business</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="generator-container">
+            <div class="generator-header">
+                <div class="icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <div>
+                    <h2>Generate a Tech Startup Name</h2>
+                    <p>Use the options below to customize your tech business name search.</p>
+                </div>
+            </div>
+
+            <div class="generator-options">
+                <div class="form-group">
+                    <label for="tech-type">Technology Sector</label>
+                    <select id="tech-type">
+                        <option value="any">Any Sector</option>
+                        <option value="software">Software/SaaS</option>
+                        <option value="app">Mobile App</option>
+                        <option value="ai">AI/Machine Learning</option>
+                        <option value="fintech">FinTech</option>
+                        <option value="ecommerce">E-commerce</option>
+                        <option value="social">Social Media</option>
+                        <option value="gaming">Gaming/Entertainment</option>
+                        <option value="health">HealthTech</option>
+                        <option value="iot">IoT/Hardware</option>
+                        <option value="cloud">Cloud Services</option>
+                        <option value="security">Cybersecurity</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="name-style">Naming Style</label>
+                    <select id="name-style">
+                        <option value="any">Any Style</option>
+                        <option value="modern">Modern/Minimal</option>
+                        <option value="coined">Coined/Made-up</option>
+                        <option value="descriptive">Descriptive</option>
+                        <option value="composite">Compound Words</option>
+                        <option value="metaphor">Metaphor-based</option>
+                        <option value="technical">Technical/Scientific</option>
+                        <option value="wordplay">Wordplay/Pun</option>
+                        <option value="prefix-suffix">Prefix/Suffix</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="name-length">Name Length</label>
+                    <select id="name-length">
+                        <option value="any">Any Length</option>
+                        <option value="short">Short (3-6 letters)</option>
+                        <option value="medium">Medium (7-10 letters)</option>
+                        <option value="long">Long (11+ letters)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="keywords">Related Keywords (Optional)</label>
+                    <input type="text" id="keywords" placeholder="Enter keywords separated by commas">
+                </div>
+
+                <div class="form-group">
+                    <label for="starting-letter">Starting Letter (Optional)</label>
+                    <input type="text" id="starting-letter" maxlength="1" placeholder="Enter a letter">
+                </div>
+
+                <button id="generate-btn" class="btn generate-btn">
+                    Generate Tech Name <i class="fas fa-robot"></i>
+                </button>
+            </div>
+
+            <!-- Google Ads Section -->
+            <div class="ad-container">
+                <div class="ad-label">Advertisement</div>
+                <div class="google-ad-placeholder">
+                    <!-- Google AdSense Code Would Go Here -->
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1234567890123456" crossorigin="anonymous"></script>
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-1234567890123456"
+                         data-ad-slot="1234567890"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+            </div>
+
+            <div class="result-container">
+                <h3>Your Tech Startup Name</h3>
+                <div id="name-result" class="name-result">Click generate to find a tech name</div>
+                <div id="domain-info" class="domain-info"></div>
+                <div id="name-meaning" class="name-meaning"></div>
+                <button id="regenerate-btn" class="btn">
+                    <i class="fas fa-redo"></i> Generate Another
+                </button>
+            </div>
+
+            <div class="tech-tips">
+                <h3>Tech Startup Naming Tips</h3>
+                <p>Naming your tech business is a crucial step in establishing your brand identity. Consider these factors when evaluating potential names:</p>
+                
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <div class="tip-icon"><i class="fas fa-globe"></i></div>
+                        <h4>Digital Presence</h4>
+                        <p>Your name must be available as a domain, particularly .com. Also check for availability across all major social media platforms to maintain brand consistency.</p>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon"><i class="fas fa-mobile-alt"></i></div>
+                        <h4>Mobile-Friendly</h4>
+                        <p>Ensure your name is easy to type on mobile devices. Avoid complex spellings or letter combinations that could lead to errors when typing on smaller screens.</p>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon"><i class="fas fa-microphone"></i></div>
+                        <h4>Voice Assistant Ready</h4>
+                        <p>With the rise of voice search, choose a name that's easy to pronounce and will be correctly interpreted by voice assistants like Siri, Alexa, and Google Assistant.</p>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon"><i class="fas fa-expand-arrows-alt"></i></div>
+                        <h4>Future-Proof</h4>
+                        <p>Avoid names that limit your future growth or expansion. Your name should allow you to pivot or expand your product offerings without becoming irrelevant.</p>
+                    </div>
+                </div>
+            </div>
+
+            <a href="../../index.html" class="back-link">
+                <i class="fas fa-arrow-left"></i> Back to All Generators
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>Name Generators</h4>
+                    <ul class="footer-links">
+                        <li><a href="../pet-name.html">Pet Names</a></li>
+                        <li><a href="../baby-name.html">Baby Names</a></li>
+                        <li><a href="../fantasy-name.html">Fantasy Names</a></li>
+                        <li><a href="../startup-name.html">Business Names</a></li>
+                        <li><a href="../gamer-tag.html">Gamer Tags</a></li>
+                        <li><a href="../boyfriend-name.html">Boyfriend Nicknames</a></li>
+                        <li><a href="../girlfriend-name.html">Girlfriend Nicknames</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Business Names</h4>
+                    <ul class="footer-links">
+                        <li><a href="restaurant-name.html">Restaurant Names</a></li>
+                        <li><a href="boutique-name.html">Boutique Names</a></li>
+                        <li><a href="tech-startup-name.html">Tech Startup Names</a></li>
+                        <li><a href="salon-name.html">Salon Names</a></li>
+                        <li><a href="consulting-name.html">Consulting Business Names</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="../../company/about.html">About Us</a></li>
+                        <li><a href="../../company/contact.html">Contact</a></li>
+                        <li><a href="../../company/privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="../../company/terms-of-service.html">Terms of Service</a></li>
+                        <li><a href="../../company/sitemap.html">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Stay Updated</h4>
+                    <p>Subscribe to our newsletter for the latest naming trends and generator updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Name Generator Hub. All rights reserved. | <a href="../../company/privacy-policy.html">Privacy Policy</a> | <a href="../../company/terms-of-service.html">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Common startup name components
+            const techPrefixes = ["Cyber", "Digi", "Tech", "Smart", "Meta", "Hyper", "Micro", "Macro", "Omni", "Quantum", "Ultra", "Cloud", "Net", "App", "Web", "Data", "Dev", "Algo", "Bit", "Byte"];
+            
+            const techSuffixes = ["ify", "ity", "io", "ics", "ize", "ible", "ance", "ible", "zen", "gent", "ware", "eous", "ient", "ax", "ex", "ix", "oid", "ary", "ible", "ition"];
+            
+            const trendyLetters = ["X", "Z", "Q", "V", "K", "J", "Y", "A", "E", "I", "O", "U"];
+            
+            // Sector-specific words
+            const sectorWords = {
+                software: ["Code", "Soft", "Ware", "Script", "Stack", "Logic", "Loop", "Function", "Command", "Program", "System", "Platform", "Suite", "Service", "Protocol", "Module"],
+                app: ["Tap", "App", "Mobile", "Screen", "Swipe", "Touch", "Interface", "Click", "User", "Device", "Portable", "Icon", "Widget", "Feature", "Download", "Install"],
+                ai: ["Mind", "Think", "Learn", "Neural", "Brain", "Cognition", "Intel", "Smart", "Logic", "Predict", "Pattern", "Decision", "Automate", "Robot", "Machine", "Vision"],
+                fintech: ["Cash", "Pay", "Money", "Bank", "Coin", "Finance", "Fund", "Credit", "Wealth", "Asset", "Invest", "Capital", "Ledger", "Token", "Secure", "Trade"],
+                ecommerce: ["Shop", "Cart", "Buy", "Store", "Market", "Retail", "Merchant", "Product", "Goods", "Sale", "Price", "Order", "Deliver", "Ship", "Stock", "Inventory"],
+                social: ["Share", "Connect", "Friend", "Network", "Group", "Community", "Chat", "Message", "Post", "Follow", "Link", "Profile", "Status", "Social", "Together", "Circle"],
+                gaming: ["Play", "Game", "Level", "Score", "Win", "Quest", "Adventure", "Strategy", "Action", "Player", "Character", "World", "Arena", "League", "Challenge", "Console"],
+                health: ["Health", "Care", "Med", "Life", "Body", "Vital", "Wellness", "Fit", "Therapy", "Treat", "Doctor", "Patient", "Cure", "Diagnose", "Heal", "Remedy"],
+                iot: ["Thing", "Connect", "Device", "Sensor", "Smart", "Home", "Control", "Automate", "Monitor", "Track", "Remote", "Signal", "Network", "Link", "Detect", "Respond"],
+                cloud: ["Cloud", "Host", "Server", "Storage", "Compute", "Scale", "Deploy", "Manage", "Access", "Remote", "Virtual", "Instance", "Container", "Service", "Resource", "Infrastructure"],
+                security: ["Secure", "Safe", "Guard", "Protect", "Shield", "Defense", "Encrypt", "Lock", "Key", "Firewall", "Vault", "Fortress", "Barrier", "Sentinel", "Watch", "Detect"]
+            };
+            
+            // Name style templates
+            const nameStyles = {
+                modern: [
+                    "{prefix}{root}",
+                    "{root}{suffix}",
+                    "{root}.io",
+                    "{root}.ai",
+                    "{consonant}{vowel}{consonant}"
+                ],
+                coined: [
+                    "{prefix}{custom}",
+                    "{custom}{suffix}",
+                    "{letter}{custom}{letter}",
+                    "{custom}"
+                ],
+                descriptive: [
+                    "{tech_verb}{tech_noun}",
+                    "{tech_adjective}{tech_noun}",
+                    "{action}{object}"
+                ],
+                composite: [
+                    "{word1}{word2}",
+                    "{word1}-{word2}",
+                    "{word1}+{word2}",
+                    "{word1}And{word2}"
+                ],
+                metaphor: [
+                    "{nature_element}{tech_term}",
+                    "{animal}{tech_action}",
+                    "{mythical}{tech_noun}"
+                ],
+                technical: [
+                    "{scientific_term}{number}",
+                    "{tech_acronym}",
+                    "{element}{tech_suffix}"
+                ],
+                wordplay: [
+                    "{pun}",
+                    "{word_combo}",
+                    "{misspelled_word}"
+                ],
+                "prefix-suffix": [
+                    "{prefix}{root}{suffix}",
+                    "{prefix}{root}",
+                    "{root}{suffix}"
+                ]
+            };
+            
+            // Helper word lists for name generation
+            const helperWords = {
+                tech_verbs: ["Build", "Create", "Deploy", "Develop", "Enhance", "Generate", "Integrate", "Launch", "Optimize", "Process", "Scan", "Transform", "Upgrade", "Utilize", "Visualize"],
+                tech_nouns: ["API", "Algorithm", "Analytics", "App", "Array", "Bandwidth", "Cloud", "Code", "Data", "Framework", "Function", "Interface", "Network", "Platform", "Protocol", "Software"],
+                tech_adjectives: ["Agile", "Automated", "Connected", "Digital", "Dynamic", "Efficient", "Innovative", "Integrated", "Intelligent", "Optimized", "Responsive", "Scalable", "Secure", "Smart", "Streamlined"],
+                actions: ["Connect", "Enable", "Enhance", "Launch", "Optimize", "Power", "Secure", "Simplify", "Streamline", "Transform"],
+                objects: ["Business", "Commerce", "Communication", "Data", "Enterprise", "Information", "Innovation", "Intelligence", "Solutions", "Success", "Systems", "Technology"],
+                nature_elements: ["Aurora", "Breeze", "Cascade", "Dawn", "Echo", "Flux", "Glow", "Horizon", "Ion", "Jet", "Kinetic", "Lunar", "Meadow", "Nebula", "Oasis", "Pulse"],
+                animals: ["Eagle", "Falcon", "Gazelle", "Hawk", "Jaguar", "Leopard", "Mantis", "Octopus", "Panther", "Raven", "Shark", "Tiger", "Wolf", "Zebra"],
+                mythical: ["Atlas", "Centaur", "Dragon", "Elysium", "Fenix", "Griffin", "Hydra", "Icarus", "Juno", "Kraken", "Lumen", "Minotaur", "Nova", "Oracle", "Pegasus"],
+                scientific_terms: ["Atom", "Binary", "Cipher", "Delta", "Electron", "Fusion", "Gamma", "Helix", "Isotope", "Joule", "Kinetic", "Lambda", "Matrix", "Neuron", "Orbital"],
+                tech_acronyms: ["API", "AWS", "CRM", "DNS", "ERP", "GUI", "HTML", "IoT", "JSON", "KPI", "LAN", "ML", "NLP", "OCR", "PaaS", "QA", "RAM", "SQL", "TCP", "UI", "VPN", "XML"],
+                elements: ["Carbon", "Cobalt", "Helium", "Hydrogen", "Iron", "Krypton", "Lithium", "Magnesium", "Neon", "Nitrogen", "Oxygen", "Phosphorus", "Platinum", "Radium", "Silicon", "Titanium", "Xenon", "Zinc"],
+                puns: ["ByteMe", "CodeRed", "DataDash", "EchoLogic", "FaceTech", "GitFit", "HyperLoop", "IntelliSense", "JavaJump", "KeyNexus", "LinkLogic", "MetaMind", "NodeKnow", "OptimizeMe", "PixelPerfect"],
+                word_combos: ["TechFusion", "CodeCraft", "DataMind", "AppSphere", "NetVerse", "CloudForge", "BitStream", "DevSprint", "InfoPulse", "WebMatrix"],
+                misspelled_words: ["Tekk", "Kodr", "Dataa", "Webz", "Appz", "Cloudz", "Bitr", "Informashun", "Softwair", "Sistm"]
+            };
+            
+            // Dom elements
+            const resultBox = document.getElementById('name-result');
+            const domainInfo = document.getElementById('domain-info');
+            const nameMeaning = document.getElementById('name-meaning');
+            const generateBtn = document.getElementById('generate-btn');
+            const regenerateBtn = document.getElementById('regenerate-btn');
+
+            // Generate tech startup name function
+            function generateTechName() {
+                const techType = document.getElementById('tech-type').value;
+                const nameStyle = document.getElementById('name-style').value;
+                const nameLength = document.getElementById('name-length').value;
+                const keywords = document.getElementById('keywords').value.split(',').map(k => k.trim()).filter(k => k);
+                const startingLetter = document.getElementById('starting-letter').value.toUpperCase();
+                
+                // Determine sector-specific words to use
+                let sectorWordList = sectorWords[techType] || [].concat(...Object.values(sectorWords).flat());
+                if (techType === 'any') {
+                    // Select a random sector if any is selected
+                    const sectors = Object.keys(sectorWords);
+                    const randomSector = sectors[Math.floor(Math.random() * sectors.length)];
+                    sectorWordList = sectorWords[randomSector];
+                }
+                
+                // Determine style to use
+                let styleTemplates = nameStyles[nameStyle] || [].concat(...Object.values(nameStyles).flat());
+                if (nameStyle === 'any') {
+                    // Select a random style if any is selected
+                    const styles = Object.keys(nameStyles);
+                    const randomStyle = styles[Math.floor(Math.random() * styles.length)];
+                    styleTemplates = nameStyles[randomStyle];
+                }
+                
+                // Helper function to pick a random item from a list
+                function getRandomItem(list) {
+                    return list[Math.floor(Math.random() * list.length)];
+                }
+                
+                // Helper function to generate a random custom word (for coined names)
+                function generateCustomWord(minLength = 3, maxLength = 7) {
+                    const vowels = ['a', 'e', 'i', 'o', 'u'];
+                    const consonants = ['b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v', 'w', 'x', 'y', 'z'];
+                    let length = minLength + Math.floor(Math.random() * (maxLength - minLength + 1));
+                    let word = '';
+                    let isVowel = Math.random() > 0.5;
+                    
+                    for (let i = 0; i < length; i++) {
+                        if (isVowel) {
+                            word += getRandomItem(vowels);
+                        } else {
+                            word += getRandomItem(consonants);
+                        }
+                        isVowel = !isVowel;
+                    }
+                    
+                    return word.charAt(0).toUpperCase() + word.slice(1);
+                }
+                
+                // Build placeholders object for template replacement
+                const placeholders = {
+                    prefix: getRandomItem(techPrefixes),
+                    suffix: getRandomItem(techSuffixes),
+                    root: getRandomItem(sectorWordList),
+                    consonant: getRandomItem(['B', 'C', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'X', 'Y', 'Z']),
+                    vowel: getRandomItem(['A', 'E', 'I', 'O', 'U']),
+                    letter: getRandomItem(trendyLetters),
+                    custom: generateCustomWord(),
+                    tech_verb: getRandomItem(helperWords.tech_verbs),
+                    tech_noun: getRandomItem(helperWords.tech_nouns),
+                    tech_adjective: getRandomItem(helperWords.tech_adjectives),
+                    action: getRandomItem(helperWords.actions),
+                    object: getRandomItem(helperWords.objects),
+                    word1: keywords.length > 0 ? keywords[0] : getRandomItem(sectorWordList),
+                    word2: keywords.length > 1 ? keywords[1] : getRandomItem(sectorWordList),
+                    nature_element: getRandomItem(helperWords.nature_elements),
+                    tech_term: getRandomItem(helperWords.tech_nouns),
+                    animal: getRandomItem(helperWords.animals),
+                    tech_action: getRandomItem(helperWords.tech_verbs),
+                    mythical: getRandomItem(helperWords.mythical),
+                    scientific_term: getRandomItem(helperWords.scientific_terms),
+                    number: Math.floor(Math.random() * 100),
+                    tech_acronym: getRandomItem(helperWords.tech_acronyms),
+                    element: getRandomItem(helperWords.elements),
+                    tech_suffix: getRandomItem(techSuffixes),
+                    pun: getRandomItem(helperWords.puns),
+                    word_combo: getRandomItem(helperWords.word_combos),
+                    misspelled_word: getRandomItem(helperWords.misspelled_words)
+                };
+                
+                // Select a template and generate the name
+                const template = getRandomItem(styleTemplates);
+                let techName = template;
+                
+                // Replace placeholders in the template
+                for (const [key, value] of Object.entries(placeholders)) {
+                    techName = techName.replace(`{${key}}`, value);
+                }
+                
+                // Adjust name based on starting letter if specified
+                if (startingLetter) {
+                    if (!techName.startsWith(startingLetter)) {
+                        // Try to prepend the letter or replace the first letter
+                        if (Math.random() > 0.5) {
+                            techName = startingLetter + techName;
+                        } else {
+                            techName = startingLetter + techName.substring(1);
+                        }
+                    }
+                }
+                
+                // Adjust name based on length preference
+                if (nameLength !== 'any') {
+                    const currentLength = techName.length;
+                    
+                    if (nameLength === 'short' && currentLength > 6) {
+                        // Truncate the name for short names
+                        techName = techName.substring(0, 6);
+                    } else if (nameLength === 'medium' && (currentLength < 7 || currentLength > 10)) {
+                        // Adjust for medium names
+                        if (currentLength < 7) {
+                            // Add a suffix
+                            techName += getRandomItem(techSuffixes);
+                        } else if (currentLength > 10) {
+                            // Truncate
+                            techName = techName.substring(0, 10);
+                        }
+                    } else if (nameLength === 'long' && currentLength < 11) {
+                        // Add elements for long names
+                        techName += getRandomItem(techSuffixes) + getRandomItem(['Hub', 'Technologies', 'Solutions', 'Systems', 'Innovations', 'Enterprises']);
+                    }
+                }
+                
+                // Display the result
+                resultBox.innerText = techName;
+                resultBox.classList.add('animate-result');
+                
+                // Show domain availability message
+                domainInfo.innerHTML = `<p><i class="fas fa-globe"></i> Domain suggestion: <strong>${techName.toLowerCase()}.com</strong></p>`;
+                
+                // Generate a tech description
+                generateTechDescription(techName, techType, nameStyle);
+                
+                // Remove animation class after animation completes
+                setTimeout(() => {
+                    resultBox.classList.remove('animate-result');
+                }, 500);
+            }
+            
+            // Generate a tech startup description
+            function generateTechDescription(name, type, style) {
+                const techTypes = {
+                    "software": "A software company offering innovative solutions for business process optimization",
+                    "app": "A mobile application platform designed to enhance user experiences and productivity",
+                    "ai": "An artificial intelligence company developing advanced machine learning solutions",
+                    "fintech": "A financial technology startup revolutionizing payment and banking services",
+                    "ecommerce": "An e-commerce platform connecting consumers with unique products and services",
+                    "social": "A social media platform fostering meaningful connections and content sharing",
+                    "gaming": "A gaming and digital entertainment company creating immersive experiences",
+                    "health": "A health technology company improving patient outcomes and care delivery",
+                    "iot": "An Internet of Things company connecting smart devices to enhance everyday living",
+                    "cloud": "A cloud services provider offering scalable infrastructure and computing solutions",
+                    "security": "A cybersecurity company protecting digital assets and ensuring data privacy",
+                    "any": "A technology company developing innovative solutions for modern challenges"
+                };
+                
+                const styleDescriptions = {
+                    "modern": "with a sleek, contemporary brand identity",
+                    "coined": "with a unique, memorable name that stands out in the market",
+                    "descriptive": "with a clear, straightforward name that communicates its purpose",
+                    "composite": "combining key concepts into a unified brand identity",
+                    "metaphor": "using metaphorical imagery to represent complex technical concepts",
+                    "technical": "highlighting its technical expertise and industry knowledge",
+                    "wordplay": "with a clever, approachable name that engages customers",
+                    "prefix-suffix": "with a structured naming convention common in the tech industry",
+                    "any": "with a distinctive brand identity in the competitive tech landscape"
+                };
+                
+                const techDesc = techTypes[type] || techTypes['any'];
+                const styleDesc = styleDescriptions[style] || styleDescriptions['any'];
+                
+                nameMeaning.innerHTML = `<p>${name} is ${techDesc} ${styleDesc}. This name suggests innovation, reliability, and a forward-thinking approach to technology solutions.</p>`;
+            }
+            
+            // Event listeners
+            generateBtn.addEventListener('click', generateTechName);
+            regenerateBtn.addEventListener('click', generateTechName);
+        });
+    </script>
+</body>
+</html>

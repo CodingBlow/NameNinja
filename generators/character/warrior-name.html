@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>Warrior Name Generator | Powerful Fighter Names | Name Generator Hub</title>
+    <meta name="title" content="Warrior Name Generator | Powerful Fighter Names | Name Generator Hub">
+    <meta name="description" content="Create the perfect warrior name for your fantasy character, RPG hero, or creative project. Generate powerful, intimidating fighter names from various cultures.">
+    <meta name="keywords" content="warrior name generator, fighter names, knight names, battle names, barbarian names, viking warrior names, samurai names, fantasy warrior names">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="../../index.html" class="navbar-brand">
+                <i class="fas fa-magic"></i> Name Generator Hub
+            </a>
+            <ul class="navbar-nav">
+                <li><a href="../../index.html#generators">Generators</a></li>
+                <li><a href="../../index.html#how-it-works">How It Works</a></li>
+                <li><a href="../../index.html#faq">FAQ</a></li>
+                <li><a href="../../index.html#about">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header warrior-header">
+        <div class="container">
+            <h1>Warrior Name Generator</h1>
+            <p>Create powerful, intimidating names for your battle-ready characters</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="generator-container">
+            <div class="generator-header">
+                <div class="icon">
+                    <i class="fas fa-sword"></i>
+                </div>
+                <div>
+                    <h2>Generate a Warrior Name</h2>
+                    <p>Use the options below to customize your warrior name search.</p>
+                </div>
+            </div>
+
+            <div class="generator-options">
+                <div class="form-group">
+                    <label for="warrior-type">Warrior Type</label>
+                    <select id="warrior-type">
+                        <option value="any">Any Type</option>
+                        <option value="knight">Knight/Paladin</option>
+                        <option value="barbarian">Barbarian/Tribal</option>
+                        <option value="samurai">Samurai/Eastern</option>
+                        <option value="viking">Viking/Norse</option>
+                        <option value="gladiator">Gladiator/Arena Fighter</option>
+                        <option value="ranger">Ranger/Hunter</option>
+                        <option value="mercenary">Mercenary/Sellsword</option>
+                        <option value="warlord">Warlord/Commander</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="warrior-gender">Gender</label>
+                    <select id="warrior-gender">
+                        <option value="any">Any Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="neutral">Gender Neutral</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="warrior-culture">Cultural Origin</label>
+                    <select id="warrior-culture">
+                        <option value="any">Any Culture</option>
+                        <option value="western">Western/Medieval</option>
+                        <option value="nordic">Nordic/Scandinavian</option>
+                        <option value="eastern">Eastern/Asian</option>
+                        <option value="celtic">Celtic/Gaelic</option>
+                        <option value="greek">Greco-Roman</option>
+                        <option value="african">African</option>
+                        <option value="middle-eastern">Middle Eastern</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="name-style">Name Style</label>
+                    <select id="name-style">
+                        <option value="any">Any Style</option>
+                        <option value="heroic">Heroic/Noble</option>
+                        <option value="fierce">Fierce/Intimidating</option>
+                        <option value="battle-hardened">Battle-Hardened</option>
+                        <option value="legendary">Legendary/Mythic</option>
+                        <option value="title-based">Title-Based</option>
+                        <option value="weapon-based">Weapon-Based</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="starting-letter">Starting Letter (Optional)</label>
+                    <input type="text" id="starting-letter" maxlength="1" placeholder="Enter a letter">
+                </div>
+
+                <button id="generate-btn" class="btn generate-btn">
+                    Generate Warrior Name <i class="fas fa-axe-battle"></i>
+                </button>
+            </div>
+
+            <!-- Google Ads Section -->
+            <div class="ad-container">
+                <div class="ad-label">Advertisement</div>
+                <div class="google-ad-placeholder">
+                    <!-- Google AdSense Code Would Go Here -->
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1234567890123456" crossorigin="anonymous"></script>
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-1234567890123456"
+                         data-ad-slot="1234567890"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+            </div>
+
+            <div class="result-container">
+                <h3>Your Warrior Name</h3>
+                <div id="name-result" class="name-result">Click generate to find a warrior name</div>
+                <div id="name-meaning" class="name-meaning"></div>
+                <button id="regenerate-btn" class="btn">
+                    <i class="fas fa-redo"></i> Generate Another
+                </button>
+            </div>
+
+            <div class="warrior-tips">
+                <h3>Creating Compelling Warrior Characters</h3>
+                <p>A powerful name is just one aspect of a memorable warrior. Consider these elements when developing your fighter:</p>
+                
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <div class="tip-icon"><i class="fas fa-fist-raised"></i></div>
+                        <h4>Combat Style</h4>
+                        <p>What fighting techniques does your warrior favor? Are they a precise duelist, a berserker who relies on fury, or a tactical fighter who outsmarts opponents?</p>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon"><i class="fas fa-shield-alt"></i></div>
+                        <h4>Honor Code</h4>
+                        <p>Most warriors live by some code or ethos. What principles guide your character in battle and life? What lines would they never cross?</p>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon"><i class="fas fa-scar"></i></div>
+                        <h4>Battle Scars</h4>
+                        <p>What physical and emotional scars have shaped your warrior? Every battle leaves its mark, and these can be powerful storytelling elements.</p>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon"><i class="fas fa-helmet-battle"></i></div>
+                        <h4>Signature Equipment</h4>
+                        <p>Most legendary warriors are known for specific weapons, armor, or tokens. What unique equipment defines your character's identity?</p>
+                    </div>
+                </div>
+            </div>
+
+            <a href="../../index.html" class="back-link">
+                <i class="fas fa-arrow-left"></i> Back to All Generators
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>Name Generators</h4>
+                    <ul class="footer-links">
+                        <li><a href="../pet-name.html">Pet Names</a></li>
+                        <li><a href="../baby-name.html">Baby Names</a></li>
+                        <li><a href="../fantasy-name.html">Fantasy Names</a></li>
+                        <li><a href="../startup-name.html">Business Names</a></li>
+                        <li><a href="../gamer-tag.html">Gamer Tags</a></li>
+                        <li><a href="../boyfriend-name.html">Boyfriend Nicknames</a></li>
+                        <li><a href="../girlfriend-name.html">Girlfriend Nicknames</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Character Names</h4>
+                    <ul class="footer-links">
+                        <li><a href="villain-name.html">Villain Names</a></li>
+                        <li><a href="hero-name.html">Hero Names</a></li>
+                        <li><a href="wizard-name.html">Wizard Names</a></li>
+                        <li><a href="warrior-name.html">Warrior Names</a></li>
+                        <li><a href="elf-name.html">Elf Names</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="../../company/about.html">About Us</a></li>
+                        <li><a href="../../company/contact.html">Contact</a></li>
+                        <li><a href="../../company/privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="../../company/terms-of-service.html">Terms of Service</a></li>
+                        <li><a href="../../company/sitemap.html">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Stay Updated</h4>
+                    <p>Subscribe to our newsletter for the latest naming trends and generator updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Name Generator Hub. All rights reserved. | <a href="../../company/privacy-policy.html">Privacy Policy</a> | <a href="../../company/terms-of-service.html">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Sample warrior first names by culture
+            const warriorNames = {
+                western: {
+                    male: ["Arthur", "Gawain", "Roland", "Percival", "William", "Gareth", "Lancelot", "Richard", "Edward", "Baldwin", "Rowan", "Galahad", "Leon", "Tristan", "Alistair", "Duncan", "Eamon", "Hector", "Malcolm", "Morgan"],
+                    female: ["Guinevere", "Isolde", "Joan", "Matilda", "Eleanor", "Morgana", "Rowena", "Brenna", "Elaine", "Caitlin", "Aveline", "Rhiannon", "Marian", "Gwendolyn", "Brigid", "Fiona", "Arabella", "Igraine", "Lyonesse", "Viviane"],
+                    neutral: ["Rowan", "Morgan", "Briar", "Justice", "Storm", "Valor", "Talon", "Ash", "Brynn", "Merit", "Honor", "Winter", "Blade", "Flint", "Reign", "Crest", "Steel", "Hawk", "Drake", "Royal"]
+                },
+                nordic: {
+                    male: ["Ragnar", "Bjorn", "Ivar", "Leif", "Erik", "Rollo", "Gunnar", "Thorvald", "Ulfr", "Sigurd", "Harald", "Skjold", "Orm", "Vidar", "Knut", "Torsten", "Olaf", "Halfdan", "Yngvar", "Magnus"],
+                    female: ["Freya", "Astrid", "Lagertha", "Sigrid", "Thyra", "Helga", "Ingrid", "Signe", "Gudrun", "Solveig", "Revna", "Thora", "Runa", "Vigdis", "Hilda", "Yrsa", "Asta", "Saga", "Ylva", "Svanhild"],
+                    neutral: ["Saga", "Vidar", "Storm", "Frey", "Vali", "Sky", "Rune", "Tide", "Vale", "Liv", "Ran", "Eira", "Birk", "Aki", "Loke", "Aric", "Bly", "Kell", "Ravn", "Tove"]
+                },
+                eastern: {
+                    male: ["Musashi", "Kenshin", "Hattori", "Takeda", "Nobunaga", "Hideyoshi", "Jin", "Hanzo", "Kenji", "Hiroshi", "Tadao", "Ryota", "Kaito", "Daichi", "Takeshi", "Akira", "Katsu", "Mitsuo", "Saito", "Yoshi"],
+                    female: ["Tomoe", "Kai", "Aya", "Momoko", "Sakura", "Yuna", "Himiko", "Mariko", "Naoko", "Reiko", "Chihiro", "Aiko", "Emiko", "Hana", "Keiko", "Midori", "Natsuki", "Sora", "Yuki", "Tamiko"],
+                    neutral: ["Akira", "Kei", "Yuki", "Toru", "Haru", "Kaoru", "Jin", "Makoto", "Rei", "Kumi", "Sora", "Aki", "Yasu", "Hoshi", "Kage", "Taki", "Shiro", "Hana", "Maki", "Tsuki"]
+                },
+                celtic: {
+                    male: ["Cormac", "Finn", "Conall", "Fergus", "Cian", "Niall", "Rory", "Liam", "Declan", "Seamus", "Angus", "Brennan", "Brogan", "Conan", "Donal", "Egan", "Seanan", "Tiernan", "Cairbre", "Fionn"],
+                    female: ["Maeve", "Deirdre", "Sorcha", "Niamh", "Aoife", "Ciara", "Fiona", "Catriona", "Siobhan", "Aisling", "Brigid", "Clodagh", "Emer", "Grainne", "Isolde", "Keira", "Orla", "Riona", "Saoirse", "Teagan"],
+                    neutral: ["Reilly", "Shannon", "Quinn", "Kerry", "Rowan", "Morgan", "Casey", "Tierney", "Sloane", "Fallon", "Regan", "Keegan", "Teagan", "Finley", "Derry", "Tara", "Erin", "Devon", "Emery", "Logan"]
+                },
+                greek: {
+                    male: ["Achilles", "Hector", "Perseus", "Ajax", "Theseus", "Odysseus", "Leonidas", "Alexander", "Lysander", "Darius", "Adonis", "Atlas", "Jason", "Orion", "Cyrus", "Leander", "Magnus", "Pericles", "Titus", "Cassius"],
+                    female: ["Athena", "Artemis", "Hippolyta", "Penthesilea", "Xena", "Kallisto", "Andromeda", "Atalanta", "Cassandra", "Helena", "Briseis", "Delia", "Lyra", "Thalia", "Zephyra", "Anthea", "Calliope", "Persephone", "Selene", "Thea"],
+                    neutral: ["Phoenix", "Orion", "Nemesis", "Atlas", "Echo", "Helios", "Zephyr", "Nike", "Cratos", "Thanatos", "Eros", "Hypnos", "Nyx", "Erebus", "Gaia", "Eos", "Eris", "Iris", "Pan", "Kratos"]
+                },
+                african: {
+                    male: ["Kofi", "Abasi", "Zuberi", "Jelani", "Sefu", "Tau", "Chike", "Adisa", "Kamau", "Kwame", "Amari", "Bakari", "Chuma", "Diallo", "Enzi", "Faraji", "Jabari", "Kosey", "Makari", "Nyasore"],
+                    female: ["Ayana", "Zola", "Nia", "Amara", "Sade", "Makeda", "Zuri", "Safiya", "Nala", "Imani", "Abeni", "Asha", "Chioma", "Dalila", "Ebele", "Folami", "Hasina", "Kali", "Layla", "Monifa"],
+                    neutral: ["Amari", "Zola", "Kendi", "Aza", "Dayo", "Enu", "Imani", "Kamau", "Nia", "Tau", "Zuri", "Azizi", "Chike", "Jaha", "Sekai", "Oya", "Oni", "Sade", "Zuberi", "Anaya"]
+                },
+                "middle-eastern": {
+                    male: ["Saladin", "Abbas", "Faisal", "Hassan", "Khalid", "Omar", "Tariq", "Zafar", "Malik", "Nasir", "Akbar", "Basir", "Darius", "Fawzi", "Hakim", "Idris", "Jamal", "Kareem", "Latif", "Mustafa"],
+                    female: ["Jamila", "Soraya", "Fatima", "Layla", "Zara", "Samira", "Amina", "Nadia", "Jasmine", "Rania", "Aaliyah", "Basma", "Dalia", "Farrah", "Hala", "Inaya", "Karima", "Leila", "Maryam", "Nasira"],
+                    neutral: ["Noor", "Sami", "Rami", "Zain", "Faris", "Iman", "Kamal", "Nur", "Salem", "Tala", "Amal", "Farid", "Jihan", "Laith", "Nadir", "Qadir", "Rafik", "Shadi", "Tamir", "Zayn"]
+                }
+            };
+            
+            // Sample warrior epithets by type
+            const warriorEpithets = {
+                knight: ["the Valiant", "the Brave", "the Honorable", "the Just", "the Loyal", "the Gallant", "the Steadfast", "the Noble", "the Righteous", "the Faithful"],
+                barbarian: ["the Untamed", "the Wild", "the Fierce", "the Savage", "the Mighty", "the Ferocious", "the Relentless", "the Indomitable", "the Primal", "the Unyielding"],
+                samurai: ["the Disciplined", "the Swift Blade", "the Honorable", "the Unyielding", "the Precise", "the Shadow Wind", "the Silent Storm", "the Steel Heart", "the Focused", "the Devoted"],
+                viking: ["the Bold", "the Sea-Wolf", "the Thunder", "the Fearless", "the Ice-Blooded", "the Storm-Bringer", "the Axe-Bearer", "the Undefeated", "the Far-Sailor", "the Bear-Hearted"],
+                gladiator: ["the Undefeated", "the Champion", "the Crowd's Roar", "the Arena Master", "the Blood-Soaked", "the Glory-Seeker", "the Chain-Breaker", "the Victorious", "the Colosseum Star", "the Challenger"],
+                ranger: ["the Hawk-Eyed", "the Silent Step", "the Tracker", "the Woodswalker", "the Far-Sighted", "the Beast-Friend", "the Shadow Hunter", "the Pathfinder", "the Vigilant", "the Forest Guardian"],
+                mercenary: ["the Sword-for-Hire", "the Ruthless", "the Pragmatic", "the Gold-Hearted", "the Contract-Keeper", "the Wanderer", "the Survivor", "the Fortune-Seeker", "the Battle-Scarred", "the Free Blade"],
+                warlord: ["the Conqueror", "the Unforgiving", "the Merciless", "the Iron-Fisted", "the War-Bringer", "the Strategist", "the Dominator", "the Subjugator", "the Battle-Born", "the Victory-Crowned"]
+            };
+            
+            // Sample warrior titles/epithets by style
+            const styleEpithets = {
+                heroic: ["the Guardian", "the Protector", "the Savior", "the Defender", "the Righteous", "the Just", "the Radiant", "the Valorous", "the Benevolent", "the Virtuous"],
+                fierce: ["the Ruthless", "the Savage", "the Merciless", "the Ferocious", "the Brutal", "the Fierce", "the Relentless", "the Destroyer", "the Terrifying", "the Unmerciful"],
+                "battle-hardened": ["the Scarred", "the Veteran", "the Weathered", "the Battle-Worn", "the Survivor", "the Unbroken", "the Enduring", "the Resilient", "the Unwavering", "the Tested"],
+                legendary: ["the Legend", "the Fabled", "the Mythic", "the Storied", "the Renowned", "the Immortal", "the Eternal", "the Unforgotten", "the Deathless", "the Saga-Worthy"],
+                "title-based": ["Slayer of Thousands", "Oathkeeper", "Dragonslayer", "Kingmaker", "Siegebreaker", "Giant's Bane", "Ironheart", "Stormbringer", "Mountaincrusher", "Lightbringer"],
+                "weapon-based": ["Axe-Wielder", "Blade of Justice", "Shieldmaiden", "Spear-Hunter", "Hammer of Dawn", "Bow-Master", "Twin Blades", "Death's Scythe", "Ironclad Fist", "Arrow Storm"]
+            };
+
+            // Generate warrior name function
+            function generateWarriorName() {
+                const warriorType = document.getElementById('warrior-type').value;
+                const gender = document.getElementById('warrior-gender').value;
+                const culture = document.getElementById('warrior-culture').value;
+                const style = document.getElementById('name-style').value;
+                const startingLetter = document.getElementById('starting-letter').value.toUpperCase();
+                
+                // Determine culture for name selection
+                let nameCulture = culture;
+                if (culture === 'any') {
+                    const cultures = Object.keys(warriorNames);
+                    nameCulture = cultures[Math.floor(Math.random() * cultures.length)];
+                }
+                
+                // Determine gender for name selection
+                let nameGender = gender;
+                if (gender === 'any') {
+                    const genders = ['male', 'female', 'neutral'];
+                    nameGender = genders[Math.floor(Math.random() * genders.length)];
+                }
+                
+                // Select appropriate first name pool
+                let firstNamePool = warriorNames[nameCulture][nameGender].slice();
+                
+                // Filter by starting letter if specified
+                if (startingLetter) {
+                    firstNamePool = firstNamePool.filter(name => name.startsWith(startingLetter));
+                    // If no matches, revert to full list to avoid empty results
+                    if (firstNamePool.length === 0) {
+                        firstNamePool = warriorNames[nameCulture][nameGender].slice();
+                    }
+                }
+                
+                // Get appropriate epithets based on warrior type and style
+                let typeEpithetList = warriorEpithets[warriorType] || warriorEpithets['knight'];
+                if (warriorType === 'any') {
+                    const randomType = Object.keys(warriorEpithets)[Math.floor(Math.random() * Object.keys(warriorEpithets).length)];
+                    typeEpithetList = warriorEpithets[randomType];
+                }
+                
+                let styleEpithetList = styleEpithets[style] || styleEpithets['heroic'];
+                if (style === 'any') {
+                    const randomStyle = Object.keys(styleEpithets)[Math.floor(Math.random() * Object.keys(styleEpithets).length)];
+                    styleEpithetList = styleEpithets[randomStyle];
+                }
+                
+                // Get random names and epithets
+                const firstName = firstNamePool[Math.floor(Math.random() * firstNamePool.length)];
+                const typeEpithet = typeEpithetList[Math.floor(Math.random() * typeEpithetList.length)];
+                const styleEpithet = styleEpithetList[Math.floor(Math.random() * styleEpithetList.length)];
+                
+                // Craft final name based on random style factors
+                const nameStructure = Math.floor(Math.random() * 3);
+                let warriorName = '';
+                
+                switch (nameStructure) {
+                    case 0:
+                        warriorName = `${firstName} ${typeEpithet}`;
+                        break;
+                    case 1:
+                        warriorName = `${firstName} ${styleEpithet}`;
+                        break;
+                    case 2:
+                        warriorName = `${firstName}, ${styleEpithet}`;
+                        break;
+                    default:
+                        warriorName = `${firstName} ${typeEpithet}`;
+                }
+                
+                // Display the result
+                document.getElementById('name-result').innerText = warriorName;
+                document.getElementById('name-result').classList.add('animate-result');
+                
+                // Create a warrior description
+                generateWarriorDescription(warriorName, warriorType, culture, nameGender);
+                
+                // Remove animation class after animation completes
+                setTimeout(() => {
+                    document.getElementById('name-result').classList.remove('animate-result');
+                }, 500);
+            }
+            
+            // Generate a warrior description
+            function generateWarriorDescription(name, type, culture, gender) {
+                const warriorTypes = {
+                    "knight": "An honorable warrior who upholds a strict chivalric code",
+                    "barbarian": "A fierce tribal warrior who harnesses raw strength and primal fury",
+                    "samurai": "A disciplined warrior who follows the way of the sword with perfect precision",
+                    "viking": "A fearless northern warrior who raids and explores with equal passion",
+                    "gladiator": "A skilled arena fighter who battles for glory and freedom",
+                    "ranger": "A wilderness warrior who uses stealth and knowledge of the land",
+                    "mercenary": "A professional fighter who sells their combat skills to the highest bidder",
+                    "warlord": "A powerful commander who leads armies with tactical brilliance",
+                    "any": "A formidable warrior known throughout the land"
+                };
+                
+                const culturalTraits = {
+                    "western": "trained in the traditions of medieval knighthood",
+                    "nordic": "bearing the hardy spirit of the northern peoples",
+                    "eastern": "following the ancient martial traditions of the East",
+                    "celtic": "drawing strength from their ancestral tribal heritage",
+                    "greek": "embodying the classical warrior virtues",
+                    "african": "carrying forward the proud warrior traditions of their people",
+                    "middle-eastern": "upholding the desert warrior's code of honor and survival",
+                    "any": "drawing from diverse combat traditions"
+                };
+                
+                const pronouns = {
+                    "male": { subject: "he", object: "him", possessive: "his" },
+                    "female": { subject: "she", object: "her", possessive: "her" },
+                    "neutral": { subject: "they", object: "them", possessive: "their" }
+                };
+                
+                const p = pronouns[gender];
+                const description = warriorTypes[type];
+                const culturalTrait = culturalTraits[culture];
+                
+                document.getElementById('name-meaning').innerHTML = `<p>${description} ${culturalTrait}. On the battlefield, ${name} is known for ${p.possessive} exceptional combat prowess and unwavering courage in the face of overwhelming odds.</p>`;
+            }
+            
+            // Event listeners
+            document.getElementById('generate-btn').addEventListener('click', generateWarriorName);
+            document.getElementById('regenerate-btn').addEventListener('click', generateWarriorName);
+        });
+    </script>
+</body>
+</html>
