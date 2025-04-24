@@ -31,22 +31,60 @@ document.addEventListener('DOMContentLoaded', function() {
  */
 function initNavbar() {
     const navbar = document.querySelector('.navbar');
-    const navbarToggle = document.createElement('button');
-    navbarToggle.className = 'navbar-toggle';
-    navbarToggle.innerHTML = '<i class="fas fa-bars"></i>';
     
-    // Add toggle button for mobile
     if (navbar) {
-        navbar.querySelector('.container').appendChild(navbarToggle);
+        // Create toggle button if it doesn't exist
+        let navbarToggle = navbar.querySelector('.navbar-toggle');
+        if (!navbarToggle) {
+            navbarToggle = document.createElement('button');
+            navbarToggle.className = 'navbar-toggle';
+            navbarToggle.setAttribute('aria-label', 'Toggle navigation menu');
+            navbarToggle.innerHTML = '<i class="fas fa-bars"></i>';
+            navbar.querySelector('.container').appendChild(navbarToggle);
+        }
         
-        // Toggle mobile menu
-        navbarToggle.addEventListener('click', function() {
-            const navList = navbar.querySelector('.navbar-nav');
-            navList.classList.toggle('active');
-            this.innerHTML = navList.classList.contains('active') ? 
-                '<i class="fas fa-times"></i>' : 
-                '<i class="fas fa-bars"></i>';
-        });
+        // Make sure nav elements are properly set up
+        const navList = navbar.querySelector('.navbar-nav');
+        if (navList) {
+            // Toggle mobile menu
+            navbarToggle.addEventListener('click', function(e) {
+                e.stopPropagation(); // Prevent event bubbling
+                navList.classList.toggle('active');
+                this.innerHTML = navList.classList.contains('active') ? 
+                    '<i class="fas fa-times"></i>' : 
+                    '<i class="fas fa-bars"></i>';
+                
+                // Add overlay when menu is active
+                if (navList.classList.contains('active')) {
+                    let overlay = document.querySelector('.navbar-overlay');
+                    if (!overlay) {
+                        overlay = document.createElement('div');
+                        overlay.className = 'navbar-overlay';
+                        document.body.appendChild(overlay);
+                        
+                        // Listen for clicks on the overlay
+                        overlay.addEventListener('click', function() {
+                            navList.classList.remove('active');
+                            navbarToggle.innerHTML = '<i class="fas fa-bars"></i>';
+                            overlay.remove();
+                        });
+                    }
+                } else {
+                    const overlay = document.querySelector('.navbar-overlay');
+                    if (overlay) overlay.remove();
+                }
+            });
+            
+            // Make sure menu items close the menu when clicked
+            navList.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', function() {
+                    navList.classList.remove('active');
+                    navbarToggle.innerHTML = '<i class="fas fa-bars"></i>';
+                    const overlay = document.querySelector('.navbar-overlay');
+                    if (overlay) overlay.remove();
+                });
+            });
+        }
         
         // Change navbar style on scroll
         window.addEventListener('scroll', function() {
@@ -59,12 +97,14 @@ function initNavbar() {
         
         // Close mobile menu when clicking outside
         document.addEventListener('click', function(event) {
-            const isClickInsideNavbar = navbar.contains(event.target);
             const navList = navbar.querySelector('.navbar-nav');
+            const isClickInsideNavbar = navbar.contains(event.target);
             
-            if (!isClickInsideNavbar && navList.classList.contains('active')) {
+            if (!isClickInsideNavbar && navList && navList.classList.contains('active')) {
                 navList.classList.remove('active');
                 navbarToggle.innerHTML = '<i class="fas fa-bars"></i>';
+                const overlay = document.querySelector('.navbar-overlay');
+                if (overlay) overlay.remove();
             }
         });
     }
@@ -149,24 +189,52 @@ function initScrollAnimations() {
 function initFaqAccordion() {
     const faqQuestions = document.querySelectorAll('.faq-question');
     
-    faqQuestions.forEach(question => {
-        question.addEventListener('click', function() {
-            const answer = this.nextElementSibling;
-            const isActive = this.classList.contains('active');
-            
-            // Close all other answers
-            document.querySelectorAll('.faq-question').forEach(q => {
-                q.classList.remove('active');
-                q.nextElementSibling.classList.remove('active');
-            });
-            
-            // Toggle current answer
-            if (!isActive) {
-                this.classList.add('active');
-                answer.classList.add('active');
-            }
+    if (faqQuestions.length > 0) {
+        // First, ensure all answers are properly initialized (collapsed)
+        document.querySelectorAll('.faq-answer').forEach(answer => {
+            answer.style.maxHeight = '0px';
+            answer.style.overflow = 'hidden';
+            answer.style.padding = '0 1.25rem';
+            answer.style.transition = 'all 0.3s ease-in-out';
         });
-    });
+        
+        // Add click functionality to each question
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', function() {
+                const answer = this.nextElementSibling;
+                const isActive = this.classList.contains('active');
+                
+                // Close all other answers
+                document.querySelectorAll('.faq-question').forEach(q => {
+                    if (q !== this) {
+                        q.classList.remove('active');
+                        const otherAnswer = q.nextElementSibling;
+                        otherAnswer.classList.remove('active');
+                        otherAnswer.style.maxHeight = '0px';
+                        otherAnswer.style.padding = '0 1.25rem';
+                    }
+                });
+                
+                // Toggle current answer
+                if (!isActive) {
+                    this.classList.add('active');
+                    answer.classList.add('active');
+                    answer.style.maxHeight = answer.scrollHeight + 30 + 'px';
+                    answer.style.padding = '0 1.25rem 1.25rem 1.25rem';
+                } else {
+                    this.classList.remove('active');
+                    answer.classList.remove('active');
+                    answer.style.maxHeight = '0px';
+                    answer.style.padding = '0 1.25rem';
+                }
+            });
+        });
+        
+        // Open the first FAQ item by default
+        if (faqQuestions.length > 0) {
+            faqQuestions[0].click();
+        }
+    }
 }
 
 /**

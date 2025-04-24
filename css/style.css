@@ -390,6 +390,25 @@ header p {
     color: var(--light-color);
     font-size: 1.5rem;
     cursor: pointer;
+    padding: 0.5rem;
+    transition: var(--transition-fast);
+    border-radius: var(--border-radius-sm);
+}
+
+.navbar-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 90;
+    backdrop-filter: blur(3px);
+    animation: fadeIn 0.3s ease;
 }
 
 /* Animations */
@@ -588,7 +607,7 @@ main {
 
 /* Ad section styling */
 .ad-container {
-    background-color: var(--primary-light);
+    background-color: var(--light-color);
     border-radius: var(--border-radius);
     padding: 1.5rem;
     margin: 2rem 0;
@@ -596,7 +615,13 @@ main {
     text-align: center;
     position: relative;
     overflow: hidden;
-    border: 1px dashed var(--primary-color);
+    border: 1px solid var(--gray-light);
+    transition: var(--transition);
+}
+
+.ad-container:hover {
+    box-shadow: var(--box-shadow-lg);
+    border-color: var(--primary-color);
 }
 
 .ad-container.horizontal {
@@ -606,6 +631,7 @@ main {
     gap: 2rem;
     padding: 1.5rem 2rem;
     text-align: left;
+    background: linear-gradient(to right, var(--light-color), var(--primary-light));
 }
 
 .ad-container.horizontal .ad-content {
@@ -617,33 +643,68 @@ main {
 }
 
 .ad-container.sponsored::before {
-    content: 'Sponsored';
+    content: 'Ad';
     position: absolute;
     top: 0;
-    right: 1rem;
-    background-color: var(--primary-color);
-    color: white;
-    font-size: 0.7rem;
-    padding: 0.1rem 0.5rem;
-    border-radius: 0 0 var(--border-radius-sm) var(--border-radius-sm);
+    left: 0;
+    background-color: #f8f9fa;
+    color: #5f6368;
+    font-size: 0.65rem;
+    padding: 0.1rem 0.4rem;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    border-radius: 0 0 var(--border-radius-sm) 0;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    border-right: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    z-index: 5;
 }
 
 .ad-title {
     color: var(--primary-color);
     font-size: 1.25rem;
     margin-bottom: 0.5rem;
+    position: relative;
+    display: inline-block;
+}
+
+.ad-title::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background-color: var(--accent-color);
+    transition: var(--transition-fast);
+}
+
+.ad-container:hover .ad-title::after {
+    width: 100%;
 }
 
 .ad-description {
     margin-bottom: 1rem;
     color: var(--dark-color-alt);
+    font-size: 0.95rem;
+    line-height: 1.5;
 }
 
 .ad-container .btn {
     box-shadow: none;
-    background-color: var(--primary-color);
+    background-color: var(--accent-color);
+    border-radius: var(--border-radius-sm);
+    font-weight: 600;
+    transition: var(--transition-fast);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 0.875rem;
+}
+
+.ad-container .btn:hover {
+    background-color: var(--accent-hover);
+    transform: translateY(-2px);
 }
 
 .ad-pattern {
@@ -652,14 +713,74 @@ main {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, var(--primary-light) 25%, transparent 25%) -50px 0,
-                linear-gradient(225deg, var(--primary-light) 25%, transparent 25%) -50px 0,
-                linear-gradient(315deg, var(--primary-light) 25%, transparent 25%),
-                linear-gradient(45deg, var(--primary-light) 25%, transparent 25%);
+    background: linear-gradient(135deg, rgba(247, 250, 255, 0.5) 25%, transparent 25%) -50px 0,
+                linear-gradient(225deg, rgba(247, 250, 255, 0.5) 25%, transparent 25%) -50px 0,
+                linear-gradient(315deg, rgba(247, 250, 255, 0.5) 25%, transparent 25%),
+                linear-gradient(45deg, rgba(247, 250, 255, 0.5) 25%, transparent 25%);
     background-size: 100px 100px;
     background-color: var(--light-color);
-    opacity: 0.5;
+    opacity: 0.3;
     z-index: -1;
+    transition: opacity 0.3s ease;
+}
+
+.ad-container:hover .ad-pattern {
+    opacity: 0.5;
+}
+
+/* Google Ads Specific Styles */
+.google-ad {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--box-shadow-sm);
+    border: 1px solid #e0e0e0;
+}
+
+.google-ad .ad-header {
+    background-color: #f8f9fa;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.google-ad .ad-label {
+    color: #5f6368;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.google-ad .ad-provider {
+    color: #1a73e8;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.google-ad .ad-content {
+    padding: 1.5rem;
+    background: white;
+}
+
+.google-ad .ad-title {
+    color: #1a73e8;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.google-ad .ad-url {
+    color: #0b8043;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.google-ad .ad-description {
+    color: #5f6368;
+    font-size: 0.9rem;
 }
 
 /* ====== How It Works ====== */
@@ -1075,11 +1196,24 @@ footer {
         top: 100%;
         left: 0;
         right: 0;
-        background-color: var(--primary-dark);
+        background-color: var(--dark-color);
         flex-direction: column;
-        padding: 1rem;
+        padding: 1.5rem;
         box-shadow: var(--box-shadow-lg);
         z-index: 100;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        animation: slideDown 0.3s ease forwards;
+    }
+    
+    @keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
     
     .navbar-nav.active {
@@ -1088,6 +1222,13 @@ footer {
     
     .navbar-nav a {
         padding: 0.75rem 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        width: 100%;
+        font-size: 1.1rem;
+    }
+    
+    .navbar-nav a:last-child {
+        border-bottom: none;
     }
     
     .navbar-toggle {
@@ -1134,16 +1275,27 @@ footer {
         width: 100%;
     }
     
+    /* Google Ads */
+    .google-ad .ad-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.25rem;
+    }
+    
     /* Footer */
     .footer-content {
         grid-template-columns: 1fr;
         gap: 2.5rem;
     }
     
+    .footer-column h4 {
+        color: var(--light-color); /* Ensure text is visible */
+        text-align: center;
+    }
+    
     .footer-column h4::after {
-        left: 0;
-        right: 0;
-        margin: 0 auto;
+        left: 50%;
+        transform: translateX(-50%);
     }
     
     .footer-column {
@@ -1153,10 +1305,29 @@ footer {
     .footer-links a {
         display: inline-block;
         padding: 0.5rem;
+        color: #9ca3af; /* Ensure text is visible */
+    }
+    
+    .footer-links a:hover {
+        color: var(--light-color);
     }
     
     .footer-social {
         justify-content: center;
+    }
+    
+    .footer-bottom p, .footer-bottom a {
+        color: #9ca3af; /* Ensure text is visible */
+    }
+    
+    /* FAQ Section */
+    .faq-question {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+    
+    .faq-answer p {
+        font-size: 0.95rem;
     }
 }
 
