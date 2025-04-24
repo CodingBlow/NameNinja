@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamer Tag Generator - Name Generator Hub</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Gamer Tag Generator</h1>
+            <p>Create unique and cool gamer tags for your online identity</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="generator-container">
+            <div class="generator-header">
+                <div class="icon">
+                    <i class="fas fa-gamepad"></i>
+                </div>
+                <div>
+                    <h2>Generate a Gamer Tag</h2>
+                    <p>Use the options below to customize your gamer tag search.</p>
+                </div>
+            </div>
+
+            <div class="generator-options">
+                <div class="form-group">
+                    <label for="game-type">Game Type</label>
+                    <select id="game-type">
+                        <option value="any">Any Game</option>
+                        <option value="fps">FPS (First-Person Shooter)</option>
+                        <option value="moba">MOBA</option>
+                        <option value="rpg">RPG</option>
+                        <option value="sports">Sports</option>
+                        <option value="racing">Racing</option>
+                        <option value="strategy">Strategy</option>
+                        <option value="sandbox">Sandbox</option>
+                        <option value="mmo">MMO</option>
+                        <option value="battle-royale">Battle Royale</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="tag-style">Tag Style</label>
+                    <select id="tag-style">
+                        <option value="any">Any Style</option>
+                        <option value="aggressive">Aggressive/Intimidating</option>
+                        <option value="funny">Funny/Humorous</option>
+                        <option value="mysterious">Mysterious</option>
+                        <option value="cool">Cool/Trendy</option>
+                        <option value="elite">Elite/Pro</option>
+                        <option value="mythical">Mythical/Fantasy</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="tag-length">Tag Length</label>
+                    <select id="tag-length">
+                        <option value="any">Any Length</option>
+                        <option value="short">Short (3-7 characters)</option>
+                        <option value="medium">Medium (8-12 characters)</option>
+                        <option value="long">Long (13+ characters)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="include-numbers">Include Numbers</label>
+                    <select id="include-numbers">
+                        <option value="maybe">Maybe</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="include-symbols">Include Symbols</label>
+                    <select id="include-symbols">
+                        <option value="maybe">Maybe</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="your-name">Your Name (Optional)</label>
+                    <input type="text" id="your-name" placeholder="For personalized tags">
+                </div>
+
+                <button id="generate-btn" class="btn generate-btn">
+                    Generate Gamer Tag <i class="fas fa-wand-magic-sparkles"></i>
+                </button>
+            </div>
+
+            <div class="result-container">
+                <h3>Your Gamer Tag</h3>
+                <div id="name-result" class="name-result">Click generate to find a tag</div>
+                <button id="regenerate-btn" class="btn">
+                    <i class="fas fa-redo"></i> Generate Another
+                </button>
+            </div>
+
+            <a href="../index.html" class="back-link">
+                <i class="fas fa-arrow-left"></i> Back to All Generators
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Name Generator Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../data/gamer-tags.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/generators/gamer-tag.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup Name Generator - Name Generator Hub</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Startup Name Generator</h1>
+            <p>Create catchy and memorable names for your business or project</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="generator-container">
+            <div class="generator-header">
+                <div class="icon">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <div>
+                    <h2>Generate a Startup Name</h2>
+                    <p>Use the options below to customize your startup name search.</p>
+                </div>
+            </div>
+
+            <div class="generator-options">
+                <div class="form-group">
+                    <label for="business-industry">Industry</label>
+                    <select id="business-industry">
+                        <option value="any">Any Industry</option>
+                        <option value="tech">Technology</option>
+                        <option value="finance">Finance/Fintech</option>
+                        <option value="health">Healthcare</option>
+                        <option value="food">Food & Beverage</option>
+                        <option value="fashion">Fashion</option>
+                        <option value="education">Education</option>
+                        <option value="entertainment">Entertainment</option>
+                        <option value="travel">Travel</option>
+                        <option value="real-estate">Real Estate</option>
+                        <option value="fitness">Fitness</option>
+                        <option value="gaming">Gaming</option>
+                        <option value="ecommerce">E-commerce</option>
+                        <option value="social">Social Media</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="name-style">Name Style</label>
+                    <select id="name-style">
+                        <option value="any">Any Style</option>
+                        <option value="modern">Modern/Innovative</option>
+                        <option value="compound">Compound Words</option>
+                        <option value="coined">Coined/Made-up</option>
+                        <option value="descriptive">Descriptive</option>
+                        <option value="metaphor">Metaphorical</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="name-length">Name Length</label>
+                    <select id="name-length">
+                        <option value="any">Any Length</option>
+                        <option value="short">Short (3-6 letters)</option>
+                        <option value="medium">Medium (7-10 letters)</option>
+                        <option value="long">Long (11+ letters)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="keywords">Related Keywords (Optional)</label>
+                    <input type="text" id="keywords" placeholder="Enter keywords separated by commas">
+                </div>
+
+                <div class="form-group">
+                    <label for="starting-letter">Starting Letter (Optional)</label>
+                    <input type="text" id="starting-letter" maxlength="1" placeholder="Enter a letter">
+                </div>
+
+                <button id="generate-btn" class="btn generate-btn">
+                    Generate Startup Name <i class="fas fa-wand-magic-sparkles"></i>
+                </button>
+            </div>
+
+            <div class="result-container">
+                <h3>Your Startup Name</h3>
+                <div id="name-result" class="name-result">Click generate to find a name</div>
+                <div id="domain-availability" class="domain-info"></div>
+                <button id="regenerate-btn" class="btn">
+                    <i class="fas fa-redo"></i> Generate Another
+                </button>
+            </div>
+
+            <a href="../index.html" class="back-link">
+                <i class="fas fa-arrow-left"></i> Back to All Generators
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Name Generator Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../data/startup-words.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/generators/startup-name.js"></script>
+</body>
+</html>

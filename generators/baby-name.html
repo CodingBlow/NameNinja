@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baby Name Generator - Name Generator Hub</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Baby Name Generator</h1>
+            <p>Find the perfect name for your newborn with meanings and origins</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="generator-container">
+            <div class="generator-header">
+                <div class="icon">
+                    <i class="fas fa-baby"></i>
+                </div>
+                <div>
+                    <h2>Generate a Baby Name</h2>
+                    <p>Use the options below to customize your baby name search.</p>
+                </div>
+            </div>
+
+            <div class="generator-options">
+                <div class="form-group">
+                    <label for="baby-gender">Gender</label>
+                    <select id="baby-gender">
+                        <option value="any">Any</option>
+                        <option value="boy">Boy</option>
+                        <option value="girl">Girl</option>
+                        <option value="neutral">Gender Neutral</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="name-origin">Origin/Ethnicity</label>
+                    <select id="name-origin">
+                        <option value="any">Any Origin</option>
+                        <option value="american">American</option>
+                        <option value="english">English</option>
+                        <option value="irish">Irish</option>
+                        <option value="scottish">Scottish</option>
+                        <option value="french">French</option>
+                        <option value="german">German</option>
+                        <option value="italian">Italian</option>
+                        <option value="spanish">Spanish</option>
+                        <option value="greek">Greek</option>
+                        <option value="nordic">Nordic</option>
+                        <option value="hebrew">Hebrew</option>
+                        <option value="arabic">Arabic</option>
+                        <option value="indian">Indian</option>
+                        <option value="chinese">Chinese</option>
+                        <option value="japanese">Japanese</option>
+                        <option value="african">African</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="name-style">Name Style</label>
+                    <select id="name-style">
+                        <option value="any">Any Style</option>
+                        <option value="classic">Classic/Traditional</option>
+                        <option value="modern">Modern/Contemporary</option>
+                        <option value="unique">Unique/Uncommon</option>
+                        <option value="trendy">Trendy</option>
+                        <option value="vintage">Vintage/Retro</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="name-length">Name Length</label>
+                    <select id="name-length">
+                        <option value="any">Any Length</option>
+                        <option value="short">Short (3-5 letters)</option>
+                        <option value="medium">Medium (6-8 letters)</option>
+                        <option value="long">Long (9+ letters)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="starting-letter">Starting Letter (Optional)</label>
+                    <input type="text" id="starting-letter" maxlength="1" placeholder="Enter a letter">
+                </div>
+
+                <button id="generate-btn" class="btn generate-btn">
+                    Generate Baby Name <i class="fas fa-wand-magic-sparkles"></i>
+                </button>
+            </div>
+
+            <div class="result-container">
+                <h3>Your Baby Name</h3>
+                <div id="name-result" class="name-result">Click generate to find a name</div>
+                <div id="name-meaning" class="name-meaning"></div>
+                <button id="regenerate-btn" class="btn">
+                    <i class="fas fa-redo"></i> Generate Another
+                </button>
+            </div>
+
+            <a href="../index.html" class="back-link">
+                <i class="fas fa-arrow-left"></i> Back to All Generators
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Name Generator Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../data/baby-names.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/generators/baby-name.js"></script>
+</body>
+</html>
