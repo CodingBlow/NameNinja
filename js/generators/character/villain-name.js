@@ -1,20 +1,11 @@
 /**
  * Villain Name Generator
  * Generates creative villain names with customizable options
+ * Uses data from villain-names.js
  */
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Sample villain first names
-    const villainFirstNames = {
-        male: ["Damien", "Draven", "Malachi", "Viktor", "Magnus", "Lucius", "Silas", "Mortimer", "Darius", "Thorne", "Asmodeus", "Kaine", "Nero", "Vladimir", "Zoran", "Grimm", "Bastian", "Cyrus", "Orion", "Raziel"],
-        female: ["Lilith", "Morgana", "Bellatrix", "Ravenna", "Morrigan", "Vesper", "Desdemona", "Maleficent", "Hela", "Lamia", "Carmilla", "Morana", "Elvira", "Jezebel", "Nephthys", "Selene", "Thana", "Vexana", "Octavia", "Nyx"],
-        neutral: ["Onyx", "Ruin", "Zenith", "Viper", "Wraith", "Void", "Eclipse", "Nemesis", "Havoc", "Abyss", "Entropy", "Cipher", "Dread", "Malice", "Shadow", "Tempest", "Chaos", "Spectre", "Oblivion", "Thorn"]
-    };
-        
-    // Sample villain last names and titles
-    const villainLastNames = ["Blackwood", "Shadowfell", "Darkheart", "Bloodthorn", "Grimshaw", "Nightshade", "Ironhand", "Duskraven", "Voidbringer", "Soulreaver", "Cruelclaw", "Deathwhisper", "Frostbane", "Mournweaver", "Hellstrom", "Doomforge", "Boneflayer", "Scourge", "Dreadlord", "Harbinger"];
-        
-    const villainTitles = ["the Merciless", "the Destroyer", "the Deceitful", "the Cruel", "the Immortal", "the Terrible", "the Shadow", "the Devourer", "the Corrupted", "the Cursed", "the Undying", "the Tormentor", "the Betrayer", "the Vile", "the Wicked", "the Insidious", "the Forsaken", "the Malevolent", "the Defiler", "the Banished"];
+    // Name data is loaded from the villain-names.js file
 
     // Generate villain name function
     function generateVillainName() {
