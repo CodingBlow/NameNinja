@@ -50,10 +50,10 @@ body {
 }
 
 .container {
-    width: 90%;
+    width: 94%;
     max-width: var(--content-width);
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 10px;
 }
 
 a {
@@ -547,7 +547,7 @@ main {
 
 .section-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 2rem;
 }
 
@@ -1392,7 +1392,16 @@ footer {
     }
     
     /* Cards */
+    .section-cards {
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        gap: 1.5rem;
+    }
+    
     .generator-card {
+        padding: 1.5rem;
+    }
+    
+    .generator-section {
         padding: 1.5rem;
     }
     
