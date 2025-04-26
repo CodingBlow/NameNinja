@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+Sitemap: https://namegeneratorhub.com/sitemap.xml
+
+# Allow all crawlers
+User-agent: *
+Disallow:
+
+# Allow Google
+User-agent: Googlebot
+Allow: /
+
+# Allow Bing
+User-agent: Bingbot
+Allow: /

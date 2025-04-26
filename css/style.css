@@ -1219,6 +1219,14 @@ footer {
     .footer-content {
         grid-template-columns: repeat(2, 1fr);
     }
+    
+    .section-cards {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+    
+    .generator-section {
+        padding: 1.75rem;
+    }
 }
 
 @media (max-width: 768px) {
