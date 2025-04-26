@@ -39,6 +39,8 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    max-width: 100%;
 }
 
 body {
@@ -1474,6 +1476,37 @@ footer {
     /* Animation adjustments */
     .generator-card:hover {
         transform: translateY(-5px);
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 400px) {
+    .section-cards {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .container {
+        width: 100%;
+        padding: 0 8px;
+    }
+    
+    .generator-section {
+        padding: 1rem;
+    }
+    
+    .generator-card {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    
+    .card-icon {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .generator-card h3 {
+        font-size: 1.2rem;
     }
 }
 
