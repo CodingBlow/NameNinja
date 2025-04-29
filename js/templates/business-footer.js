@@ -3,12 +3,12 @@
  * Dynamically inserts consistent footer across all business generators
  */
 
-document.addEventListener('DOMContentLoaded', function() {
-    // If this generator has a footer-container element, populate it with our standard footer
-    const footerContainer = document.getElementById('footer-container');
-    
-    if (footerContainer) {
-        footerContainer.innerHTML = `
+document.addEventListener("DOMContentLoaded", function () {
+  // If this generator has a footer-container element, populate it with our standard footer
+  const footerContainer = document.getElementById("footer-container");
+
+  if (footerContainer) {
+    footerContainer.innerHTML = `
         <footer>
             <div class="container">
                 <div class="footer-content">
@@ -60,10 +60,10 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
                 </div>
                 <div class="footer-bottom">
-                    <p>&copy; 2025 Name Generator Hub. All rights reserved. | <a href="../../company/privacy-policy.html">Privacy Policy</a> | <a href="../../company/terms-of-service.html">Terms of Service</a></p>
+                    <p>&copy; 2025 Name Fabulous. All rights reserved. | <a href="../../company/privacy-policy.html">Privacy Policy</a> | <a href="../../company/terms-of-service.html">Terms of Service</a></p>
                 </div>
             </div>
         </footer>
         `;
-    }
+  }
 });

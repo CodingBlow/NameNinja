@@ -1,200 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <!-- Primary Meta Tags -->
-    <title>Gamer Tag Generator - Create Unique Gaming Names & Usernames | Free Tool</title>
-    <meta name="title" content="Gamer Tag Generator - Create Unique Gaming Names & Usernames | Free Tool">
-    <meta name="description" content="Create unique gamer tags and usernames for all gaming platforms with our free online generator. Customize by style, length, and game type to find the perfect gaming identity.">
-    <meta name="keywords" content="gamer tag generator, gaming username generator, gamer name ideas, gaming alias, unique gamer tags, username generator for gaming, battle royale names, fps usernames">
-    
+    <title>
+      Gamer Tag Generator - Create Unique Gaming Names & Usernames | Free Tool
+    </title>
+    <meta
+      name="title"
+      content="Gamer Tag Generator - Create Unique Gaming Names & Usernames | Free Tool"
+    />
+    <meta
+      name="description"
+      content="Create unique gamer tags and usernames for all gaming platforms with our free online generator. Customize by style, length, and game type to find the perfect gaming identity."
+    />
+    <meta
+      name="keywords"
+      content="gamer tag generator, gaming username generator, gamer name ideas, gaming alias, unique gamer tags, username generator for gaming, battle royale names, fps usernames"
+    />
+
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="container">
-            <a href="../index.html" class="navbar-brand">
-                <i class="fas fa-magic"></i> Name Generator Hub
-            </a>
-            <ul class="navbar-nav">
-                <li><a href="../index.html#generators">Generators</a></li>
-                <li><a href="../index.html#how-it-works">How It Works</a></li>
-                <li><a href="../index.html#faq">FAQ</a></li>
-                <li><a href="../index.html#about">About</a></li>
-            </ul>
-        </div>
+      <div class="container">
+        <a href="../index.html" class="navbar-brand">
+          <i class="fas fa-magic"></i> Name Fabulous
+        </a>
+        <ul class="navbar-nav">
+          <li><a href="../index.html#generators">Generators</a></li>
+          <li><a href="../index.html#how-it-works">How It Works</a></li>
+          <li><a href="../index.html#faq">FAQ</a></li>
+          <li><a href="../index.html#about">About</a></li>
+        </ul>
+      </div>
     </nav>
-    
+
     <header>
-        <div class="container">
-            <h1>Gamer Tag Generator</h1>
-            <p>Create unique and cool gamer tags for your online identity</p>
-        </div>
+      <div class="container">
+        <h1>Gamer Tag Generator</h1>
+        <p>Create unique and cool gamer tags for your online identity</p>
+      </div>
     </header>
 
     <main class="container">
-        <div class="generator-container">
-            <div class="generator-header">
-                <div class="icon">
-                    <i class="fas fa-gamepad"></i>
-                </div>
-                <div>
-                    <h2>Generate a Gamer Tag</h2>
-                    <p>Use the options below to customize your gamer tag search.</p>
-                </div>
-            </div>
-
-            <div class="generator-options">
-                <div class="form-group">
-                    <label for="game-type">Game Type</label>
-                    <select id="game-type">
-                        <option value="any">Any Game</option>
-                        <option value="fps">FPS (First-Person Shooter)</option>
-                        <option value="moba">MOBA</option>
-                        <option value="rpg">RPG</option>
-                        <option value="sports">Sports</option>
-                        <option value="racing">Racing</option>
-                        <option value="strategy">Strategy</option>
-                        <option value="sandbox">Sandbox</option>
-                        <option value="mmo">MMO</option>
-                        <option value="battle-royale">Battle Royale</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="tag-style">Tag Style</label>
-                    <select id="tag-style">
-                        <option value="any">Any Style</option>
-                        <option value="aggressive">Aggressive/Intimidating</option>
-                        <option value="funny">Funny/Humorous</option>
-                        <option value="mysterious">Mysterious</option>
-                        <option value="cool">Cool/Trendy</option>
-                        <option value="elite">Elite/Pro</option>
-                        <option value="mythical">Mythical/Fantasy</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="tag-length">Tag Length</label>
-                    <select id="tag-length">
-                        <option value="any">Any Length</option>
-                        <option value="short">Short (3-7 characters)</option>
-                        <option value="medium">Medium (8-12 characters)</option>
-                        <option value="long">Long (13+ characters)</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="include-numbers">Include Numbers</label>
-                    <select id="include-numbers">
-                        <option value="maybe">Maybe</option>
-                        <option value="yes">Yes</option>
-                        <option value="no">No</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="include-symbols">Include Symbols</label>
-                    <select id="include-symbols">
-                        <option value="maybe">Maybe</option>
-                        <option value="yes">Yes</option>
-                        <option value="no">No</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="your-name">Your Name (Optional)</label>
-                    <input type="text" id="your-name" placeholder="For personalized tags">
-                </div>
-
-                <button id="generate-btn" class="btn generate-btn">
-                    Generate Gamer Tag <i class="fas fa-wand-magic-sparkles"></i>
-                </button>
-            </div>
-
-            <div class="result-container">
-                <h3>Your Gamer Tag</h3>
-                <div id="name-result" class="name-result">Click generate to find a tag</div>
-                <button id="regenerate-btn" class="btn">
-                    <i class="fas fa-redo"></i> Generate Another
-                </button>
-            </div>
-
-            <a href="../index.html" class="back-link">
-                <i class="fas fa-arrow-left"></i> Back to All Generators
-            </a>
+      <div class="generator-container">
+        <div class="generator-header">
+          <div class="icon">
+            <i class="fas fa-gamepad"></i>
+          </div>
+          <div>
+            <h2>Generate a Gamer Tag</h2>
+            <p>Use the options below to customize your gamer tag search.</p>
+          </div>
         </div>
+
+        <div class="generator-options">
+          <div class="form-group">
+            <label for="game-type">Game Type</label>
+            <select id="game-type">
+              <option value="any">Any Game</option>
+              <option value="fps">FPS (First-Person Shooter)</option>
+              <option value="moba">MOBA</option>
+              <option value="rpg">RPG</option>
+              <option value="sports">Sports</option>
+              <option value="racing">Racing</option>
+              <option value="strategy">Strategy</option>
+              <option value="sandbox">Sandbox</option>
+              <option value="mmo">MMO</option>
+              <option value="battle-royale">Battle Royale</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="tag-style">Tag Style</label>
+            <select id="tag-style">
+              <option value="any">Any Style</option>
+              <option value="aggressive">Aggressive/Intimidating</option>
+              <option value="funny">Funny/Humorous</option>
+              <option value="mysterious">Mysterious</option>
+              <option value="cool">Cool/Trendy</option>
+              <option value="elite">Elite/Pro</option>
+              <option value="mythical">Mythical/Fantasy</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="tag-length">Tag Length</label>
+            <select id="tag-length">
+              <option value="any">Any Length</option>
+              <option value="short">Short (3-7 characters)</option>
+              <option value="medium">Medium (8-12 characters)</option>
+              <option value="long">Long (13+ characters)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="include-numbers">Include Numbers</label>
+            <select id="include-numbers">
+              <option value="maybe">Maybe</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="include-symbols">Include Symbols</label>
+            <select id="include-symbols">
+              <option value="maybe">Maybe</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="your-name">Your Name (Optional)</label>
+            <input
+              type="text"
+              id="your-name"
+              placeholder="For personalized tags"
+            />
+          </div>
+
+          <button id="generate-btn" class="btn generate-btn">
+            Generate Gamer Tag <i class="fas fa-wand-magic-sparkles"></i>
+          </button>
+        </div>
+
+        <div class="result-container">
+          <h3>Your Gamer Tag</h3>
+          <div id="name-result" class="name-result">
+            Click generate to find a tag
+          </div>
+          <button id="regenerate-btn" class="btn">
+            <i class="fas fa-redo"></i> Generate Another
+          </button>
+        </div>
+
+        <a href="../index.html" class="back-link">
+          <i class="fas fa-arrow-left"></i> Back to All Generators
+        </a>
+      </div>
     </main>
 
     <!-- Footer -->
     <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-column">
-                    <h4>Name Generators</h4>
-                    <ul class="footer-links">
-                        <li><a href="pet-name.html">Pet Names</a></li>
-                        <li><a href="baby-name.html">Baby Names</a></li>
-                        <li><a href="fantasy-name.html">Fantasy Names</a></li>
-                        <li><a href="startup-name.html">Business Names</a></li>
-                        <li><a href="gamer-tag.html">Gamer Tags</a></li>
-                        <li><a href="boyfriend-name.html">Boyfriend Nicknames</a></li>
-                        <li><a href="girlfriend-name.html">Girlfriend Nicknames</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4>Gaming Resources</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">Gaming Platforms</a></li>
-                        <li><a href="#">Username Tips</a></li>
-                        <li><a href="#">Streaming Advice</a></li>
-                        <li><a href="#">Gaming Communities</a></li>
-                        <li><a href="#">Gaming Glossary</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4>Company</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="#">Sitemap</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4>Stay Updated</h4>
-                    <p>Subscribe to our newsletter for the latest gaming name trends and generator updates.</p>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="Your email address">
-                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
-                    </form>
-                    <div class="footer-social">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitch"></i></a>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <h4>Name Generators</h4>
+            <ul class="footer-links">
+              <li><a href="pet-name.html">Pet Names</a></li>
+              <li><a href="baby-name.html">Baby Names</a></li>
+              <li><a href="fantasy-name.html">Fantasy Names</a></li>
+              <li><a href="startup-name.html">Business Names</a></li>
+              <li><a href="gamer-tag.html">Gamer Tags</a></li>
+              <li><a href="boyfriend-name.html">Boyfriend Nicknames</a></li>
+              <li><a href="girlfriend-name.html">Girlfriend Nicknames</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Gaming Resources</h4>
+            <ul class="footer-links">
+              <li><a href="#">Gaming Platforms</a></li>
+              <li><a href="#">Username Tips</a></li>
+              <li><a href="#">Streaming Advice</a></li>
+              <li><a href="#">Gaming Communities</a></li>
+              <li><a href="#">Gaming Glossary</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Company</h4>
+            <ul class="footer-links">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Sitemap</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Stay Updated</h4>
+            <p>
+              Subscribe to our newsletter for the latest gaming name trends and
+              generator updates.
+            </p>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Your email address" />
+              <button type="submit"><i class="fas fa-paper-plane"></i></button>
+            </form>
+            <div class="footer-social">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitch"></i></a>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Name Generator Hub. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
-            </div>
+          </div>
         </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 Name Fabulous. All rights reserved. |
+            <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+          </p>
+        </div>
+      </div>
     </footer>
 
     <script src="../data/gamer-tags.js"></script>
     <script src="../js/main.js"></script>
     <script src="../js/generators/gamer-tag.js"></script>
-</body>
+  </body>
 </html>

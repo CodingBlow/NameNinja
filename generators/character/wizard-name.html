@@ -1,419 +1,749 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <!-- Primary Meta Tags -->
-    <title>Wizard Name Generator | Magical Character Names | Name Generator Hub</title>
-    <meta name="title" content="Wizard Name Generator | Magical Character Names | Name Generator Hub">
-    <meta name="description" content="Create mystical, powerful wizard names for your fantasy novel, RPG character, or creative project. Generate unique mage, sorcerer and wizard names instantly.">
-    <meta name="keywords" content="wizard name generator, mage names, sorcerer names, magical character names, fantasy wizard names, RPG wizard names, spellcaster names">
-    
+    <title>
+      Wizard Name Generator | Magical Character Names | Name Fabulous
+    </title>
+    <meta
+      name="title"
+      content="Wizard Name Generator | Magical Character Names | Name Fabulous"
+    />
+    <meta
+      name="description"
+      content="Create mystical, powerful wizard names for your fantasy novel, RPG character, or creative project. Generate unique mage, sorcerer and wizard names instantly."
+    />
+    <meta
+      name="keywords"
+      content="wizard name generator, mage names, sorcerer names, magical character names, fantasy wizard names, RPG wizard names, spellcaster names"
+    />
+
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="../../css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="container">
-            <a href="../../index.html" class="navbar-brand">
-                <i class="fas fa-magic"></i> Name Generator Hub
-            </a>
-            <ul class="navbar-nav">
-                <li><a href="../../index.html#generators">Generators</a></li>
-                <li><a href="../../index.html#how-it-works">How It Works</a></li>
-                <li><a href="../../index.html#faq">FAQ</a></li>
-                <li><a href="../../index.html#about">About</a></li>
-            </ul>
-        </div>
+      <div class="container">
+        <a href="../../index.html" class="navbar-brand">
+          <i class="fas fa-magic"></i> Name Fabulous
+        </a>
+        <ul class="navbar-nav">
+          <li><a href="../../index.html#generators">Generators</a></li>
+          <li><a href="../../index.html#how-it-works">How It Works</a></li>
+          <li><a href="../../index.html#faq">FAQ</a></li>
+          <li><a href="../../index.html#about">About</a></li>
+        </ul>
+      </div>
     </nav>
 
     <header class="page-header wizard-header">
-        <div class="container">
-            <h1>Wizard Name Generator</h1>
-            <p>Create mystical, arcane names for your magical characters</p>
-        </div>
+      <div class="container">
+        <h1>Wizard Name Generator</h1>
+        <p>Create mystical, arcane names for your magical characters</p>
+      </div>
     </header>
 
     <main class="container">
-        <div class="generator-container">
-            <div class="generator-header">
-                <div class="icon">
-                    <i class="fas fa-hat-wizard"></i>
-                </div>
-                <div>
-                    <h2>Generate a Wizard Name</h2>
-                    <p>Use the options below to customize your magical name search.</p>
-                </div>
-            </div>
-
-            <div class="generator-options">
-                <div class="form-group">
-                    <label for="wizard-type">Magical Archetype</label>
-                    <select id="wizard-type">
-                        <option value="any">Any Type</option>
-                        <option value="wizard">Classic Wizard</option>
-                        <option value="sorcerer">Sorcerer/Sorceress</option>
-                        <option value="mage">Mage/Magician</option>
-                        <option value="enchanter">Enchanter/Enchantress</option>
-                        <option value="warlock">Warlock</option>
-                        <option value="mystic">Mystic</option>
-                        <option value="druid">Druid</option>
-                        <option value="necromancer">Necromancer</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="wizard-gender">Gender</label>
-                    <select id="wizard-gender">
-                        <option value="any">Any Gender</option>
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
-                        <option value="neutral">Gender Neutral</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="magic-school">Magical School</label>
-                    <select id="magic-school">
-                        <option value="any">Any School</option>
-                        <option value="elemental">Elemental Magic</option>
-                        <option value="divination">Divination</option>
-                        <option value="enchantment">Enchantment</option>
-                        <option value="necromancy">Necromancy</option>
-                        <option value="illusion">Illusion</option>
-                        <option value="transmutation">Transmutation</option>
-                        <option value="abjuration">Abjuration/Protection</option>
-                        <option value="conjuration">Conjuration</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="name-style">Name Style</label>
-                    <select id="name-style">
-                        <option value="any">Any Style</option>
-                        <option value="ancient">Ancient/Classical</option>
-                        <option value="mystical">Mystical/Otherworldly</option>
-                        <option value="scholarly">Scholarly/Academic</option>
-                        <option value="eldritch">Eldritch/Dark</option>
-                        <option value="elemental">Elemental/Nature-based</option>
-                        <option value="eccentric">Eccentric/Whimsical</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="starting-letter">Starting Letter (Optional)</label>
-                    <input type="text" id="starting-letter" maxlength="1" placeholder="Enter a letter">
-                </div>
-
-                <button id="generate-btn" class="btn generate-btn">
-                    Generate Wizard Name <i class="fas fa-hat-wizard"></i>
-                </button>
-            </div>
-
-            <!-- Google Ads Section -->
-            <div class="ad-container">
-                <div class="ad-label">Advertisement</div>
-                <div class="google-ad-placeholder">
-                    <!-- Google AdSense Code Would Go Here -->
-                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1234567890123456" crossorigin="anonymous"></script>
-                    <ins class="adsbygoogle"
-                         style="display:block"
-                         data-ad-client="ca-pub-1234567890123456"
-                         data-ad-slot="1234567890"
-                         data-ad-format="auto"
-                         data-full-width-responsive="true"></ins>
-                    <script>
-                         (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
-                </div>
-            </div>
-
-            <div class="result-container">
-                <h3>Your Wizard Name</h3>
-                <div id="name-result" class="name-result">Click generate to find a wizard name</div>
-                <div id="name-meaning" class="name-meaning"></div>
-                <button id="regenerate-btn" class="btn">
-                    <i class="fas fa-redo"></i> Generate Another
-                </button>
-            </div>
-
-            <div class="wizard-tips">
-                <h3>Creating Compelling Magical Characters</h3>
-                <p>A mystical name is just the beginning of your arcane character's journey. Consider these aspects when developing your wizard:</p>
-                
-                <div class="tips-grid">
-                    <div class="tip-card">
-                        <div class="tip-icon"><i class="fas fa-book-open"></i></div>
-                        <h4>Magical Studies & Specialization</h4>
-                        <p>What branch of magic has your character mastered? Are they a generalist or specialist? Consider how their magical focus shapes their perspective and abilities.</p>
-                    </div>
-                    <div class="tip-card">
-                        <div class="tip-icon"><i class="fas fa-landmark"></i></div>
-                        <h4>Origins & Training</h4>
-                        <p>Was your wizard formally trained at an academy, self-taught through forbidden tomes, or apprenticed to a single master? Their educational background influences their approach to magic.</p>
-                    </div>
-                    <div class="tip-card">
-                        <div class="tip-icon"><i class="fas fa-scroll"></i></div>
-                        <h4>Magical Philosophy</h4>
-                        <p>How does your character view magic—as a science to be studied, a wild force to be respected, a gift from higher powers, or a tool for personal advancement?</p>
-                    </div>
-                    <div class="tip-card">
-                        <div class="tip-icon"><i class="fas fa-gem"></i></div>
-                        <h4>Magical Artifacts</h4>
-                        <p>What signature items define your wizard? Consider their staff, wand, familiar, spell components, or magical focus that reflects their personality and magical style.</p>
-                    </div>
-                </div>
-            </div>
-
-            <a href="../../index.html" class="back-link">
-                <i class="fas fa-arrow-left"></i> Back to All Generators
-            </a>
+      <div class="generator-container">
+        <div class="generator-header">
+          <div class="icon">
+            <i class="fas fa-hat-wizard"></i>
+          </div>
+          <div>
+            <h2>Generate a Wizard Name</h2>
+            <p>Use the options below to customize your magical name search.</p>
+          </div>
         </div>
+
+        <div class="generator-options">
+          <div class="form-group">
+            <label for="wizard-type">Magical Archetype</label>
+            <select id="wizard-type">
+              <option value="any">Any Type</option>
+              <option value="wizard">Classic Wizard</option>
+              <option value="sorcerer">Sorcerer/Sorceress</option>
+              <option value="mage">Mage/Magician</option>
+              <option value="enchanter">Enchanter/Enchantress</option>
+              <option value="warlock">Warlock</option>
+              <option value="mystic">Mystic</option>
+              <option value="druid">Druid</option>
+              <option value="necromancer">Necromancer</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="wizard-gender">Gender</label>
+            <select id="wizard-gender">
+              <option value="any">Any Gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="neutral">Gender Neutral</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="magic-school">Magical School</label>
+            <select id="magic-school">
+              <option value="any">Any School</option>
+              <option value="elemental">Elemental Magic</option>
+              <option value="divination">Divination</option>
+              <option value="enchantment">Enchantment</option>
+              <option value="necromancy">Necromancy</option>
+              <option value="illusion">Illusion</option>
+              <option value="transmutation">Transmutation</option>
+              <option value="abjuration">Abjuration/Protection</option>
+              <option value="conjuration">Conjuration</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="name-style">Name Style</label>
+            <select id="name-style">
+              <option value="any">Any Style</option>
+              <option value="ancient">Ancient/Classical</option>
+              <option value="mystical">Mystical/Otherworldly</option>
+              <option value="scholarly">Scholarly/Academic</option>
+              <option value="eldritch">Eldritch/Dark</option>
+              <option value="elemental">Elemental/Nature-based</option>
+              <option value="eccentric">Eccentric/Whimsical</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="starting-letter">Starting Letter (Optional)</label>
+            <input
+              type="text"
+              id="starting-letter"
+              maxlength="1"
+              placeholder="Enter a letter"
+            />
+          </div>
+
+          <button id="generate-btn" class="btn generate-btn">
+            Generate Wizard Name <i class="fas fa-hat-wizard"></i>
+          </button>
+        </div>
+
+        <!-- Google Ads Section -->
+        <div class="ad-container">
+          <div class="ad-label">Advertisement</div>
+          <div class="google-ad-placeholder">
+            <!-- Google AdSense Code Would Go Here -->
+            <script
+              async
+              src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1234567890123456"
+              crossorigin="anonymous"
+            ></script>
+            <ins
+              class="adsbygoogle"
+              style="display: block"
+              data-ad-client="ca-pub-1234567890123456"
+              data-ad-slot="1234567890"
+              data-ad-format="auto"
+              data-full-width-responsive="true"
+            ></ins>
+            <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+          </div>
+        </div>
+
+        <div class="result-container">
+          <h3>Your Wizard Name</h3>
+          <div id="name-result" class="name-result">
+            Click generate to find a wizard name
+          </div>
+          <div id="name-meaning" class="name-meaning"></div>
+          <button id="regenerate-btn" class="btn">
+            <i class="fas fa-redo"></i> Generate Another
+          </button>
+        </div>
+
+        <div class="wizard-tips">
+          <h3>Creating Compelling Magical Characters</h3>
+          <p>
+            A mystical name is just the beginning of your arcane character's
+            journey. Consider these aspects when developing your wizard:
+          </p>
+
+          <div class="tips-grid">
+            <div class="tip-card">
+              <div class="tip-icon"><i class="fas fa-book-open"></i></div>
+              <h4>Magical Studies & Specialization</h4>
+              <p>
+                What branch of magic has your character mastered? Are they a
+                generalist or specialist? Consider how their magical focus
+                shapes their perspective and abilities.
+              </p>
+            </div>
+            <div class="tip-card">
+              <div class="tip-icon"><i class="fas fa-landmark"></i></div>
+              <h4>Origins & Training</h4>
+              <p>
+                Was your wizard formally trained at an academy, self-taught
+                through forbidden tomes, or apprenticed to a single master?
+                Their educational background influences their approach to magic.
+              </p>
+            </div>
+            <div class="tip-card">
+              <div class="tip-icon"><i class="fas fa-scroll"></i></div>
+              <h4>Magical Philosophy</h4>
+              <p>
+                How does your character view magic—as a science to be studied, a
+                wild force to be respected, a gift from higher powers, or a tool
+                for personal advancement?
+              </p>
+            </div>
+            <div class="tip-card">
+              <div class="tip-icon"><i class="fas fa-gem"></i></div>
+              <h4>Magical Artifacts</h4>
+              <p>
+                What signature items define your wizard? Consider their staff,
+                wand, familiar, spell components, or magical focus that reflects
+                their personality and magical style.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <a href="../../index.html" class="back-link">
+          <i class="fas fa-arrow-left"></i> Back to All Generators
+        </a>
+      </div>
     </main>
 
     <!-- Footer -->
     <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-column">
-                    <h4>Name Generators</h4>
-                    <ul class="footer-links">
-                        <li><a href="../pet-name.html">Pet Names</a></li>
-                        <li><a href="../baby-name.html">Baby Names</a></li>
-                        <li><a href="../fantasy-name.html">Fantasy Names</a></li>
-                        <li><a href="../startup-name.html">Business Names</a></li>
-                        <li><a href="../gamer-tag.html">Gamer Tags</a></li>
-                        <li><a href="../boyfriend-name.html">Boyfriend Nicknames</a></li>
-                        <li><a href="../girlfriend-name.html">Girlfriend Nicknames</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4>Character Names</h4>
-                    <ul class="footer-links">
-                        <li><a href="villain-name.html">Villain Names</a></li>
-                        <li><a href="hero-name.html">Hero Names</a></li>
-                        <li><a href="wizard-name.html">Wizard Names</a></li>
-                        <li><a href="warrior-name.html">Warrior Names</a></li>
-                        <li><a href="elf-name.html">Elf Names</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4>Company</h4>
-                    <ul class="footer-links">
-                        <li><a href="../../company/about.html">About Us</a></li>
-                        <li><a href="../../company/contact.html">Contact</a></li>
-                        <li><a href="../../company/privacy-policy.html">Privacy Policy</a></li>
-                        <li><a href="../../company/terms-of-service.html">Terms of Service</a></li>
-                        <li><a href="../../company/sitemap.html">Sitemap</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4>Stay Updated</h4>
-                    <p>Subscribe to our newsletter for the latest naming trends and generator updates.</p>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="Your email address">
-                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
-                    </form>
-                    <div class="footer-social">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-discord"></i></a>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <h4>Name Generators</h4>
+            <ul class="footer-links">
+              <li><a href="../pet-name.html">Pet Names</a></li>
+              <li><a href="../baby-name.html">Baby Names</a></li>
+              <li><a href="../fantasy-name.html">Fantasy Names</a></li>
+              <li><a href="../startup-name.html">Business Names</a></li>
+              <li><a href="../gamer-tag.html">Gamer Tags</a></li>
+              <li><a href="../boyfriend-name.html">Boyfriend Nicknames</a></li>
+              <li>
+                <a href="../girlfriend-name.html">Girlfriend Nicknames</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Character Names</h4>
+            <ul class="footer-links">
+              <li><a href="villain-name.html">Villain Names</a></li>
+              <li><a href="hero-name.html">Hero Names</a></li>
+              <li><a href="wizard-name.html">Wizard Names</a></li>
+              <li><a href="warrior-name.html">Warrior Names</a></li>
+              <li><a href="elf-name.html">Elf Names</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Company</h4>
+            <ul class="footer-links">
+              <li><a href="../../company/about.html">About Us</a></li>
+              <li><a href="../../company/contact.html">Contact</a></li>
+              <li>
+                <a href="../../company/privacy-policy.html">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="../../company/terms-of-service.html"
+                  >Terms of Service</a
+                >
+              </li>
+              <li><a href="../../company/sitemap.html">Sitemap</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Stay Updated</h4>
+            <p>
+              Subscribe to our newsletter for the latest naming trends and
+              generator updates.
+            </p>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Your email address" />
+              <button type="submit"><i class="fas fa-paper-plane"></i></button>
+            </form>
+            <div class="footer-social">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-discord"></i></a>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Name Generator Hub. All rights reserved. | <a href="../../company/privacy-policy.html">Privacy Policy</a> | <a href="../../company/terms-of-service.html">Terms of Service</a></p>
-            </div>
+          </div>
         </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 Name Fabulous. All rights reserved. |
+            <a href="../../company/privacy-policy.html">Privacy Policy</a> |
+            <a href="../../company/terms-of-service.html">Terms of Service</a>
+          </p>
+        </div>
+      </div>
     </footer>
 
     <script src="../../js/main.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Sample wizard first names
-            const wizardFirstNames = {
-                male: ["Merlin", "Gandalf", "Albus", "Gareth", "Thaddeus", "Balthazar", "Mortimer", "Zephyrus", "Eldritch", "Gideon", "Archibald", "Aramis", "Cedric", "Magnus", "Thorne", "Ambrose", "Ignatius", "Percival", "Erasmus", "Ozymandias"],
-                female: ["Morgana", "Circe", "Elora", "Seraphina", "Althea", "Thalia", "Nimue", "Isolde", "Celestine", "Melusine", "Evangeline", "Thessaly", "Lillith", "Artemisia", "Zephyria", "Sybil", "Calliope", "Cassia", "Elspeth", "Persephone"],
-                neutral: ["Sage", "Ash", "Myst", "Rowan", "Phoenix", "Avery", "Onyx", "Fern", "Ellis", "River", "Storm", "Ember", "Vesper", "Linden", "Wren", "Winter", "Vale", "Arden", "Haven", "Indigo"]
-            };
-            
-            // Sample wizard last names and titles
-            const wizardLastNames = {
-                ancient: ["Blackstaff", "Flameheart", "Silvermoon", "Stormweaver", "Spellwright", "Moonshadow", "Grimoire", "Rimeblood", "Stardust", "Runemark"],
-                mystical: ["Voidwalker", "Starwhisper", "Etherbound", "Dreamshaper", "Mistwalker", "Shadowbane", "Astralweave", "Cryptborn", "Netherlight", "Soulforge"],
-                scholarly: ["Arcanum", "Grimsby", "Thorne", "Winterhold", "Crowley", "Hemlock", "Thickett", "Pendragon", "Blackwood", "Quill"],
-                eldritch: ["Darkbane", "Gloomweaver", "Duskraven", "Nightshade", "Wraithwind", "Hexen", "Fellshadow", "Grimclaw", "Darkmere", "Baneworth"],
-                elemental: ["Flametongue", "Frostwhisper", "Stormhaven", "Earthshaker", "Tidecaller", "Windrider", "Cinderheart", "Icebound", "Thunderforge", "Stonehaven"],
-                eccentric: ["Oddlewick", "Fidget", "Bumblebrewer", "Zigzag", "Wobblestaff", "Twiddlethumb", "Crookshank", "Poppycock", "Muddlefoot", "Flumox"]
-            };
-            
-            const wizardTitles = {
-                wizard: ["the Wise", "the Learned", "the Enigmatic", "the Arcane", "the All-Knowing"],
-                sorcerer: ["the Mystic", "the Channeler", "the Innate", "the Gifted", "the Wild Magic"],
-                mage: ["the Studious", "the Adept", "the Versatile", "the Practiced", "the Attuned"],
-                enchanter: ["the Beguiler", "the Charming", "the Charismatic", "the Mesmerizing", "the Alluring"],
-                warlock: ["the Bound", "the Pact-Maker", "the Dark Patron", "the Eldritch", "the Otherworldly"],
-                mystic: ["the Enlightened", "the Seer", "the Transcendent", "the Awakened", "the Inner Eye"],
-                druid: ["the Wild", "the Nature's Voice", "the Shapeshifter", "the Ancient", "the Grove Keeper"],
-                necromancer: ["the Deathless", "the Grave Speaker", "the Soul Binder", "the Midnight", "the Revenant"]
-            };
-            
-            // Sample magical school suffixes
-            const magicalSchoolSuffixes = {
-                elemental: ["of the Flame", "of the Tides", "of the Earthen Core", "of the Tempest", "of the Primal Elements"],
-                divination: ["of the All-Seeing Eye", "of the Unveiled Future", "of the Star Charts", "of the Cosmic Threads", "of Prophecy"],
-                enchantment: ["of Binding Will", "of the Captivating Word", "of Heart and Mind", "of Subtle Influence", "of the Woven Charm"],
-                necromancy: ["of the Final Veil", "of Bones and Spirits", "of the Grave Whispers", "of Undying Lore", "of the Somber Pact"],
-                illusion: ["of Shifting Realities", "of a Thousand Faces", "of the Deceiving Shadow", "of the Mirage", "of Dreams and Nightmares"],
-                transmutation: ["of Fundamental Change", "of Matter's Mastery", "of the Alchemical Art", "of Transformation", "of Essence Alteration"],
-                abjuration: ["of the Impenetrable Ward", "of the Sacred Circle", "of Protection's Light", "of the Shielding Arts", "of Banishment"],
-                conjuration: ["of the Summoning Circle", "of Distant Calling", "of Planar Bridges", "of Creation", "of the Manifesting Word"]
-            };
+      document.addEventListener("DOMContentLoaded", function () {
+        // Sample wizard first names
+        const wizardFirstNames = {
+          male: [
+            "Merlin",
+            "Gandalf",
+            "Albus",
+            "Gareth",
+            "Thaddeus",
+            "Balthazar",
+            "Mortimer",
+            "Zephyrus",
+            "Eldritch",
+            "Gideon",
+            "Archibald",
+            "Aramis",
+            "Cedric",
+            "Magnus",
+            "Thorne",
+            "Ambrose",
+            "Ignatius",
+            "Percival",
+            "Erasmus",
+            "Ozymandias",
+          ],
+          female: [
+            "Morgana",
+            "Circe",
+            "Elora",
+            "Seraphina",
+            "Althea",
+            "Thalia",
+            "Nimue",
+            "Isolde",
+            "Celestine",
+            "Melusine",
+            "Evangeline",
+            "Thessaly",
+            "Lillith",
+            "Artemisia",
+            "Zephyria",
+            "Sybil",
+            "Calliope",
+            "Cassia",
+            "Elspeth",
+            "Persephone",
+          ],
+          neutral: [
+            "Sage",
+            "Ash",
+            "Myst",
+            "Rowan",
+            "Phoenix",
+            "Avery",
+            "Onyx",
+            "Fern",
+            "Ellis",
+            "River",
+            "Storm",
+            "Ember",
+            "Vesper",
+            "Linden",
+            "Wren",
+            "Winter",
+            "Vale",
+            "Arden",
+            "Haven",
+            "Indigo",
+          ],
+        };
 
-            // Generate wizard name function
-            function generateWizardName() {
-                const wizardType = document.getElementById('wizard-type').value;
-                const gender = document.getElementById('wizard-gender').value;
-                const magicSchool = document.getElementById('magic-school').value;
-                const style = document.getElementById('name-style').value;
-                const startingLetter = document.getElementById('starting-letter').value.toUpperCase();
-                
-                // Determine gender for name selection
-                let nameGender = gender;
-                if (gender === 'any') {
-                    const genders = ['male', 'female', 'neutral'];
-                    nameGender = genders[Math.floor(Math.random() * genders.length)];
-                }
-                
-                // Select appropriate first name list
-                let firstNamePool = wizardFirstNames[nameGender].slice();
-                
-                // Filter by starting letter if specified
-                if (startingLetter) {
-                    firstNamePool = firstNamePool.filter(name => name.startsWith(startingLetter));
-                    // If no matches, revert to full list to avoid empty results
-                    if (firstNamePool.length === 0) {
-                        firstNamePool = wizardFirstNames[nameGender].slice();
-                    }
-                }
-                
-                // Determine name style if "any" was selected
-                let nameStyle = style;
-                if (style === 'any') {
-                    const styles = Object.keys(wizardLastNames);
-                    nameStyle = styles[Math.floor(Math.random() * styles.length)];
-                }
-                
-                // Generate name components
-                const firstName = firstNamePool[Math.floor(Math.random() * firstNamePool.length)];
-                const lastName = wizardLastNames[nameStyle][Math.floor(Math.random() * wizardLastNames[nameStyle].length)];
-                
-                // Get titles appropriate to the wizard type
-                let titleList = wizardTitles[wizardType] || wizardTitles['wizard'];
-                if (wizardType === 'any') {
-                    const randomType = Object.keys(wizardTitles)[Math.floor(Math.random() * Object.keys(wizardTitles).length)];
-                    titleList = wizardTitles[randomType];
-                }
-                const title = titleList[Math.floor(Math.random() * titleList.length)];
-                
-                // Get magical school suffix if applicable
-                let suffix = '';
-                if (magicSchool !== 'any') {
-                    const suffixList = magicalSchoolSuffixes[magicSchool];
-                    if (suffixList) {
-                        suffix = suffixList[Math.floor(Math.random() * suffixList.length)];
-                    }
-                }
-                
-                // Craft final name based on random style factors
-                const nameStructure = Math.floor(Math.random() * 5);
-                let wizardName = '';
-                
-                switch (nameStructure) {
-                    case 0:
-                        wizardName = `${firstName} ${lastName}`;
-                        break;
-                    case 1:
-                        wizardName = `${firstName} ${title}`;
-                        break;
-                    case 2:
-                        wizardName = `${firstName} ${lastName} ${title}`;
-                        break;
-                    case 3:
-                        wizardName = `${firstName} ${suffix}`;
-                        break;
-                    case 4:
-                        wizardName = `${firstName} ${lastName} ${suffix}`;
-                        break;
-                    default:
-                        wizardName = `${firstName} ${lastName}`;
-                }
-                
-                // Display the result
-                document.getElementById('name-result').innerText = wizardName;
-                document.getElementById('name-result').classList.add('animate-result');
-                
-                // Create a wizard description
-                generateWizardDescription(wizardName, wizardType, magicSchool, nameGender);
-                
-                // Remove animation class after animation completes
-                setTimeout(() => {
-                    document.getElementById('name-result').classList.remove('animate-result');
-                }, 500);
+        // Sample wizard last names and titles
+        const wizardLastNames = {
+          ancient: [
+            "Blackstaff",
+            "Flameheart",
+            "Silvermoon",
+            "Stormweaver",
+            "Spellwright",
+            "Moonshadow",
+            "Grimoire",
+            "Rimeblood",
+            "Stardust",
+            "Runemark",
+          ],
+          mystical: [
+            "Voidwalker",
+            "Starwhisper",
+            "Etherbound",
+            "Dreamshaper",
+            "Mistwalker",
+            "Shadowbane",
+            "Astralweave",
+            "Cryptborn",
+            "Netherlight",
+            "Soulforge",
+          ],
+          scholarly: [
+            "Arcanum",
+            "Grimsby",
+            "Thorne",
+            "Winterhold",
+            "Crowley",
+            "Hemlock",
+            "Thickett",
+            "Pendragon",
+            "Blackwood",
+            "Quill",
+          ],
+          eldritch: [
+            "Darkbane",
+            "Gloomweaver",
+            "Duskraven",
+            "Nightshade",
+            "Wraithwind",
+            "Hexen",
+            "Fellshadow",
+            "Grimclaw",
+            "Darkmere",
+            "Baneworth",
+          ],
+          elemental: [
+            "Flametongue",
+            "Frostwhisper",
+            "Stormhaven",
+            "Earthshaker",
+            "Tidecaller",
+            "Windrider",
+            "Cinderheart",
+            "Icebound",
+            "Thunderforge",
+            "Stonehaven",
+          ],
+          eccentric: [
+            "Oddlewick",
+            "Fidget",
+            "Bumblebrewer",
+            "Zigzag",
+            "Wobblestaff",
+            "Twiddlethumb",
+            "Crookshank",
+            "Poppycock",
+            "Muddlefoot",
+            "Flumox",
+          ],
+        };
+
+        const wizardTitles = {
+          wizard: [
+            "the Wise",
+            "the Learned",
+            "the Enigmatic",
+            "the Arcane",
+            "the All-Knowing",
+          ],
+          sorcerer: [
+            "the Mystic",
+            "the Channeler",
+            "the Innate",
+            "the Gifted",
+            "the Wild Magic",
+          ],
+          mage: [
+            "the Studious",
+            "the Adept",
+            "the Versatile",
+            "the Practiced",
+            "the Attuned",
+          ],
+          enchanter: [
+            "the Beguiler",
+            "the Charming",
+            "the Charismatic",
+            "the Mesmerizing",
+            "the Alluring",
+          ],
+          warlock: [
+            "the Bound",
+            "the Pact-Maker",
+            "the Dark Patron",
+            "the Eldritch",
+            "the Otherworldly",
+          ],
+          mystic: [
+            "the Enlightened",
+            "the Seer",
+            "the Transcendent",
+            "the Awakened",
+            "the Inner Eye",
+          ],
+          druid: [
+            "the Wild",
+            "the Nature's Voice",
+            "the Shapeshifter",
+            "the Ancient",
+            "the Grove Keeper",
+          ],
+          necromancer: [
+            "the Deathless",
+            "the Grave Speaker",
+            "the Soul Binder",
+            "the Midnight",
+            "the Revenant",
+          ],
+        };
+
+        // Sample magical school suffixes
+        const magicalSchoolSuffixes = {
+          elemental: [
+            "of the Flame",
+            "of the Tides",
+            "of the Earthen Core",
+            "of the Tempest",
+            "of the Primal Elements",
+          ],
+          divination: [
+            "of the All-Seeing Eye",
+            "of the Unveiled Future",
+            "of the Star Charts",
+            "of the Cosmic Threads",
+            "of Prophecy",
+          ],
+          enchantment: [
+            "of Binding Will",
+            "of the Captivating Word",
+            "of Heart and Mind",
+            "of Subtle Influence",
+            "of the Woven Charm",
+          ],
+          necromancy: [
+            "of the Final Veil",
+            "of Bones and Spirits",
+            "of the Grave Whispers",
+            "of Undying Lore",
+            "of the Somber Pact",
+          ],
+          illusion: [
+            "of Shifting Realities",
+            "of a Thousand Faces",
+            "of the Deceiving Shadow",
+            "of the Mirage",
+            "of Dreams and Nightmares",
+          ],
+          transmutation: [
+            "of Fundamental Change",
+            "of Matter's Mastery",
+            "of the Alchemical Art",
+            "of Transformation",
+            "of Essence Alteration",
+          ],
+          abjuration: [
+            "of the Impenetrable Ward",
+            "of the Sacred Circle",
+            "of Protection's Light",
+            "of the Shielding Arts",
+            "of Banishment",
+          ],
+          conjuration: [
+            "of the Summoning Circle",
+            "of Distant Calling",
+            "of Planar Bridges",
+            "of Creation",
+            "of the Manifesting Word",
+          ],
+        };
+
+        // Generate wizard name function
+        function generateWizardName() {
+          const wizardType = document.getElementById("wizard-type").value;
+          const gender = document.getElementById("wizard-gender").value;
+          const magicSchool = document.getElementById("magic-school").value;
+          const style = document.getElementById("name-style").value;
+          const startingLetter = document
+            .getElementById("starting-letter")
+            .value.toUpperCase();
+
+          // Determine gender for name selection
+          let nameGender = gender;
+          if (gender === "any") {
+            const genders = ["male", "female", "neutral"];
+            nameGender = genders[Math.floor(Math.random() * genders.length)];
+          }
+
+          // Select appropriate first name list
+          let firstNamePool = wizardFirstNames[nameGender].slice();
+
+          // Filter by starting letter if specified
+          if (startingLetter) {
+            firstNamePool = firstNamePool.filter((name) =>
+              name.startsWith(startingLetter)
+            );
+            // If no matches, revert to full list to avoid empty results
+            if (firstNamePool.length === 0) {
+              firstNamePool = wizardFirstNames[nameGender].slice();
             }
-            
-            // Generate a wizard description
-            function generateWizardDescription(name, type, school, gender) {
-                const wizardTypes = {
-                    "wizard": "A learned practitioner of the arcane arts who studies magical theory and ancient tomes",
-                    "sorcerer": "A natural wielder of magic whose abilities are innate rather than studied",
-                    "mage": "A versatile magic-user who balances theory with practical applications of spellcraft",
-                    "enchanter": "A specialist in charms, illusions, and mind-affecting magics",
-                    "warlock": "A spellcaster who draws power from a pact with an otherworldly patron",
-                    "mystic": "A spiritual channeler of magical energies who seeks enlightenment",
-                    "druid": "A guardian of nature who draws magic from the primal forces of the world",
-                    "necromancer": "A practitioner of death magic who commands the forces of mortality and undeath",
-                    "any": "A powerful wielder of arcane energies"
-                };
-                
-                const schoolDescriptions = {
-                    "elemental": "controls the fundamental forces of nature: fire, water, earth, and air",
-                    "divination": "perceives the threads of fate and glimpses possible futures",
-                    "enchantment": "bends the will of others and influences emotions and thoughts",
-                    "necromancy": "commands the powers of death and communicates with departed spirits",
-                    "illusion": "creates phantasms and alters perception of reality",
-                    "transmutation": "transforms matter and changes the properties of objects and creatures",
-                    "abjuration": "specializes in protective wards and banishment of harmful forces",
-                    "conjuration": "summons entities and objects from other planes of existence",
-                    "any": "commands various branches of magical knowledge"
-                };
-                
-                const pronouns = {
-                    "male": { subject: "he", object: "him", possessive: "his" },
-                    "female": { subject: "she", object: "her", possessive: "her" },
-                    "neutral": { subject: "they", object: "them", possessive: "their" }
-                };
-                
-                const p = pronouns[gender];
-                const description = wizardTypes[type];
-                const schoolDesc = schoolDescriptions[school];
-                
-                document.getElementById('name-meaning').innerHTML = `<p>${description} who ${schoolDesc}. Known for ${p.possessive} vast arcane knowledge and mysterious demeanor, ${name} is both respected and feared by those who understand the true extent of ${p.possessive} powers.</p>`;
+          }
+
+          // Determine name style if "any" was selected
+          let nameStyle = style;
+          if (style === "any") {
+            const styles = Object.keys(wizardLastNames);
+            nameStyle = styles[Math.floor(Math.random() * styles.length)];
+          }
+
+          // Generate name components
+          const firstName =
+            firstNamePool[Math.floor(Math.random() * firstNamePool.length)];
+          const lastName =
+            wizardLastNames[nameStyle][
+              Math.floor(Math.random() * wizardLastNames[nameStyle].length)
+            ];
+
+          // Get titles appropriate to the wizard type
+          let titleList = wizardTitles[wizardType] || wizardTitles["wizard"];
+          if (wizardType === "any") {
+            const randomType =
+              Object.keys(wizardTitles)[
+                Math.floor(Math.random() * Object.keys(wizardTitles).length)
+              ];
+            titleList = wizardTitles[randomType];
+          }
+          const title = titleList[Math.floor(Math.random() * titleList.length)];
+
+          // Get magical school suffix if applicable
+          let suffix = "";
+          if (magicSchool !== "any") {
+            const suffixList = magicalSchoolSuffixes[magicSchool];
+            if (suffixList) {
+              suffix =
+                suffixList[Math.floor(Math.random() * suffixList.length)];
             }
-            
-            // Event listeners
-            document.getElementById('generate-btn').addEventListener('click', generateWizardName);
-            document.getElementById('regenerate-btn').addEventListener('click', generateWizardName);
-        });
+          }
+
+          // Craft final name based on random style factors
+          const nameStructure = Math.floor(Math.random() * 5);
+          let wizardName = "";
+
+          switch (nameStructure) {
+            case 0:
+              wizardName = `${firstName} ${lastName}`;
+              break;
+            case 1:
+              wizardName = `${firstName} ${title}`;
+              break;
+            case 2:
+              wizardName = `${firstName} ${lastName} ${title}`;
+              break;
+            case 3:
+              wizardName = `${firstName} ${suffix}`;
+              break;
+            case 4:
+              wizardName = `${firstName} ${lastName} ${suffix}`;
+              break;
+            default:
+              wizardName = `${firstName} ${lastName}`;
+          }
+
+          // Display the result
+          document.getElementById("name-result").innerText = wizardName;
+          document
+            .getElementById("name-result")
+            .classList.add("animate-result");
+
+          // Create a wizard description
+          generateWizardDescription(
+            wizardName,
+            wizardType,
+            magicSchool,
+            nameGender
+          );
+
+          // Remove animation class after animation completes
+          setTimeout(() => {
+            document
+              .getElementById("name-result")
+              .classList.remove("animate-result");
+          }, 500);
+        }
+
+        // Generate a wizard description
+        function generateWizardDescription(name, type, school, gender) {
+          const wizardTypes = {
+            wizard:
+              "A learned practitioner of the arcane arts who studies magical theory and ancient tomes",
+            sorcerer:
+              "A natural wielder of magic whose abilities are innate rather than studied",
+            mage: "A versatile magic-user who balances theory with practical applications of spellcraft",
+            enchanter:
+              "A specialist in charms, illusions, and mind-affecting magics",
+            warlock:
+              "A spellcaster who draws power from a pact with an otherworldly patron",
+            mystic:
+              "A spiritual channeler of magical energies who seeks enlightenment",
+            druid:
+              "A guardian of nature who draws magic from the primal forces of the world",
+            necromancer:
+              "A practitioner of death magic who commands the forces of mortality and undeath",
+            any: "A powerful wielder of arcane energies",
+          };
+
+          const schoolDescriptions = {
+            elemental:
+              "controls the fundamental forces of nature: fire, water, earth, and air",
+            divination:
+              "perceives the threads of fate and glimpses possible futures",
+            enchantment:
+              "bends the will of others and influences emotions and thoughts",
+            necromancy:
+              "commands the powers of death and communicates with departed spirits",
+            illusion: "creates phantasms and alters perception of reality",
+            transmutation:
+              "transforms matter and changes the properties of objects and creatures",
+            abjuration:
+              "specializes in protective wards and banishment of harmful forces",
+            conjuration:
+              "summons entities and objects from other planes of existence",
+            any: "commands various branches of magical knowledge",
+          };
+
+          const pronouns = {
+            male: { subject: "he", object: "him", possessive: "his" },
+            female: { subject: "she", object: "her", possessive: "her" },
+            neutral: { subject: "they", object: "them", possessive: "their" },
+          };
+
+          const p = pronouns[gender];
+          const description = wizardTypes[type];
+          const schoolDesc = schoolDescriptions[school];
+
+          document.getElementById(
+            "name-meaning"
+          ).innerHTML = `<p>${description} who ${schoolDesc}. Known for ${p.possessive} vast arcane knowledge and mysterious demeanor, ${name} is both respected and feared by those who understand the true extent of ${p.possessive} powers.</p>`;
+        }
+
+        // Event listeners
+        document
+          .getElementById("generate-btn")
+          .addEventListener("click", generateWizardName);
+        document
+          .getElementById("regenerate-btn")
+          .addEventListener("click", generateWizardName);
+      });
     </script>
-</body>
+  </body>
 </html>

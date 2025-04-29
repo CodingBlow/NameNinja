@@ -1,444 +1,1215 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <!-- Primary Meta Tags -->
-    <title>Elf Name Generator | Elegant Fantasy Names | Name Generator Hub</title>
-    <meta name="title" content="Elf Name Generator | Elegant Fantasy Names | Name Generator Hub">
-    <meta name="description" content="Create beautiful elvish names for your fantasy novel, D&D character, or creative project. Generate melodic high elf, wood elf, and dark elf names instantly.">
-    <meta name="keywords" content="elf name generator, elvish names, fantasy elf names, high elf names, wood elf names, dark elf names, D&D elf names, fantasy character names">
-    
+    <title>Elf Name Generator | Elegant Fantasy Names | Name Fabulous</title>
+    <meta
+      name="title"
+      content="Elf Name Generator | Elegant Fantasy Names | Name Fabulous"
+    />
+    <meta
+      name="description"
+      content="Create beautiful elvish names for your fantasy novel, D&D character, or creative project. Generate melodic high elf, wood elf, and dark elf names instantly."
+    />
+    <meta
+      name="keywords"
+      content="elf name generator, elvish names, fantasy elf names, high elf names, wood elf names, dark elf names, D&D elf names, fantasy character names"
+    />
+
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="../../css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="container">
-            <a href="../../index.html" class="navbar-brand">
-                <i class="fas fa-magic"></i> Name Generator Hub
-            </a>
-            <ul class="navbar-nav">
-                <li><a href="../../index.html#generators">Generators</a></li>
-                <li><a href="../../index.html#how-it-works">How It Works</a></li>
-                <li><a href="../../index.html#faq">FAQ</a></li>
-                <li><a href="../../index.html#about">About</a></li>
-            </ul>
-        </div>
+      <div class="container">
+        <a href="../../index.html" class="navbar-brand">
+          <i class="fas fa-magic"></i> Name Fabulous
+        </a>
+        <ul class="navbar-nav">
+          <li><a href="../../index.html#generators">Generators</a></li>
+          <li><a href="../../index.html#how-it-works">How It Works</a></li>
+          <li><a href="../../index.html#faq">FAQ</a></li>
+          <li><a href="../../index.html#about">About</a></li>
+        </ul>
+      </div>
     </nav>
 
     <header class="page-header elf-header">
-        <div class="container">
-            <h1>Elf Name Generator</h1>
-            <p>Create elegant, melodic names for elven characters in your fantasy world</p>
-        </div>
+      <div class="container">
+        <h1>Elf Name Generator</h1>
+        <p>
+          Create elegant, melodic names for elven characters in your fantasy
+          world
+        </p>
+      </div>
     </header>
 
     <main class="container">
-        <div class="generator-container">
-            <div class="generator-header">
-                <div class="icon">
-                    <i class="fas fa-leaf"></i>
-                </div>
-                <div>
-                    <h2>Generate an Elven Name</h2>
-                    <p>Use the options below to customize your elven name search.</p>
-                </div>
-            </div>
-
-            <div class="generator-options">
-                <div class="form-group">
-                    <label for="elf-type">Elven Type</label>
-                    <select id="elf-type">
-                        <option value="any">Any Type</option>
-                        <option value="high">High Elf</option>
-                        <option value="wood">Wood Elf</option>
-                        <option value="dark">Dark Elf</option>
-                        <option value="moon">Moon Elf</option>
-                        <option value="sun">Sun Elf</option>
-                        <option value="sea">Sea Elf</option>
-                        <option value="snow">Snow Elf</option>
-                        <option value="half">Half-Elf</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="elf-gender">Gender</label>
-                    <select id="elf-gender">
-                        <option value="any">Any Gender</option>
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
-                        <option value="neutral">Gender Neutral</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="name-style">Name Style</label>
-                    <select id="name-style">
-                        <option value="any">Any Style</option>
-                        <option value="melodic">Melodic/Flowing</option>
-                        <option value="ancient">Ancient/Archaic</option>
-                        <option value="naturalistic">Nature-Inspired</option>
-                        <option value="mystical">Mystical/Arcane</option>
-                        <option value="noble">Noble/Royal</option>
-                        <option value="warrior">Warrior/Ranger</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="name-elements">Optional Elements</label>
-                    <select id="name-elements">
-                        <option value="any">Any Elements</option>
-                        <option value="full">Full Name (First + Last)</option>
-                        <option value="title">Name with Title</option>
-                        <option value="clan">Name with Clan/House</option>
-                        <option value="first">First Name Only</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="starting-letter">Starting Letter (Optional)</label>
-                    <input type="text" id="starting-letter" maxlength="1" placeholder="Enter a letter">
-                </div>
-
-                <button id="generate-btn" class="btn generate-btn">
-                    Generate Elven Name <i class="fas fa-sparkles"></i>
-                </button>
-            </div>
-
-            <!-- Google Ads Section -->
-            <div class="ad-container">
-                <div class="ad-label">Advertisement</div>
-                <div class="google-ad-placeholder">
-                    <!-- Google AdSense Code Would Go Here -->
-                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1234567890123456" crossorigin="anonymous"></script>
-                    <ins class="adsbygoogle"
-                         style="display:block"
-                         data-ad-client="ca-pub-1234567890123456"
-                         data-ad-slot="1234567890"
-                         data-ad-format="auto"
-                         data-full-width-responsive="true"></ins>
-                    <script>
-                         (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
-                </div>
-            </div>
-
-            <div class="result-container">
-                <h3>Your Elven Name</h3>
-                <div id="name-result" class="name-result">Click generate to find an elven name</div>
-                <div id="name-meaning" class="name-meaning"></div>
-                <button id="regenerate-btn" class="btn">
-                    <i class="fas fa-redo"></i> Generate Another
-                </button>
-            </div>
-
-            <div class="elf-tips">
-                <h3>Creating Compelling Elven Characters</h3>
-                <p>Elves are one of fantasy's most enduring races, with rich lore across many fictional worlds. Consider these aspects when developing your elven character:</p>
-                
-                <div class="tips-grid">
-                    <div class="tip-card">
-                        <div class="tip-icon"><i class="fas fa-hourglass"></i></div>
-                        <h4>Lifespan Perspective</h4>
-                        <p>How does your elf's long lifespan shape their worldview? Do they view shorter-lived races with curiosity, condescension, or compassion?</p>
-                    </div>
-                    <div class="tip-card">
-                        <div class="tip-icon"><i class="fas fa-tree"></i></div>
-                        <h4>Cultural Connection</h4>
-                        <p>What aspects of traditional elven society does your character embrace or reject? Are they deeply traditional or a maverick within their culture?</p>
-                    </div>
-                    <div class="tip-card">
-                        <div class="tip-icon"><i class="fas fa-wand-sparkles"></i></div>
-                        <h4>Magical Affinity</h4>
-                        <p>How does your elf relate to magic? Are they naturally gifted, studiously trained, or perhaps unusual in lacking magical ability?</p>
-                    </div>
-                    <div class="tip-card">
-                        <div class="tip-icon"><i class="fas fa-history"></i></div>
-                        <h4>Personal History</h4>
-                        <p>What significant events in your elf's potentially centuries-long life have shaped them? What historic events have they witnessed firsthand?</p>
-                    </div>
-                </div>
-            </div>
-
-            <a href="../../index.html" class="back-link">
-                <i class="fas fa-arrow-left"></i> Back to All Generators
-            </a>
+      <div class="generator-container">
+        <div class="generator-header">
+          <div class="icon">
+            <i class="fas fa-leaf"></i>
+          </div>
+          <div>
+            <h2>Generate an Elven Name</h2>
+            <p>Use the options below to customize your elven name search.</p>
+          </div>
         </div>
+
+        <div class="generator-options">
+          <div class="form-group">
+            <label for="elf-type">Elven Type</label>
+            <select id="elf-type">
+              <option value="any">Any Type</option>
+              <option value="high">High Elf</option>
+              <option value="wood">Wood Elf</option>
+              <option value="dark">Dark Elf</option>
+              <option value="moon">Moon Elf</option>
+              <option value="sun">Sun Elf</option>
+              <option value="sea">Sea Elf</option>
+              <option value="snow">Snow Elf</option>
+              <option value="half">Half-Elf</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="elf-gender">Gender</label>
+            <select id="elf-gender">
+              <option value="any">Any Gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="neutral">Gender Neutral</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="name-style">Name Style</label>
+            <select id="name-style">
+              <option value="any">Any Style</option>
+              <option value="melodic">Melodic/Flowing</option>
+              <option value="ancient">Ancient/Archaic</option>
+              <option value="naturalistic">Nature-Inspired</option>
+              <option value="mystical">Mystical/Arcane</option>
+              <option value="noble">Noble/Royal</option>
+              <option value="warrior">Warrior/Ranger</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="name-elements">Optional Elements</label>
+            <select id="name-elements">
+              <option value="any">Any Elements</option>
+              <option value="full">Full Name (First + Last)</option>
+              <option value="title">Name with Title</option>
+              <option value="clan">Name with Clan/House</option>
+              <option value="first">First Name Only</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="starting-letter">Starting Letter (Optional)</label>
+            <input
+              type="text"
+              id="starting-letter"
+              maxlength="1"
+              placeholder="Enter a letter"
+            />
+          </div>
+
+          <button id="generate-btn" class="btn generate-btn">
+            Generate Elven Name <i class="fas fa-sparkles"></i>
+          </button>
+        </div>
+
+        <!-- Google Ads Section -->
+        <div class="ad-container">
+          <div class="ad-label">Advertisement</div>
+          <div class="google-ad-placeholder">
+            <!-- Google AdSense Code Would Go Here -->
+            <script
+              async
+              src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1234567890123456"
+              crossorigin="anonymous"
+            ></script>
+            <ins
+              class="adsbygoogle"
+              style="display: block"
+              data-ad-client="ca-pub-1234567890123456"
+              data-ad-slot="1234567890"
+              data-ad-format="auto"
+              data-full-width-responsive="true"
+            ></ins>
+            <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+          </div>
+        </div>
+
+        <div class="result-container">
+          <h3>Your Elven Name</h3>
+          <div id="name-result" class="name-result">
+            Click generate to find an elven name
+          </div>
+          <div id="name-meaning" class="name-meaning"></div>
+          <button id="regenerate-btn" class="btn">
+            <i class="fas fa-redo"></i> Generate Another
+          </button>
+        </div>
+
+        <div class="elf-tips">
+          <h3>Creating Compelling Elven Characters</h3>
+          <p>
+            Elves are one of fantasy's most enduring races, with rich lore
+            across many fictional worlds. Consider these aspects when developing
+            your elven character:
+          </p>
+
+          <div class="tips-grid">
+            <div class="tip-card">
+              <div class="tip-icon"><i class="fas fa-hourglass"></i></div>
+              <h4>Lifespan Perspective</h4>
+              <p>
+                How does your elf's long lifespan shape their worldview? Do they
+                view shorter-lived races with curiosity, condescension, or
+                compassion?
+              </p>
+            </div>
+            <div class="tip-card">
+              <div class="tip-icon"><i class="fas fa-tree"></i></div>
+              <h4>Cultural Connection</h4>
+              <p>
+                What aspects of traditional elven society does your character
+                embrace or reject? Are they deeply traditional or a maverick
+                within their culture?
+              </p>
+            </div>
+            <div class="tip-card">
+              <div class="tip-icon"><i class="fas fa-wand-sparkles"></i></div>
+              <h4>Magical Affinity</h4>
+              <p>
+                How does your elf relate to magic? Are they naturally gifted,
+                studiously trained, or perhaps unusual in lacking magical
+                ability?
+              </p>
+            </div>
+            <div class="tip-card">
+              <div class="tip-icon"><i class="fas fa-history"></i></div>
+              <h4>Personal History</h4>
+              <p>
+                What significant events in your elf's potentially centuries-long
+                life have shaped them? What historic events have they witnessed
+                firsthand?
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <a href="../../index.html" class="back-link">
+          <i class="fas fa-arrow-left"></i> Back to All Generators
+        </a>
+      </div>
     </main>
 
     <!-- Footer -->
     <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-column">
-                    <h4>Name Generators</h4>
-                    <ul class="footer-links">
-                        <li><a href="../pet-name.html">Pet Names</a></li>
-                        <li><a href="../baby-name.html">Baby Names</a></li>
-                        <li><a href="../fantasy-name.html">Fantasy Names</a></li>
-                        <li><a href="../startup-name.html">Business Names</a></li>
-                        <li><a href="../gamer-tag.html">Gamer Tags</a></li>
-                        <li><a href="../boyfriend-name.html">Boyfriend Nicknames</a></li>
-                        <li><a href="../girlfriend-name.html">Girlfriend Nicknames</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4>Character Names</h4>
-                    <ul class="footer-links">
-                        <li><a href="villain-name.html">Villain Names</a></li>
-                        <li><a href="hero-name.html">Hero Names</a></li>
-                        <li><a href="wizard-name.html">Wizard Names</a></li>
-                        <li><a href="warrior-name.html">Warrior Names</a></li>
-                        <li><a href="elf-name.html">Elf Names</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4>Company</h4>
-                    <ul class="footer-links">
-                        <li><a href="../../company/about.html">About Us</a></li>
-                        <li><a href="../../company/contact.html">Contact</a></li>
-                        <li><a href="../../company/privacy-policy.html">Privacy Policy</a></li>
-                        <li><a href="../../company/terms-of-service.html">Terms of Service</a></li>
-                        <li><a href="../../company/sitemap.html">Sitemap</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4>Stay Updated</h4>
-                    <p>Subscribe to our newsletter for the latest naming trends and generator updates.</p>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="Your email address">
-                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
-                    </form>
-                    <div class="footer-social">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-discord"></i></a>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <h4>Name Generators</h4>
+            <ul class="footer-links">
+              <li><a href="../pet-name.html">Pet Names</a></li>
+              <li><a href="../baby-name.html">Baby Names</a></li>
+              <li><a href="../fantasy-name.html">Fantasy Names</a></li>
+              <li><a href="../startup-name.html">Business Names</a></li>
+              <li><a href="../gamer-tag.html">Gamer Tags</a></li>
+              <li><a href="../boyfriend-name.html">Boyfriend Nicknames</a></li>
+              <li>
+                <a href="../girlfriend-name.html">Girlfriend Nicknames</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Character Names</h4>
+            <ul class="footer-links">
+              <li><a href="villain-name.html">Villain Names</a></li>
+              <li><a href="hero-name.html">Hero Names</a></li>
+              <li><a href="wizard-name.html">Wizard Names</a></li>
+              <li><a href="warrior-name.html">Warrior Names</a></li>
+              <li><a href="elf-name.html">Elf Names</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Company</h4>
+            <ul class="footer-links">
+              <li><a href="../../company/about.html">About Us</a></li>
+              <li><a href="../../company/contact.html">Contact</a></li>
+              <li>
+                <a href="../../company/privacy-policy.html">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="../../company/terms-of-service.html"
+                  >Terms of Service</a
+                >
+              </li>
+              <li><a href="../../company/sitemap.html">Sitemap</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Stay Updated</h4>
+            <p>
+              Subscribe to our newsletter for the latest naming trends and
+              generator updates.
+            </p>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Your email address" />
+              <button type="submit"><i class="fas fa-paper-plane"></i></button>
+            </form>
+            <div class="footer-social">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-discord"></i></a>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Name Generator Hub. All rights reserved. | <a href="../../company/privacy-policy.html">Privacy Policy</a> | <a href="../../company/terms-of-service.html">Terms of Service</a></p>
-            </div>
+          </div>
         </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 Name Fabulous. All rights reserved. |
+            <a href="../../company/privacy-policy.html">Privacy Policy</a> |
+            <a href="../../company/terms-of-service.html">Terms of Service</a>
+          </p>
+        </div>
+      </div>
     </footer>
 
     <script src="../../js/main.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Sample elf first names
-            const elfFirstNames = {
-                high: {
-                    male: ["Aelar", "Caelum", "Elrond", "Galathil", "Isilion", "Laeroth", "Meldiron", "Naertho", "Olorion", "Pharom", "Quarion", "Riluaneth", "Sylvan", "Thranduil", "Varis", "Xanaphia", "Ylyndar", "Zaltarish"],
-                    female: ["Aelene", "Caladwen", "Elwing", "Galadriel", "Isewen", "Lathiel", "Miriel", "Nimrodel", "Olara", "Phiriel", "Quelenia", "Ravaphel", "Sylvie", "Thariel", "Valindra", "Xiloscient", "Yrneha", "Zylvana"],
-                    neutral: ["Arin", "Caelin", "Elrin", "Galyn", "Iriven", "Lorin", "Melrin", "Nirin", "Orin", "Pherin", "Quirin", "Ryllin", "Syrin", "Therin", "Varin", "Xerin", "Yerin", "Zerin"]
-                },
-                wood: {
-                    male: ["Adran", "Berrian", "Corthon", "Dessian", "Evendur", "Faelar", "Gaelin", "Hadarai", "Irril", "Jhaan", "Korfel", "Lamlis", "Miirphys", "Neldor", "Orivir", "Peren", "Quarrel", "Riardon"],
-                    female: ["Adrie", "Birel", "Chaedi", "Dara", "Enna", "Faelyn", "Gaerradh", "Hirael", "Irann", "Jarsali", "Kethra", "Leshanna", "Maeralya", "Naivara", "Oriel", "Phyrra", "Quelenna", "Ratha"],
-                    neutral: ["Alyre", "Bren", "Cael", "Dessi", "Eni", "Fern", "Gael", "Hali", "Inril", "Jora", "Kae", "Lumi", "Miri", "Nael", "Oran", "Pren", "Quin", "Roan"]
-                },
-                dark: {
-                    male: ["Arkoth", "Belaern", "Cazorth", "Drizzt", "Eclavdra", "Faeryl", "Guldor", "Houndaer", "Ilphrin", "Jarlaxle", "Krenaste", "Lorthax", "Malaggar", "Nurval", "Orgoloth", "Phaere", "Quevven", "Rizolvir"],
-                    female: ["Akordia", "Baltana", "Chalithra", "Drisinil", "Elvanshalee", "Felyndiira", "Greyanna", "Halisstra", "Ilivarra", "Jhulae", "Kiriy", "Lirdnolu", "Malice", "Nulliira", "Olorae", "Pellanistra", "Qilué", "Rilrae"],
-                    neutral: ["Ash", "Briza", "Chasz", "Dhaunil", "Eliss", "Fildar", "Ghil", "Hatch", "Illiam", "Jhuild", "Kyess", "Loun", "Mol", "Nez", "Obsul", "Phyx", "Quill", "Ryltar"]
-                },
-                moon: {
-                    male: ["Aegnor", "Beluar", "Cystenn", "Daelar", "Erendriel", "Fildor", "Gaerlan", "Haedir", "Ilbryn", "Jhardrath", "Kelrin", "Lareth", "Maeral", "Nesterin", "Orsavir", "Pathil", "Quinar", "Raibyn"],
-                    female: ["Amlaruil", "Brelinda", "Cylya", "Dasyra", "Elora", "Fildra", "Gaerwen", "Haela", "Ilmadia", "Jhenna", "Kyrrha", "Loriellin", "Maelyrra", "Nueleth", "Oluevaera", "Phyraha", "Quamara", "Raven"],
-                    neutral: ["Alue", "Brei", "Cael", "Daen", "Elith", "Fael", "Glyn", "Hael", "Iril", "Jaen", "Kith", "Lael", "Miel", "Niel", "Oriel", "Pael", "Quil", "Riel"]
-                },
-                sun: {
-                    male: ["Aerendyl", "Bialaer", "Cyrendar", "Darcassan", "Elaxalim", "Filarion", "Gaemon", "Haladavar", "Iliphar", "Jonstal", "Keryth", "Lauruthin", "Melabrion", "Navarre", "Ontholen", "Pontifex", "Quynn", "Ravaphel"],
-                    female: ["Aithlin", "Briatha", "Caerthynna", "Dayadra", "Elandra", "Filauria", "Gaertha", "Haela", "Ilmaria", "Jhaumrithe", "Kylantha", "Lazziar", "Maerithel", "Nuelma", "Oloma", "Phyrra", "Quilla", "Rathiain"],
-                    neutral: ["Amar", "Bryn", "Caran", "Doral", "Elen", "Faren", "Gael", "Haren", "Irithel", "Jaren", "Keth", "Loran", "Maran", "Naren", "Oren", "Pareth", "Quath", "Rauth"]
-                },
-                sea: {
-                    male: ["Althidon", "Brevan", "Corym", "Delnis", "Emardin", "Finthas", "Gwydn", "Haldir", "Ithilion", "Jassin", "Koril", "Laucian", "Morvin", "Nelthon", "Orthil", "Pywaln", "Quaeth", "Revyn"],
-                    female: ["Alanis", "Brienna", "Cora", "Delsanra", "Elweth", "Fayeth", "Glyntra", "Hylaeth", "Itylra", "Jelenneth", "Krystara", "Lyraesel", "Meriele", "Nausica", "Olwynn", "Pyria", "Qwynna", "Ryleth"],
-                    neutral: ["Aeon", "Bran", "Cren", "Dren", "Esel", "Fyn", "Gwyn", "Haen", "Isen", "Jhen", "Kren", "Lyn", "Mren", "Nyn", "Osen", "Pyn", "Qren", "Ren"]
-                },
-                snow: {
-                    male: ["Angwar", "Borwarith", "Corurel", "Dendric", "Erewan", "Faeranduil", "Glirendel", "Haemir", "Iliphar", "Jaerdan", "Khelben", "Lhoris", "Morthil", "Neremyn", "Ornthalas", "Paeris", "Quorin", "Rythorn"],
-                    female: ["Anarzee", "Brynda", "Calarel", "Dasyra", "Elorfindar", "Fieryat", "Gilthanas", "Heryndra", "Ilsevel", "Jorilda", "Kendalee", "Laerune", "Morgwais", "Nylaathria", "Olyranna", "Phelorna", "Quillathe", "Rathiain"],
-                    neutral: ["Aspen", "Bjorn", "Crystal", "Drift", "Everest", "Frost", "Glacier", "Hail", "Ice", "Juneau", "Kelvin", "Lumi", "Mist", "North", "Orion", "Polar", "Quill", "Rime"]
-                },
-                half: {
-                    male: ["Adran", "Birel", "Cerran", "Darion", "Erendriel", "Faelyn", "Gaerlan", "Haedir", "Iliphar", "Jendar", "Korfel", "Lamlis", "Morian", "Nesterin", "Orym", "Peren", "Quarion", "Rolen"],
-                    female: ["Adrie", "Briella", "Chaedi", "Dara", "Enna", "Faelyn", "Gaerradh", "Hirael", "Irann", "Jarsali", "Kethra", "Leshanna", "Miriel", "Naivara", "Oriel", "Phyrra", "Quelenna", "Ratha"],
-                    neutral: ["Alue", "Brei", "Cael", "Daen", "Elith", "Fael", "Glyn", "Hael", "Iril", "Jaen", "Kith", "Lael", "Miel", "Niel", "Oriel", "Pael", "Quil", "Riel"]
-                }
-            };
-            
-            // Sample elf last names/house names by type
-            const elfLastNames = {
-                high: ["Amaratharr", "Brightwater", "Crystalbrook", "Diamonddew", "Eveningfall", "Fallentree", "Goldleaf", "Highwind", "Ithilnarion", "Jewelflower", "Koehlanna", "Lightshimmer", "Moonshadow", "Nightbreeze", "Oakenheel", "Proudlute", "Quin'thalor", "Silverspire"],
-                wood: ["Amakiir", "Brightwood", "Creekhollow", "Deepleaf", "Emberleaf", "Fernwhisper", "Greenmantle", "Hawksong", "Ivybrook", "Jungleclaw", "Kithseer", "Leafdancer", "Mistwalker", "Nightwind", "Oakenheart", "Pinegrove", "Quillshadow", "Rootweaver"],
-                dark: ["Abaeir", "Baenre", "Coldheart", "Despana", "Everhate", "Fey-Branche", "Ghaunadaur", "Hunzrin", "Ilythiiri", "Jusztiirin", "K'yorl", "Lolthlurker", "Maerret", "Noqu'ath", "Oblodra", "Pharn", "Quavein", "Resurrection"],
-                moon: ["Amalith", "Brightstar", "Crescentgleam", "Dreamweaver", "Evenstar", "Frostwind", "Glimmerdawn", "Halfmoon", "Ithiltari", "Jewelnight", "Kilkaen", "Lunarwhisper", "Moonarrow", "Nightsong", "Orbaen", "Purelake", "Quinalin", "Riverwind"],
-                sun: ["Ahmaquissar", "Brightflame", "Cormanthyr", "Duskryn", "Emberbrow", "Firehair", "Goldenshield", "Heliosong", "Illumine", "Jadefire", "Korianthil", "Lightheart", "Morningsun", "Nhaemaer", "Oranshalee", "Phoenixwave", "Quessir", "Raybearer"],
-                sea: ["Aquastride", "Bluegill", "Coralborn", "Deepcurrent", "Ebbtide", "Finborn", "Glimmersea", "Highwave", "Islerose", "Jetstream", "Keelhauler", "Lightwater", "Meredith", "Nautilus", "Oceandeep", "Pearlcatcher", "Quarterdeck", "Ripsail"],
-                snow: ["Avariel", "Blizzardbrow", "Crystalheart", "Diamondfrost", "Everwinter", "Frostarrow", "Glacierdawn", "Hoarmantle", "Icebloom", "Januani", "Kholduny", "Lightsnow", "Meridith", "Northstar", "Opaline", "Permafrost", "Quickfreeze", "Rimeheart"],
-                half: ["Amastacia", "Brightblade", "Caerdonel", "Daemonfey", "Elenvir", "Floshem", "Galanodel", "Holimion", "Ilphelkiir", "Jorildyn", "Kaladath", "Liadon", "Meliamne", "Naïlo", "Ofandrus", "Presrae", "Quessir", "Raethran"]
-            };
-            
-            // Sample elf titles by type
-            const elfTitles = {
-                high: ["of the Silver Spires", "Spellweaver", "Stargazer", "Archmage", "of the Ancient Bloodline", "Lorekeeper", "the Wise", "Keeper of Traditions"],
-                wood: ["Greenleaf", "Pathfinder", "of the Deep Forest", "Beastfriend", "Wildwalker", "the Swift", "Guardian of the Grove", "Treewhisperer"],
-                dark: ["Nightblade", "of the Underdark", "Spider Kissed", "the Merciless", "Shadowdancer", "Poison Master", "Lolth's Chosen", "the Exile"],
-                moon: ["Moonchild", "Dreamspeaker", "Silvertongue", "Night Wanderer", "Keeper of Secrets", "Starlight Walker", "Moon Blessed", "of the Waxing Crescent"],
-                sun: ["Sunborn", "Light Bringer", "Flame Heart", "Dawn Herald", "Golden One", "Sun Blessed", "Brightspear", "Dawnpriest"],
-                sea: ["Tidefriend", "Wave Dancer", "of the Coral Halls", "Pearl Seeker", "Storm Rider", "Deepsong", "Current Caller", "Seasinger"],
-                snow: ["Frostheart", "Ice Walker", "Winterborn", "Snowdancer", "of the Frozen Peaks", "Cold Harbinger", "Blizzard Caller", "Icecrafter"],
-                half: ["Between Worlds", "Bridge Builder", "of Two Bloods", "the Mediator", "Twilight Child", "the Adaptable", "Wayfinder", "Balance Keeper"]
-            };
-            
-            // Sample elven house/clan prefixes
-            const elfHousePrefixes = {
-                high: ["House", "Court of", "Spire of", "Circle of", "Dynasty of"],
-                wood: ["Grove of", "Clan", "Circle of", "Hearth of", "Children of"],
-                dark: ["House", "Cabal of", "Web of", "Bloodline of", "Sect of"],
-                moon: ["House", "Lineage of", "Pact of", "Circle of", "Covenant of"],
-                sun: ["House", "Order of", "Radiance of", "Legacy of", "Scions of"],
-                sea: ["Tide of", "Current of", "Wave of", "Depths of", "Reef of"],
-                snow: ["Lodge of", "Frost of", "Peak of", "Drift of", "Crest of"],
-                half: ["House", "Legacy of", "Line of", "Fellowship of", "Union of"]
-            };
+      document.addEventListener("DOMContentLoaded", function () {
+        // Sample elf first names
+        const elfFirstNames = {
+          high: {
+            male: [
+              "Aelar",
+              "Caelum",
+              "Elrond",
+              "Galathil",
+              "Isilion",
+              "Laeroth",
+              "Meldiron",
+              "Naertho",
+              "Olorion",
+              "Pharom",
+              "Quarion",
+              "Riluaneth",
+              "Sylvan",
+              "Thranduil",
+              "Varis",
+              "Xanaphia",
+              "Ylyndar",
+              "Zaltarish",
+            ],
+            female: [
+              "Aelene",
+              "Caladwen",
+              "Elwing",
+              "Galadriel",
+              "Isewen",
+              "Lathiel",
+              "Miriel",
+              "Nimrodel",
+              "Olara",
+              "Phiriel",
+              "Quelenia",
+              "Ravaphel",
+              "Sylvie",
+              "Thariel",
+              "Valindra",
+              "Xiloscient",
+              "Yrneha",
+              "Zylvana",
+            ],
+            neutral: [
+              "Arin",
+              "Caelin",
+              "Elrin",
+              "Galyn",
+              "Iriven",
+              "Lorin",
+              "Melrin",
+              "Nirin",
+              "Orin",
+              "Pherin",
+              "Quirin",
+              "Ryllin",
+              "Syrin",
+              "Therin",
+              "Varin",
+              "Xerin",
+              "Yerin",
+              "Zerin",
+            ],
+          },
+          wood: {
+            male: [
+              "Adran",
+              "Berrian",
+              "Corthon",
+              "Dessian",
+              "Evendur",
+              "Faelar",
+              "Gaelin",
+              "Hadarai",
+              "Irril",
+              "Jhaan",
+              "Korfel",
+              "Lamlis",
+              "Miirphys",
+              "Neldor",
+              "Orivir",
+              "Peren",
+              "Quarrel",
+              "Riardon",
+            ],
+            female: [
+              "Adrie",
+              "Birel",
+              "Chaedi",
+              "Dara",
+              "Enna",
+              "Faelyn",
+              "Gaerradh",
+              "Hirael",
+              "Irann",
+              "Jarsali",
+              "Kethra",
+              "Leshanna",
+              "Maeralya",
+              "Naivara",
+              "Oriel",
+              "Phyrra",
+              "Quelenna",
+              "Ratha",
+            ],
+            neutral: [
+              "Alyre",
+              "Bren",
+              "Cael",
+              "Dessi",
+              "Eni",
+              "Fern",
+              "Gael",
+              "Hali",
+              "Inril",
+              "Jora",
+              "Kae",
+              "Lumi",
+              "Miri",
+              "Nael",
+              "Oran",
+              "Pren",
+              "Quin",
+              "Roan",
+            ],
+          },
+          dark: {
+            male: [
+              "Arkoth",
+              "Belaern",
+              "Cazorth",
+              "Drizzt",
+              "Eclavdra",
+              "Faeryl",
+              "Guldor",
+              "Houndaer",
+              "Ilphrin",
+              "Jarlaxle",
+              "Krenaste",
+              "Lorthax",
+              "Malaggar",
+              "Nurval",
+              "Orgoloth",
+              "Phaere",
+              "Quevven",
+              "Rizolvir",
+            ],
+            female: [
+              "Akordia",
+              "Baltana",
+              "Chalithra",
+              "Drisinil",
+              "Elvanshalee",
+              "Felyndiira",
+              "Greyanna",
+              "Halisstra",
+              "Ilivarra",
+              "Jhulae",
+              "Kiriy",
+              "Lirdnolu",
+              "Malice",
+              "Nulliira",
+              "Olorae",
+              "Pellanistra",
+              "Qilué",
+              "Rilrae",
+            ],
+            neutral: [
+              "Ash",
+              "Briza",
+              "Chasz",
+              "Dhaunil",
+              "Eliss",
+              "Fildar",
+              "Ghil",
+              "Hatch",
+              "Illiam",
+              "Jhuild",
+              "Kyess",
+              "Loun",
+              "Mol",
+              "Nez",
+              "Obsul",
+              "Phyx",
+              "Quill",
+              "Ryltar",
+            ],
+          },
+          moon: {
+            male: [
+              "Aegnor",
+              "Beluar",
+              "Cystenn",
+              "Daelar",
+              "Erendriel",
+              "Fildor",
+              "Gaerlan",
+              "Haedir",
+              "Ilbryn",
+              "Jhardrath",
+              "Kelrin",
+              "Lareth",
+              "Maeral",
+              "Nesterin",
+              "Orsavir",
+              "Pathil",
+              "Quinar",
+              "Raibyn",
+            ],
+            female: [
+              "Amlaruil",
+              "Brelinda",
+              "Cylya",
+              "Dasyra",
+              "Elora",
+              "Fildra",
+              "Gaerwen",
+              "Haela",
+              "Ilmadia",
+              "Jhenna",
+              "Kyrrha",
+              "Loriellin",
+              "Maelyrra",
+              "Nueleth",
+              "Oluevaera",
+              "Phyraha",
+              "Quamara",
+              "Raven",
+            ],
+            neutral: [
+              "Alue",
+              "Brei",
+              "Cael",
+              "Daen",
+              "Elith",
+              "Fael",
+              "Glyn",
+              "Hael",
+              "Iril",
+              "Jaen",
+              "Kith",
+              "Lael",
+              "Miel",
+              "Niel",
+              "Oriel",
+              "Pael",
+              "Quil",
+              "Riel",
+            ],
+          },
+          sun: {
+            male: [
+              "Aerendyl",
+              "Bialaer",
+              "Cyrendar",
+              "Darcassan",
+              "Elaxalim",
+              "Filarion",
+              "Gaemon",
+              "Haladavar",
+              "Iliphar",
+              "Jonstal",
+              "Keryth",
+              "Lauruthin",
+              "Melabrion",
+              "Navarre",
+              "Ontholen",
+              "Pontifex",
+              "Quynn",
+              "Ravaphel",
+            ],
+            female: [
+              "Aithlin",
+              "Briatha",
+              "Caerthynna",
+              "Dayadra",
+              "Elandra",
+              "Filauria",
+              "Gaertha",
+              "Haela",
+              "Ilmaria",
+              "Jhaumrithe",
+              "Kylantha",
+              "Lazziar",
+              "Maerithel",
+              "Nuelma",
+              "Oloma",
+              "Phyrra",
+              "Quilla",
+              "Rathiain",
+            ],
+            neutral: [
+              "Amar",
+              "Bryn",
+              "Caran",
+              "Doral",
+              "Elen",
+              "Faren",
+              "Gael",
+              "Haren",
+              "Irithel",
+              "Jaren",
+              "Keth",
+              "Loran",
+              "Maran",
+              "Naren",
+              "Oren",
+              "Pareth",
+              "Quath",
+              "Rauth",
+            ],
+          },
+          sea: {
+            male: [
+              "Althidon",
+              "Brevan",
+              "Corym",
+              "Delnis",
+              "Emardin",
+              "Finthas",
+              "Gwydn",
+              "Haldir",
+              "Ithilion",
+              "Jassin",
+              "Koril",
+              "Laucian",
+              "Morvin",
+              "Nelthon",
+              "Orthil",
+              "Pywaln",
+              "Quaeth",
+              "Revyn",
+            ],
+            female: [
+              "Alanis",
+              "Brienna",
+              "Cora",
+              "Delsanra",
+              "Elweth",
+              "Fayeth",
+              "Glyntra",
+              "Hylaeth",
+              "Itylra",
+              "Jelenneth",
+              "Krystara",
+              "Lyraesel",
+              "Meriele",
+              "Nausica",
+              "Olwynn",
+              "Pyria",
+              "Qwynna",
+              "Ryleth",
+            ],
+            neutral: [
+              "Aeon",
+              "Bran",
+              "Cren",
+              "Dren",
+              "Esel",
+              "Fyn",
+              "Gwyn",
+              "Haen",
+              "Isen",
+              "Jhen",
+              "Kren",
+              "Lyn",
+              "Mren",
+              "Nyn",
+              "Osen",
+              "Pyn",
+              "Qren",
+              "Ren",
+            ],
+          },
+          snow: {
+            male: [
+              "Angwar",
+              "Borwarith",
+              "Corurel",
+              "Dendric",
+              "Erewan",
+              "Faeranduil",
+              "Glirendel",
+              "Haemir",
+              "Iliphar",
+              "Jaerdan",
+              "Khelben",
+              "Lhoris",
+              "Morthil",
+              "Neremyn",
+              "Ornthalas",
+              "Paeris",
+              "Quorin",
+              "Rythorn",
+            ],
+            female: [
+              "Anarzee",
+              "Brynda",
+              "Calarel",
+              "Dasyra",
+              "Elorfindar",
+              "Fieryat",
+              "Gilthanas",
+              "Heryndra",
+              "Ilsevel",
+              "Jorilda",
+              "Kendalee",
+              "Laerune",
+              "Morgwais",
+              "Nylaathria",
+              "Olyranna",
+              "Phelorna",
+              "Quillathe",
+              "Rathiain",
+            ],
+            neutral: [
+              "Aspen",
+              "Bjorn",
+              "Crystal",
+              "Drift",
+              "Everest",
+              "Frost",
+              "Glacier",
+              "Hail",
+              "Ice",
+              "Juneau",
+              "Kelvin",
+              "Lumi",
+              "Mist",
+              "North",
+              "Orion",
+              "Polar",
+              "Quill",
+              "Rime",
+            ],
+          },
+          half: {
+            male: [
+              "Adran",
+              "Birel",
+              "Cerran",
+              "Darion",
+              "Erendriel",
+              "Faelyn",
+              "Gaerlan",
+              "Haedir",
+              "Iliphar",
+              "Jendar",
+              "Korfel",
+              "Lamlis",
+              "Morian",
+              "Nesterin",
+              "Orym",
+              "Peren",
+              "Quarion",
+              "Rolen",
+            ],
+            female: [
+              "Adrie",
+              "Briella",
+              "Chaedi",
+              "Dara",
+              "Enna",
+              "Faelyn",
+              "Gaerradh",
+              "Hirael",
+              "Irann",
+              "Jarsali",
+              "Kethra",
+              "Leshanna",
+              "Miriel",
+              "Naivara",
+              "Oriel",
+              "Phyrra",
+              "Quelenna",
+              "Ratha",
+            ],
+            neutral: [
+              "Alue",
+              "Brei",
+              "Cael",
+              "Daen",
+              "Elith",
+              "Fael",
+              "Glyn",
+              "Hael",
+              "Iril",
+              "Jaen",
+              "Kith",
+              "Lael",
+              "Miel",
+              "Niel",
+              "Oriel",
+              "Pael",
+              "Quil",
+              "Riel",
+            ],
+          },
+        };
 
-            // Generate elf name function
-            function generateElfName() {
-                const elfType = document.getElementById('elf-type').value;
-                const gender = document.getElementById('elf-gender').value;
-                const style = document.getElementById('name-style').value;
-                const nameElements = document.getElementById('name-elements').value;
-                const startingLetter = document.getElementById('starting-letter').value.toUpperCase();
-                
-                // Determine elf type for name selection
-                let nameType = elfType;
-                if (elfType === 'any') {
-                    const types = Object.keys(elfFirstNames);
-                    nameType = types[Math.floor(Math.random() * types.length)];
-                }
-                
-                // Determine gender for name selection
-                let nameGender = gender;
-                if (gender === 'any') {
-                    const genders = ['male', 'female', 'neutral'];
-                    nameGender = genders[Math.floor(Math.random() * genders.length)];
-                }
-                
-                // Select appropriate first name pool
-                let firstNamePool = elfFirstNames[nameType][nameGender].slice();
-                
-                // Filter by starting letter if specified
-                if (startingLetter) {
-                    firstNamePool = firstNamePool.filter(name => name.startsWith(startingLetter));
-                    // If no matches, revert to full list to avoid empty results
-                    if (firstNamePool.length === 0) {
-                        firstNamePool = elfFirstNames[nameType][nameGender].slice();
-                    }
-                }
-                
-                // Get appropriate name components
-                const firstName = firstNamePool[Math.floor(Math.random() * firstNamePool.length)];
-                const lastName = elfLastNames[nameType][Math.floor(Math.random() * elfLastNames[nameType].length)];
-                const title = elfTitles[nameType][Math.floor(Math.random() * elfTitles[nameType].length)];
-                const housePrefix = elfHousePrefixes[nameType][Math.floor(Math.random() * elfHousePrefixes[nameType].length)];
-                
-                // Craft final name based on selected elements
-                let elfName = '';
-                
-                switch (nameElements) {
-                    case 'full':
-                    case 0:
-                        elfName = `${firstName} ${lastName}`;
-                        break;
-                    case 'title':
-                    case 1:
-                        elfName = `${firstName} ${title}`;
-                        break;
-                    case 'clan':
-                    case 2:
-                        elfName = `${firstName} of ${housePrefix} ${lastName}`;
-                        break;
-                    case 'first':
-                    case 3:
-                        elfName = `${firstName}`;
-                        break;
-                    case 'any':
-                    default:
-                        const randomFormat = Math.floor(Math.random() * 4);
-                        if (randomFormat === 0) elfName = `${firstName} ${lastName}`;
-                        else if (randomFormat === 1) elfName = `${firstName} ${title}`;
-                        else if (randomFormat === 2) elfName = `${firstName} of ${housePrefix} ${lastName}`;
-                        else elfName = `${firstName}`;
-                        break;
-                }
-                
-                // Display the result
-                document.getElementById('name-result').innerText = elfName;
-                document.getElementById('name-result').classList.add('animate-result');
-                
-                // Create an elf description
-                generateElfDescription(elfName, nameType, nameGender);
-                
-                // Remove animation class after animation completes
-                setTimeout(() => {
-                    document.getElementById('name-result').classList.remove('animate-result');
-                }, 500);
+        // Sample elf last names/house names by type
+        const elfLastNames = {
+          high: [
+            "Amaratharr",
+            "Brightwater",
+            "Crystalbrook",
+            "Diamonddew",
+            "Eveningfall",
+            "Fallentree",
+            "Goldleaf",
+            "Highwind",
+            "Ithilnarion",
+            "Jewelflower",
+            "Koehlanna",
+            "Lightshimmer",
+            "Moonshadow",
+            "Nightbreeze",
+            "Oakenheel",
+            "Proudlute",
+            "Quin'thalor",
+            "Silverspire",
+          ],
+          wood: [
+            "Amakiir",
+            "Brightwood",
+            "Creekhollow",
+            "Deepleaf",
+            "Emberleaf",
+            "Fernwhisper",
+            "Greenmantle",
+            "Hawksong",
+            "Ivybrook",
+            "Jungleclaw",
+            "Kithseer",
+            "Leafdancer",
+            "Mistwalker",
+            "Nightwind",
+            "Oakenheart",
+            "Pinegrove",
+            "Quillshadow",
+            "Rootweaver",
+          ],
+          dark: [
+            "Abaeir",
+            "Baenre",
+            "Coldheart",
+            "Despana",
+            "Everhate",
+            "Fey-Branche",
+            "Ghaunadaur",
+            "Hunzrin",
+            "Ilythiiri",
+            "Jusztiirin",
+            "K'yorl",
+            "Lolthlurker",
+            "Maerret",
+            "Noqu'ath",
+            "Oblodra",
+            "Pharn",
+            "Quavein",
+            "Resurrection",
+          ],
+          moon: [
+            "Amalith",
+            "Brightstar",
+            "Crescentgleam",
+            "Dreamweaver",
+            "Evenstar",
+            "Frostwind",
+            "Glimmerdawn",
+            "Halfmoon",
+            "Ithiltari",
+            "Jewelnight",
+            "Kilkaen",
+            "Lunarwhisper",
+            "Moonarrow",
+            "Nightsong",
+            "Orbaen",
+            "Purelake",
+            "Quinalin",
+            "Riverwind",
+          ],
+          sun: [
+            "Ahmaquissar",
+            "Brightflame",
+            "Cormanthyr",
+            "Duskryn",
+            "Emberbrow",
+            "Firehair",
+            "Goldenshield",
+            "Heliosong",
+            "Illumine",
+            "Jadefire",
+            "Korianthil",
+            "Lightheart",
+            "Morningsun",
+            "Nhaemaer",
+            "Oranshalee",
+            "Phoenixwave",
+            "Quessir",
+            "Raybearer",
+          ],
+          sea: [
+            "Aquastride",
+            "Bluegill",
+            "Coralborn",
+            "Deepcurrent",
+            "Ebbtide",
+            "Finborn",
+            "Glimmersea",
+            "Highwave",
+            "Islerose",
+            "Jetstream",
+            "Keelhauler",
+            "Lightwater",
+            "Meredith",
+            "Nautilus",
+            "Oceandeep",
+            "Pearlcatcher",
+            "Quarterdeck",
+            "Ripsail",
+          ],
+          snow: [
+            "Avariel",
+            "Blizzardbrow",
+            "Crystalheart",
+            "Diamondfrost",
+            "Everwinter",
+            "Frostarrow",
+            "Glacierdawn",
+            "Hoarmantle",
+            "Icebloom",
+            "Januani",
+            "Kholduny",
+            "Lightsnow",
+            "Meridith",
+            "Northstar",
+            "Opaline",
+            "Permafrost",
+            "Quickfreeze",
+            "Rimeheart",
+          ],
+          half: [
+            "Amastacia",
+            "Brightblade",
+            "Caerdonel",
+            "Daemonfey",
+            "Elenvir",
+            "Floshem",
+            "Galanodel",
+            "Holimion",
+            "Ilphelkiir",
+            "Jorildyn",
+            "Kaladath",
+            "Liadon",
+            "Meliamne",
+            "Naïlo",
+            "Ofandrus",
+            "Presrae",
+            "Quessir",
+            "Raethran",
+          ],
+        };
+
+        // Sample elf titles by type
+        const elfTitles = {
+          high: [
+            "of the Silver Spires",
+            "Spellweaver",
+            "Stargazer",
+            "Archmage",
+            "of the Ancient Bloodline",
+            "Lorekeeper",
+            "the Wise",
+            "Keeper of Traditions",
+          ],
+          wood: [
+            "Greenleaf",
+            "Pathfinder",
+            "of the Deep Forest",
+            "Beastfriend",
+            "Wildwalker",
+            "the Swift",
+            "Guardian of the Grove",
+            "Treewhisperer",
+          ],
+          dark: [
+            "Nightblade",
+            "of the Underdark",
+            "Spider Kissed",
+            "the Merciless",
+            "Shadowdancer",
+            "Poison Master",
+            "Lolth's Chosen",
+            "the Exile",
+          ],
+          moon: [
+            "Moonchild",
+            "Dreamspeaker",
+            "Silvertongue",
+            "Night Wanderer",
+            "Keeper of Secrets",
+            "Starlight Walker",
+            "Moon Blessed",
+            "of the Waxing Crescent",
+          ],
+          sun: [
+            "Sunborn",
+            "Light Bringer",
+            "Flame Heart",
+            "Dawn Herald",
+            "Golden One",
+            "Sun Blessed",
+            "Brightspear",
+            "Dawnpriest",
+          ],
+          sea: [
+            "Tidefriend",
+            "Wave Dancer",
+            "of the Coral Halls",
+            "Pearl Seeker",
+            "Storm Rider",
+            "Deepsong",
+            "Current Caller",
+            "Seasinger",
+          ],
+          snow: [
+            "Frostheart",
+            "Ice Walker",
+            "Winterborn",
+            "Snowdancer",
+            "of the Frozen Peaks",
+            "Cold Harbinger",
+            "Blizzard Caller",
+            "Icecrafter",
+          ],
+          half: [
+            "Between Worlds",
+            "Bridge Builder",
+            "of Two Bloods",
+            "the Mediator",
+            "Twilight Child",
+            "the Adaptable",
+            "Wayfinder",
+            "Balance Keeper",
+          ],
+        };
+
+        // Sample elven house/clan prefixes
+        const elfHousePrefixes = {
+          high: ["House", "Court of", "Spire of", "Circle of", "Dynasty of"],
+          wood: ["Grove of", "Clan", "Circle of", "Hearth of", "Children of"],
+          dark: ["House", "Cabal of", "Web of", "Bloodline of", "Sect of"],
+          moon: ["House", "Lineage of", "Pact of", "Circle of", "Covenant of"],
+          sun: ["House", "Order of", "Radiance of", "Legacy of", "Scions of"],
+          sea: ["Tide of", "Current of", "Wave of", "Depths of", "Reef of"],
+          snow: ["Lodge of", "Frost of", "Peak of", "Drift of", "Crest of"],
+          half: ["House", "Legacy of", "Line of", "Fellowship of", "Union of"],
+        };
+
+        // Generate elf name function
+        function generateElfName() {
+          const elfType = document.getElementById("elf-type").value;
+          const gender = document.getElementById("elf-gender").value;
+          const style = document.getElementById("name-style").value;
+          const nameElements = document.getElementById("name-elements").value;
+          const startingLetter = document
+            .getElementById("starting-letter")
+            .value.toUpperCase();
+
+          // Determine elf type for name selection
+          let nameType = elfType;
+          if (elfType === "any") {
+            const types = Object.keys(elfFirstNames);
+            nameType = types[Math.floor(Math.random() * types.length)];
+          }
+
+          // Determine gender for name selection
+          let nameGender = gender;
+          if (gender === "any") {
+            const genders = ["male", "female", "neutral"];
+            nameGender = genders[Math.floor(Math.random() * genders.length)];
+          }
+
+          // Select appropriate first name pool
+          let firstNamePool = elfFirstNames[nameType][nameGender].slice();
+
+          // Filter by starting letter if specified
+          if (startingLetter) {
+            firstNamePool = firstNamePool.filter((name) =>
+              name.startsWith(startingLetter)
+            );
+            // If no matches, revert to full list to avoid empty results
+            if (firstNamePool.length === 0) {
+              firstNamePool = elfFirstNames[nameType][nameGender].slice();
             }
-            
-            // Generate an elf description
-            function generateElfDescription(name, type, gender) {
-                const elfTypes = {
-                    "high": "A noble and sophisticated elf from an ancient magical civilization",
-                    "wood": "A wild and nature-attuned elf who lives in harmony with the forest",
-                    "dark": "A mysterious elf from the subterranean realms with an affinity for shadow",
-                    "moon": "A dreamy, intuitive elf with connections to lunar magic and divination",
-                    "sun": "A proud, bright-spirited elf who draws power from solar energies",
-                    "sea": "A graceful aquatic elf with an affinity for oceans and waterways",
-                    "snow": "A resilient elf adapted to life in frigid, mountainous realms",
-                    "half": "A versatile individual with mixed elven and human heritage"
-                };
-                
-                const elfTraits = {
-                    "high": "arcane knowledge and refined etiquette",
-                    "wood": "stealth, archery, and a deep connection to natural world",
-                    "dark": "subterfuge, exceptional night vision, and innate magical abilities",
-                    "moon": "prophetic insights, enchantment magic, and artistic expression",
-                    "sun": "radiant magic, martial prowess, and unwavering determination",
-                    "sea": "aquatic adaptation, water magic, and melodious singing",
-                    "snow": "cold resistance, survival skills, and ice-based magic",
-                    "half": "adaptability, diplomatic skills, and diverse talents"
-                };
-                
-                const pronouns = {
-                    "male": { subject: "he", object: "him", possessive: "his" },
-                    "female": { subject: "she", object: "her", possessive: "her" },
-                    "neutral": { subject: "they", object: "them", possessive: "their" }
-                };
-                
-                const p = pronouns[gender];
-                const description = elfTypes[type];
-                const trait = elfTraits[type];
-                
-                document.getElementById('name-meaning').innerHTML = `<p>${description} known for ${trait}. With a grace that comes from centuries of life, ${name} moves through the world with purpose and ethereal elegance.</p>`;
-            }
-            
-            // Event listeners
-            document.getElementById('generate-btn').addEventListener('click', generateElfName);
-            document.getElementById('regenerate-btn').addEventListener('click', generateElfName);
-        });
+          }
+
+          // Get appropriate name components
+          const firstName =
+            firstNamePool[Math.floor(Math.random() * firstNamePool.length)];
+          const lastName =
+            elfLastNames[nameType][
+              Math.floor(Math.random() * elfLastNames[nameType].length)
+            ];
+          const title =
+            elfTitles[nameType][
+              Math.floor(Math.random() * elfTitles[nameType].length)
+            ];
+          const housePrefix =
+            elfHousePrefixes[nameType][
+              Math.floor(Math.random() * elfHousePrefixes[nameType].length)
+            ];
+
+          // Craft final name based on selected elements
+          let elfName = "";
+
+          switch (nameElements) {
+            case "full":
+            case 0:
+              elfName = `${firstName} ${lastName}`;
+              break;
+            case "title":
+            case 1:
+              elfName = `${firstName} ${title}`;
+              break;
+            case "clan":
+            case 2:
+              elfName = `${firstName} of ${housePrefix} ${lastName}`;
+              break;
+            case "first":
+            case 3:
+              elfName = `${firstName}`;
+              break;
+            case "any":
+            default:
+              const randomFormat = Math.floor(Math.random() * 4);
+              if (randomFormat === 0) elfName = `${firstName} ${lastName}`;
+              else if (randomFormat === 1) elfName = `${firstName} ${title}`;
+              else if (randomFormat === 2)
+                elfName = `${firstName} of ${housePrefix} ${lastName}`;
+              else elfName = `${firstName}`;
+              break;
+          }
+
+          // Display the result
+          document.getElementById("name-result").innerText = elfName;
+          document
+            .getElementById("name-result")
+            .classList.add("animate-result");
+
+          // Create an elf description
+          generateElfDescription(elfName, nameType, nameGender);
+
+          // Remove animation class after animation completes
+          setTimeout(() => {
+            document
+              .getElementById("name-result")
+              .classList.remove("animate-result");
+          }, 500);
+        }
+
+        // Generate an elf description
+        function generateElfDescription(name, type, gender) {
+          const elfTypes = {
+            high: "A noble and sophisticated elf from an ancient magical civilization",
+            wood: "A wild and nature-attuned elf who lives in harmony with the forest",
+            dark: "A mysterious elf from the subterranean realms with an affinity for shadow",
+            moon: "A dreamy, intuitive elf with connections to lunar magic and divination",
+            sun: "A proud, bright-spirited elf who draws power from solar energies",
+            sea: "A graceful aquatic elf with an affinity for oceans and waterways",
+            snow: "A resilient elf adapted to life in frigid, mountainous realms",
+            half: "A versatile individual with mixed elven and human heritage",
+          };
+
+          const elfTraits = {
+            high: "arcane knowledge and refined etiquette",
+            wood: "stealth, archery, and a deep connection to natural world",
+            dark: "subterfuge, exceptional night vision, and innate magical abilities",
+            moon: "prophetic insights, enchantment magic, and artistic expression",
+            sun: "radiant magic, martial prowess, and unwavering determination",
+            sea: "aquatic adaptation, water magic, and melodious singing",
+            snow: "cold resistance, survival skills, and ice-based magic",
+            half: "adaptability, diplomatic skills, and diverse talents",
+          };
+
+          const pronouns = {
+            male: { subject: "he", object: "him", possessive: "his" },
+            female: { subject: "she", object: "her", possessive: "her" },
+            neutral: { subject: "they", object: "them", possessive: "their" },
+          };
+
+          const p = pronouns[gender];
+          const description = elfTypes[type];
+          const trait = elfTraits[type];
+
+          document.getElementById(
+            "name-meaning"
+          ).innerHTML = `<p>${description} known for ${trait}. With a grace that comes from centuries of life, ${name} moves through the world with purpose and ethereal elegance.</p>`;
+        }
+
+        // Event listeners
+        document
+          .getElementById("generate-btn")
+          .addEventListener("click", generateElfName);
+        document
+          .getElementById("regenerate-btn")
+          .addEventListener("click", generateElfName);
+      });
     </script>
-</body>
+  </body>
 </html>

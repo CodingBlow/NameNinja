@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
-Sitemap: https://namegeneratorhub.com/sitemap.xml
+Sitemap: https://namefabulous.com/sitemap.xml
 
 # Allow all crawlers
 User-agent: *
