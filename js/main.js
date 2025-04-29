@@ -1,5 +1,5 @@
 /**
- * Name Fabulous - Main JavaScript
+ * Name Siri - Main JavaScript
  *
  * This file contains shared utility functions and site-wide features
  * that are used across multiple name generators.
